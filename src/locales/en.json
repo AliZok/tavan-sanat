@@ -1,0 +1,76 @@
+{
+  "header": {
+    "brand": "AirSense Analytics",
+    "nav": {
+      "services": "Services",
+      "about": "About Us",
+      "technology": "Technology",
+      "contact": "Contact"
+    },
+    "cta": "Get a Quote"
+  },
+  "hero": {
+    "title": "Pioneering Air Quality Solutions for a Healthier Tomorrow",
+    "subtitle": "Empowering a healthier planet through precise environmental monitoring, advanced analytics, and actionable insights for a sustainable future.",
+    "buttons": {
+      "discover": "Discover Our Services",
+      "demo": "Request a Demo"
+    }
+  },
+  "features": {
+    "title": "Our Advanced Capabilities",
+    "subtitle": "Leveraging cutting-edge technology and deep expertise to deliver unparalleled insights into air quality, ensuring a healthier environment for all.",
+    "items": {
+      "data": {
+        "title": "Hyper-Accurate Data",
+        "description": "Providing highly precise and reliable air quality data, validated by rigorous scientific methods, for truly informed decision-making."
+      },
+      "analytics": {
+        "title": "AI-Powered Analytics",
+        "description": "Utilizing state-of-the-art sensors and advanced AI algorithms for comprehensive monitoring and predictive analysis."
+      },
+      "impact": {
+        "title": "Global Environmental Impact",
+        "description": "Contributing to a healthier global environment through widespread data collection, analysis, and collaborative initiatives."
+      }
+    }
+  },
+  "mission": {
+    "title": "Our Unwavering Mission",
+    "description": "At AirSense Analytics, we are passionately dedicated to providing the most accurate, transparent, and accessible air quality information available. Our core mission is to empower communities, forward-thinking businesses, and proactive governments with the critical data and actionable insights needed to make informed decisions that profoundly protect public health and foster a sustainable environment. We firmly believe that clean, breathable air is a fundamental human right, and we are relentlessly committed to making it a tangible reality for everyone, everywhere."
+  },
+  "process": {
+    "title": "Our Seamless Process",
+    "subtitle": "From deployment to insights, our streamlined process ensures you get the air quality data you need, when you need it.",
+    "steps": {
+      "deployment": {
+        "title": "1. Sensor Deployment",
+        "description": "Strategically deploy our advanced sensors in key locations to begin real-time data collection."
+      },
+      "analysis": {
+        "title": "2. Data Collection & Analysis",
+        "description": "Our systems continuously collect and analyze data, identifying patterns and anomalies."
+      },
+      "insights": {
+        "title": "3. Actionable Insights",
+        "description": "Receive clear, actionable reports and recommendations to improve air quality."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Environment?",
+    "subtitle": "Partner with AirSense Analytics today to gain unparalleled insights into your air quality and contribute to a healthier, more sustainable future.",
+    "button": "Get in Touch Now"
+  },
+  "footer": {
+    "copyright": "© 2025 AirSense Analytics. All rights reserved. Dedicated to clean air for a better world.",
+    "links": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "language": {
+    "en": "English",
+    "fa": "فارسی"
+  }
+} 

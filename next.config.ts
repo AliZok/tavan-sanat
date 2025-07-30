@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Using App Router with dynamic locale routing instead of old i18n config
 };
 
 export default nextConfig;
