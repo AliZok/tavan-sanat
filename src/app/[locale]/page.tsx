@@ -237,7 +237,7 @@ export default function Component() {
             <p className="max-w-[800px] text-lg md:text-xl lg:text-2xl opacity-90">
               {translations.cta.subtitle}
             </p>
-            <button className="inline-flex h-14 items-center justify-center bg-[--color-secondary-blue] px-10 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:bg-[--color-dark-blue] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[--color-secondary-blue] focus:ring-offset-2">
+            <button className="inline-flex h-14 items-center justify-center px-10 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:bg-[#669c27] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[--color-secondary-blue] focus:ring-offset-2">
               {translations.cta.button} <ChevronRight className="ml-2 h-5 w-5" />
             </button>
           </div>
