@@ -28,33 +28,33 @@ export default function Component() {
             className="h-8 w-8"
           />
           <span className="sr-only">{translations.header.brand}</span>
-          <span className="ml-3 text-xl font-extrabold text-gray-900 tracking-tight">{translations.header.brand}</span>
+          <span className="ml-3 text-xl font-extrabold text-[#353c4a] tracking-tight">{translations.header.brand}</span>
         </Link>
         <nav className="ml-auto flex gap-6 sm:gap-8 items-center">
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-gray-700"
+            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
             prefetch={false}
           >
             {translations.header.nav.services}
           </Link>
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-gray-700"
+            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
             prefetch={false}
           >
             {translations.header.nav.about}
           </Link>
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-gray-700"
+            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
             prefetch={false}
           >
             {translations.header.nav.technology}
           </Link>
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-gray-700"
+            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
             prefetch={false}
           >
             {translations.header.nav.contact}
@@ -76,7 +76,7 @@ export default function Component() {
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
-              opacity: 0.6,
+              opacity: 0.2,
               zIndex: 1
             }}
           ></div>
@@ -84,10 +84,9 @@ export default function Component() {
           <div className="container px-4 md:px-6 grid gap-8 lg:grid-cols-[1fr_550px] lg:gap-12 xl:grid-cols-[1fr_600px] items-center relative z-10">
             <div className="flex flex-col justify-center space-y-6">
               <div className="space-y-4">
-                <h1 className="text-4xl font-extrabold tracking-tighter sm:text-6xl xl:text-7xl/none text-gray-900 leading-tight animate-fade-in-up">
-                  {translations.hero.title}
+                <h1 className="text-4xl font-extrabold tracking-tighter sm:text-6xl xl:text-7xl/none text-[#353c4a] leading-tight animate-fade-in-up mb-4" dangerouslySetInnerHTML={{ __html: translations.hero.title }}>
                 </h1>
-                <p className="max-w-[700px] text-gray-700 md:text-xl/relaxed lg:text-lg/relaxed xl:text-xl/relaxed animate-fade-in-up delay-200">
+                <p className="max-w-[700px] text-[#353c4a] md:text-xl/relaxed lg:text-lg/relaxed xl:text-xl/relaxed animate-fade-in-up delay-200">
                   {translations.hero.subtitle}
                 </p>
               </div>
@@ -115,10 +114,10 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center">
               <div className="space-y-3">
-                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-gray-900">
+                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-[#353c4a]">
                   {translations.features.title}
                 </h2>
-                <p className="max-w-[900px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[900px] text-[#353c4a] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   {translations.features.subtitle}
                 </p>
               </div>
@@ -127,27 +126,27 @@ export default function Component() {
               <div className="flex flex-col items-center justify-between p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white h-full">
                 <div className="flex flex-col items-center">
                   <BarChart className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in" />
-                  <h3 className="text-2xl font-bold text-gray-800">{translations.features.items.data.title}</h3>
+                  <h3 className="text-2xl font-bold text-[#353c4a]">{translations.features.items.data.title}</h3>
                 </div>
-                <p className="text-gray-600 text-base mt-4">
+                <p className="text-[#353c4a] text-base mt-4">
                   {translations.features.items.data.description}
                 </p>
               </div>
               <div className="flex flex-col items-center justify-between p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white h-full">
                 <div className="flex flex-col items-center">
                   <Cpu className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in delay-100" />
-                  <h3 className="text-2xl font-bold text-gray-800">{translations.features.items.analytics.title}</h3>
+                  <h3 className="text-2xl font-bold text-[#353c4a]">{translations.features.items.analytics.title}</h3>
                 </div>
-                <p className="text-gray-600 text-base mt-4">
+                <p className="text-[#353c4a] text-base mt-4">
                   {translations.features.items.analytics.description}
                 </p>
               </div>
               <div className="flex flex-col items-center justify-between p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white h-full">
                 <div className="flex flex-col items-center">
                   <Globe className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in delay-200" />
-                  <h3 className="text-2xl font-bold text-gray-800">{translations.features.items.impact.title}</h3>
+                  <h3 className="text-2xl font-bold text-[#353c4a]">{translations.features.items.impact.title}</h3>
                 </div>
-                <p className="text-gray-600 text-base mt-4">
+                <p className="text-[#353c4a] text-base mt-4">
                   {translations.features.items.impact.description}
                 </p>
               </div>
@@ -167,10 +166,10 @@ export default function Component() {
             />
             <div className="flex flex-col justify-center space-y-6">
               <div className="space-y-4">
-                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-gray-900">
+                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-[#353c4a]">
                   {translations.mission.title}
                 </h2>
-                <p className="max-w-[700px] text-gray-700 md:text-xl/relaxed lg:text-lg/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[700px] text-[#353c4a] md:text-xl/relaxed lg:text-lg/relaxed xl:text-xl/relaxed">
                   {translations.mission.description}
                 </p>
               </div>
@@ -182,10 +181,10 @@ export default function Component() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center">
               <div className="space-y-3">
-                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-gray-900">
+                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-[#353c4a]">
                   {translations.process.title}
                 </h2>
-                <p className="max-w-[900px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[900px] text-[#353c4a] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   {translations.process.subtitle}
                 </p>
               </div>
@@ -196,9 +195,9 @@ export default function Component() {
                   <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
                     <Cloud className="h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.deployment.title}</h3>
+                  <h3 className="text-xl font-bold text-[#353c4a] mb-2">{translations.process.steps.deployment.title}</h3>
                 </div>
-                <p className="text-gray-600">
+                <p className="text-[#353c4a]">
                   {translations.process.steps.deployment.description}
                 </p>
               </div>
@@ -207,9 +206,9 @@ export default function Component() {
                   <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
                     <BarChart className="h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.analysis.title}</h3>
+                  <h3 className="text-xl font-bold text-[#353c4a] mb-2">{translations.process.steps.analysis.title}</h3>
                 </div>
-                <p className="text-gray-600">
+                <p className="text-[#353c4a]">
                   {translations.process.steps.analysis.description}
                 </p>
               </div>
@@ -218,9 +217,9 @@ export default function Component() {
                   <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
                     <Cpu className="h-8 w-8" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.insights.title}</h3>
+                  <h3 className="text-xl font-bold text-[#353c4a] mb-2">{translations.process.steps.insights.title}</h3>
                 </div>
-                <p className="text-gray-600">
+                <p className="text-[#353c4a]">
                   {translations.process.steps.insights.description}
                 </p>
               </div>
@@ -249,23 +248,23 @@ export default function Component() {
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <Link href="#" className="flex items-center justify-center" prefetch={false}>
             <Cloud className="h-6 w-6 text-[#669c27]" />
-            <span className="ml-2 text-lg font-bold text-gray-900">{translations.header.brand}</span>
+            <span className="ml-2 text-lg font-bold text-[#353c4a]">{translations.header.brand}</span>
           </Link>
-          <p className="text-sm text-gray-600 text-center sm:text-left">
+          <p className="text-sm text-[#353c4a] text-center sm:text-left">
             {translations.footer.copyright}
           </p>
         </div>
         <nav className="sm:ml-auto flex gap-6 sm:gap-8 items-center">
-          <Link href="#" className="text-sm hover:underline underline-offset-4 text-gray-600" prefetch={false}>
+          <Link href="#" className="text-sm hover:underline underline-offset-4 text-[#353c4a]" prefetch={false}>
             {translations.footer.links.terms}
           </Link>
-          <Link href="#" className="text-sm hover:underline underline-offset-4 text-gray-600" prefetch={false}>
+          <Link href="#" className="text-sm hover:underline underline-offset-4 text-[#353c4a]" prefetch={false}>
             {translations.footer.links.privacy}
           </Link>
           <div className="flex gap-4">
             <Link
               href="#"
-              className="text-gray-600 hover:text-[--color-secondary-blue] transition-colors duration-300"
+              className="text-[#353c4a] hover:text-[--color-secondary-blue] transition-colors duration-300"
               aria-label="Facebook"
               prefetch={false}
             >
@@ -273,7 +272,7 @@ export default function Component() {
             </Link>
             <Link
               href="#"
-              className="text-gray-600 hover:text-[--color-secondary-blue] transition-colors duration-300"
+              className="text-[#353c4a] hover:text-[--color-secondary-blue] transition-colors duration-300"
               aria-label="Twitter"
               prefetch={false}
             >
@@ -281,7 +280,7 @@ export default function Component() {
             </Link>
             <Link
               href="#"
-              className="text-gray-600 hover:text-[--color-secondary-blue] transition-colors duration-300"
+              className="text-[#353c4a] hover:text-[--color-secondary-blue] transition-colors duration-300"
               aria-label="LinkedIn"
               prefetch={false}
             >
@@ -289,7 +288,7 @@ export default function Component() {
             </Link>
             <Link
               href="#"
-              className="text-gray-600 hover:text-[--color-secondary-blue] transition-colors duration-300"
+              className="text-[#353c4a] hover:text-[--color-secondary-blue] transition-colors duration-300"
               aria-label="Instagram"
               prefetch={false}
             >
