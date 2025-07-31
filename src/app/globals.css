@@ -199,3 +199,17 @@ body {
 .delay-400 {
   animation-delay: 0.4s;
 }
+
+/* Button cursor pointer */
+button {
+  cursor: pointer;
+}
+
+/* Ensure all interactive elements have pointer cursor */
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}
