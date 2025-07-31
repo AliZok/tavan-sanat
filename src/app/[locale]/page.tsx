@@ -18,8 +18,15 @@ export default function Component() {
     <div className="flex flex-col min-h-screen" dir={direction}>
       {/* Header */}
       <header className="px-4 lg:px-6 h-16 flex items-center bg-gradient-to-r from-white to-[#0ac5b2]/5 shadow-lg">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <Cloud className="h-8 w-8 text-[#0ac5b2] animate-pulse" />
+        <Link href="/" className="flex items-center justify-center" prefetch={false}>
+          {/* <Cloud className="h-8 w-8 text-[#0ac5b2] animate-pulse" /> */}
+          <Image
+            src="/fuck.png"
+            alt={translations.header.brand}
+            width={32}
+            height={32}
+            className="h-8 w-8"
+          />
           <span className="sr-only">{translations.header.brand}</span>
           <span className="ml-3 text-xl font-extrabold text-gray-900 tracking-tight">{translations.header.brand}</span>
         </Link>
@@ -62,7 +69,17 @@ export default function Component() {
       {/* Hero Section */}
       <main className="flex-1">
         <section className="w-full py-6 md:py-12 lg:py-16 xl:py-22 bg-gradient-to-br from-[#0ac5b2]/5 to-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/blue-industry3.jpg')] opacity-10 pointer-events-none bg-cover bg-center"></div>
+          <div 
+            className="absolute inset-0 pointer-events-none"
+            style={{ 
+              backgroundImage: "url('/blue-industry3.jpg')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              opacity: 0.6,
+              zIndex: 1
+            }}
+          ></div>
           
           <div className="container px-4 md:px-6 grid gap-8 lg:grid-cols-[1fr_550px] lg:gap-12 xl:grid-cols-[1fr_600px] items-center relative z-10">
             <div className="flex flex-col justify-center space-y-6">

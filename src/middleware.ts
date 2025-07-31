@@ -1,11 +1,29 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 const locales = ['en', 'fa'];
-const defaultLocale = 'en';
+const defaultLocale = 'fa';
+
+// Routes that should not be redirected to include locale
+const excludedRoutes = ['/test'];
+
+// File extensions that should not be redirected to include locale
+const staticFileExtensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.ico', '.css', '.js', '.woff', '.woff2', '.ttf', '.eot'];
 
 export function middleware(request: NextRequest) {
-  // Check if there is any supported locale in the pathname
   const pathname = request.nextUrl.pathname;
+  
+  // Skip locale redirection for excluded routes
+  if (excludedRoutes.includes(pathname)) {
+    return NextResponse.next();
+  }
+  
+  // Skip locale redirection for static files
+  const isStaticFile = staticFileExtensions.some(ext => pathname.endsWith(ext));
+  if (isStaticFile) {
+    return NextResponse.next();
+  }
+  
+  // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
