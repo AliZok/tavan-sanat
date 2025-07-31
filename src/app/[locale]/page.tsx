@@ -21,7 +21,7 @@ export default function Component() {
         <Link href="/" className="flex items-center justify-center" prefetch={false}>
           {/* <Cloud className="h-8 w-8 text-[#669c27] animate-pulse" /> */}
           <Image
-            src="/fuck.png"
+            src="/my-logo.png"
             alt={translations.header.brand}
             width={32}
             height={32}
