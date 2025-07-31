@@ -95,7 +95,7 @@ export default function Component() {
                 <button className="inline-flex h-12 items-center justify-center bg-[#669c27] px-8 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:bg-[--color-dark-green] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#669c27] focus:ring-offset-2">
                   {translations.hero.buttons.discover} <ChevronRight className="ml-2 h-5 w-5" />
                 </button>
-                <button className="inline-flex h-12 items-center justify-center border-2 border-[--color-secondary-blue] bg-white px-8 text-base font-semibold shadow-lg transition-all duration-300 hover:bg-[--color-secondary-blue]/10 hover:text-[--color-dark-blue] focus:outline-none focus:ring-2 focus:ring-[--color-secondary-blue] focus:ring-offset-2 text-[--color-secondary-blue]">
+                <button className="inline-flex h-12 items-center justify-center bg-white px-8 text-base font-semibold shadow-lg transition-all duration-300 hover:bg-[--color-secondary-blue]/10 hover:text-[--color-dark-blue] focus:outline-none focus:ring-2 focus:ring-[--color-secondary-blue] focus:ring-offset-2 text-[--color-secondary-blue]">
                   {translations.hero.buttons.demo}
                 </button>
               </div>
@@ -123,8 +123,8 @@ export default function Component() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-6xl items-start gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-3 mt-16">
-              <div className="flex flex-col items-center p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
+            <div className="mx-auto grid max-w-6xl items-stretch gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-3 mt-16">
+              <div className="flex flex-col items-center justify-between p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white h-full">
                 <div className="flex flex-col items-center">
                   <BarChart className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in" />
                   <h3 className="text-2xl font-bold text-gray-800">{translations.features.items.data.title}</h3>
@@ -133,7 +133,7 @@ export default function Component() {
                   {translations.features.items.data.description}
                 </p>
               </div>
-              <div className="flex flex-col items-center p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
+              <div className="flex flex-col items-center justify-between p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white h-full">
                 <div className="flex flex-col items-center">
                   <Cpu className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in delay-100" />
                   <h3 className="text-2xl font-bold text-gray-800">{translations.features.items.analytics.title}</h3>
@@ -142,7 +142,7 @@ export default function Component() {
                   {translations.features.items.analytics.description}
                 </p>
               </div>
-              <div className="flex flex-col items-center p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
+              <div className="flex flex-col items-center justify-between p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white h-full">
                 <div className="flex flex-col items-center">
                   <Globe className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in delay-200" />
                   <h3 className="text-2xl font-bold text-gray-800">{translations.features.items.impact.title}</h3>
@@ -190,30 +190,36 @@ export default function Component() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-6xl items-start gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-3 mt-16">
-              <div className="flex flex-col items-center text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl">
-                <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
-                  <Cloud className="h-8 w-8" />
+            <div className="mx-auto grid max-w-6xl items-stretch gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-3 mt-16">
+              <div className="flex flex-col items-center justify-between text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl h-full">
+                <div className="flex flex-col items-center">
+                  <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
+                    <Cloud className="h-8 w-8" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.deployment.title}</h3>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.deployment.title}</h3>
                 <p className="text-gray-600">
                   {translations.process.steps.deployment.description}
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl">
-                <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
-                  <BarChart className="h-8 w-8" />
+              <div className="flex flex-col items-center justify-between text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl h-full">
+                <div className="flex flex-col items-center">
+                  <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
+                    <BarChart className="h-8 w-8" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.analysis.title}</h3>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.analysis.title}</h3>
                 <p className="text-gray-600">
                   {translations.process.steps.analysis.description}
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl">
-                <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
-                  <Cpu className="h-8 w-8" />
+              <div className="flex flex-col items-center justify-between text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl h-full">
+                <div className="flex flex-col items-center">
+                  <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
+                    <Cpu className="h-8 w-8" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.insights.title}</h3>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.insights.title}</h3>
                 <p className="text-gray-600">
                   {translations.process.steps.insights.description}
                 </p>
