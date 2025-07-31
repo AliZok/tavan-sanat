@@ -31,9 +31,9 @@ export default function LanguageNotification({
 
   return (
     <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 animate-fade-in-up">
-      <div className="bg-white rounded-lg shadow-lg border border-gray-200 px-4 py-3 flex items-center gap-3">
+      <div className="bg-white shadow-lg border border-gray-200 px-4 py-3 flex items-center gap-3">
         <div className="flex items-center gap-2">
-          <Globe className="h-4 w-4 text-[#0ac5b2]" />
+          <Globe className="h-4 w-4 text-[#669c27]" />
           <Check className="h-4 w-4 text-green-500" />
         </div>
         <span className="text-sm font-medium text-gray-700">

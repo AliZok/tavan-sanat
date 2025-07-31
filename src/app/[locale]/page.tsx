@@ -17,9 +17,9 @@ export default function Component() {
   return (
     <div className="flex flex-col min-h-screen" dir={direction}>
       {/* Header */}
-      <header className="px-4 lg:px-6 h-16 flex items-center bg-gradient-to-r from-white to-[#0ac5b2]/5 shadow-lg">
+      <header className="px-4 lg:px-6 h-16 flex items-center bg-gradient-to-r from-white to-[#669c27]/5 shadow-lg">
         <Link href="/" className="flex items-center justify-center" prefetch={false}>
-          {/* <Cloud className="h-8 w-8 text-[#0ac5b2] animate-pulse" /> */}
+          {/* <Cloud className="h-8 w-8 text-[#669c27] animate-pulse" /> */}
           <Image
             src="/fuck.png"
             alt={translations.header.brand}
@@ -33,34 +33,34 @@ export default function Component() {
         <nav className="ml-auto flex gap-6 sm:gap-8 items-center">
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#0ac5b2] transition-colors duration-300 text-gray-700"
+            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-gray-700"
             prefetch={false}
           >
             {translations.header.nav.services}
           </Link>
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#0ac5b2] transition-colors duration-300 text-gray-700"
+            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-gray-700"
             prefetch={false}
           >
             {translations.header.nav.about}
           </Link>
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#0ac5b2] transition-colors duration-300 text-gray-700"
+            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-gray-700"
             prefetch={false}
           >
             {translations.header.nav.technology}
           </Link>
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#0ac5b2] transition-colors duration-300 text-gray-700"
+            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-gray-700"
             prefetch={false}
           >
             {translations.header.nav.contact}
           </Link>
           <LanguageSwitcher currentLocale={locale} />
-          <button className="inline-flex h-10 items-center justify-center rounded-full bg-[#0ac5b2] px-6 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:bg-[--color-dark-green] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#0ac5b2] focus:ring-offset-2">
+          <button className="inline-flex h-10 items-center justify-center bg-[#669c27] px-6 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:bg-[--color-dark-green] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#669c27] focus:ring-offset-2">
             {translations.header.cta}
           </button>
         </nav>
@@ -68,7 +68,7 @@ export default function Component() {
 
       {/* Hero Section */}
       <main className="flex-1">
-        <section className="w-full py-6 md:py-12 lg:py-16 xl:py-22 bg-gradient-to-br from-[#0ac5b2]/5 to-white relative overflow-hidden">
+        <section className="w-full py-6 md:py-12 lg:py-16 xl:py-22 bg-gradient-to-br from-[#669c27]/5 to-white relative overflow-hidden">
           <div 
             className="absolute inset-0 pointer-events-none"
             style={{ 
@@ -92,10 +92,10 @@ export default function Component() {
                 </p>
               </div>
               <div className="flex flex-col gap-4 min-[400px]:flex-row animate-fade-in-up delay-400">
-                <button className="inline-flex h-12 items-center justify-center rounded-full bg-[#0ac5b2] px-8 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:bg-[--color-dark-green] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#0ac5b2] focus:ring-offset-2">
+                <button className="inline-flex h-12 items-center justify-center bg-[#669c27] px-8 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:bg-[--color-dark-green] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#669c27] focus:ring-offset-2">
                   {translations.hero.buttons.discover} <ChevronRight className="ml-2 h-5 w-5" />
                 </button>
-                <button className="inline-flex h-12 items-center justify-center rounded-full border-2 border-[--color-secondary-blue] bg-white px-8 text-base font-semibold shadow-lg transition-all duration-300 hover:bg-[--color-secondary-blue]/10 hover:text-[--color-dark-blue] focus:outline-none focus:ring-2 focus:ring-[--color-secondary-blue] focus:ring-offset-2 text-[--color-secondary-blue]">
+                <button className="inline-flex h-12 items-center justify-center border-2 border-[--color-secondary-blue] bg-white px-8 text-base font-semibold shadow-lg transition-all duration-300 hover:bg-[--color-secondary-blue]/10 hover:text-[--color-dark-blue] focus:outline-none focus:ring-2 focus:ring-[--color-secondary-blue] focus:ring-offset-2 text-[--color-secondary-blue]">
                   {translations.hero.buttons.demo}
                 </button>
               </div>
@@ -105,7 +105,7 @@ export default function Component() {
               width="750"
               height="500"
               alt="Air Quality Monitoring - Industrial Environment"
-              className="mx-auto aspect-[3/2] overflow-hidden rounded-2xl object-cover sm:w-full lg:order-last lg:aspect-[4/3] shadow-2xl animate-fade-in-right"
+              className="mx-auto aspect-[3/2] overflow-hidden object-cover sm:w-full lg:order-last lg:aspect-[4/3] shadow-2xl animate-fade-in-right"
             />
           </div>
         </section>
@@ -124,27 +124,27 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-6xl items-start gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-3 mt-16">
-              <div className="flex flex-col items-center p-8 text-center shadow-xl rounded-xl border border-[#0ac5b2]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
+              <div className="flex flex-col items-center p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
                 <div className="flex flex-col items-center">
-                  <BarChart className="h-14 w-14 text-[#0ac5b2] mb-5 animate-bounce-in" />
+                  <BarChart className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in" />
                   <h3 className="text-2xl font-bold text-gray-800">{translations.features.items.data.title}</h3>
                 </div>
                 <p className="text-gray-600 text-base mt-4">
                   {translations.features.items.data.description}
                 </p>
               </div>
-              <div className="flex flex-col items-center p-8 text-center shadow-xl rounded-xl border border-[#0ac5b2]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
+              <div className="flex flex-col items-center p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
                 <div className="flex flex-col items-center">
-                  <Cpu className="h-14 w-14 text-[#0ac5b2] mb-5 animate-bounce-in delay-100" />
+                  <Cpu className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in delay-100" />
                   <h3 className="text-2xl font-bold text-gray-800">{translations.features.items.analytics.title}</h3>
                 </div>
                 <p className="text-gray-600 text-base mt-4">
                   {translations.features.items.analytics.description}
                 </p>
               </div>
-              <div className="flex flex-col items-center p-8 text-center shadow-xl rounded-xl border border-[#0ac5b2]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
+              <div className="flex flex-col items-center p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
                 <div className="flex flex-col items-center">
-                  <Globe className="h-14 w-14 text-[#0ac5b2] mb-5 animate-bounce-in delay-200" />
+                  <Globe className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in delay-200" />
                   <h3 className="text-2xl font-bold text-gray-800">{translations.features.items.impact.title}</h3>
                 </div>
                 <p className="text-gray-600 text-base mt-4">
@@ -156,14 +156,14 @@ export default function Component() {
         </section>
 
         {/* About/Mission Section */}
-        <section className="w-full py-16 md:py-28 lg:py-36 bg-gradient-to-r from-white to-[#0ac5b2]/10">
+        <section className="w-full py-16 md:py-28 lg:py-36 bg-gradient-to-r from-white to-[#669c27]/10">
           <div className="container px-4 md:px-6 grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
             <Image
               src="/blue-industry23.jpg"
               width="750"
               height="500"
               alt="About Us - Advanced Technology"
-              className="mx-auto aspect-[3/2] overflow-hidden rounded-2xl object-cover object-center sm:w-full shadow-2xl animate-fade-in-left"
+              className="mx-auto aspect-[3/2] overflow-hidden object-cover object-center sm:w-full shadow-2xl animate-fade-in-left"
             />
             <div className="flex flex-col justify-center space-y-6">
               <div className="space-y-4">
@@ -191,8 +191,8 @@ export default function Component() {
               </div>
             </div>
             <div className="mx-auto grid max-w-6xl items-start gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-3 mt-16">
-              <div className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#0ac5b2]/10 text-[#0ac5b2] mb-6">
+              <div className="flex flex-col items-center text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl">
+                <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
                   <Cloud className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.deployment.title}</h3>
@@ -200,8 +200,8 @@ export default function Component() {
                   {translations.process.steps.deployment.description}
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#0ac5b2]/10 text-[#0ac5b2] mb-6">
+              <div className="flex flex-col items-center text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl">
+                <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
                   <BarChart className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.analysis.title}</h3>
@@ -209,8 +209,8 @@ export default function Component() {
                   {translations.process.steps.analysis.description}
                 </p>
               </div>
-              <div className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl">
-                <div className="flex items-center justify-center h-16 w-16 rounded-full bg-[#0ac5b2]/10 text-[#0ac5b2] mb-6">
+              <div className="flex flex-col items-center text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl">
+                <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
                   <Cpu className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{translations.process.steps.insights.title}</h3>
@@ -223,7 +223,7 @@ export default function Component() {
         </section>
 
         {/* Call to Action Section */}
-        <section className="w-full py-16 md:py-28 lg:py-36 bg-gradient-to-br from-[#0ac5b2] to-[--color-dark-green] text-white shadow-inner">
+        <section className="w-full py-16 md:py-28 lg:py-36 bg-gradient-to-br from-[#669c27] to-[--color-dark-green] text-white shadow-inner">
           <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-6 text-center">
             <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl lg:text-6xl leading-tight">
               {translations.cta.title}
@@ -231,7 +231,7 @@ export default function Component() {
             <p className="max-w-[800px] text-lg md:text-xl lg:text-2xl opacity-90">
               {translations.cta.subtitle}
             </p>
-            <button className="inline-flex h-14 items-center justify-center rounded-full bg-[--color-secondary-blue] px-10 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:bg-[--color-dark-blue] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[--color-secondary-blue] focus:ring-offset-2">
+            <button className="inline-flex h-14 items-center justify-center bg-[--color-secondary-blue] px-10 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:bg-[--color-dark-blue] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[--color-secondary-blue] focus:ring-offset-2">
               {translations.cta.button} <ChevronRight className="ml-2 h-5 w-5" />
             </button>
           </div>
@@ -242,7 +242,7 @@ export default function Component() {
       <footer className="flex flex-col gap-4 sm:flex-row py-8 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-100">
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <Link href="#" className="flex items-center justify-center" prefetch={false}>
-            <Cloud className="h-6 w-6 text-[#0ac5b2]" />
+            <Cloud className="h-6 w-6 text-[#669c27]" />
             <span className="ml-2 text-lg font-bold text-gray-900">{translations.header.brand}</span>
           </Link>
           <p className="text-sm text-gray-600 text-center sm:text-left">

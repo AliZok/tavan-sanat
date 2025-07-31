@@ -49,7 +49,7 @@ export default function LanguageSwitcher({ currentLocale }: LanguageSwitcherProp
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-[#0ac5b2] transition-all duration-300 rounded-lg hover:bg-gray-100 border border-gray-200 hover:border-[#0ac5b2] focus:outline-none focus:ring-2 focus:ring-[#0ac5b2] focus:ring-offset-2"
+        className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-[#669c27] transition-all duration-300 hover:bg-gray-100 border border-gray-200 hover:border-[#669c27] focus:outline-none focus:ring-2 focus:ring-[#669c27] focus:ring-offset-2"
         aria-label="Switch language"
         aria-expanded={isOpen}
       >
@@ -59,12 +59,12 @@ export default function LanguageSwitcher({ currentLocale }: LanguageSwitcherProp
       </button>
       
       {isOpen && (
-        <div className={`absolute top-full mt-2 w-36 bg-white rounded-lg shadow-xl border border-gray-200 z-50 ${direction === 'rtl' ? 'left-0' : 'right-0'}`}>
+        <div className={`absolute top-full mt-2 w-36 bg-white shadow-xl border border-gray-200 z-50 ${direction === 'rtl' ? 'left-0' : 'right-0'}`}>
           <div className="py-1">
             <button
               onClick={() => switchLanguage('en')}
               className={`w-full px-3 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 flex items-center gap-2 ${
-                currentLocale === 'en' ? 'text-[#0ac5b2] font-medium bg-[#0ac5b2]/5' : 'text-gray-700'
+                currentLocale === 'en' ? 'text-[#669c27] font-medium bg-[#669c27]/5' : 'text-gray-700'
               }`}
             >
               <span className="text-base">🇺🇸</span>
@@ -73,7 +73,7 @@ export default function LanguageSwitcher({ currentLocale }: LanguageSwitcherProp
             <button
               onClick={() => switchLanguage('fa')}
               className={`w-full px-3 py-2 text-sm hover:bg-gray-50 transition-colors duration-200 flex items-center gap-2 ${
-                currentLocale === 'fa' ? 'text-[#0ac5b2] font-medium bg-[#0ac5b2]/5' : 'text-gray-700'
+                currentLocale === 'fa' ? 'text-[#669c27] font-medium bg-[#669c27]/5' : 'text-gray-700'
               }`}
             >
               <span className="text-base">🇮🇷</span>
