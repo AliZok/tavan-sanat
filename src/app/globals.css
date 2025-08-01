@@ -172,6 +172,114 @@ body {
   }
 }
 
+/* New animations for shapes and text */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(102, 156, 39, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(102, 156, 39, 0.6);
+  }
+}
+
+@keyframes diamond-pulse {
+  0%, 100% {
+    transform: rotate(45deg) scale(1);
+    box-shadow: 0 0 30px rgba(102, 156, 39, 0.4);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.05);
+    box-shadow: 0 0 50px rgba(102, 156, 39, 0.7);
+  }
+}
+
+@keyframes text-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    border-color: transparent;
+  }
+  51%, 100% {
+    border-color: #669c27;
+  }
+}
+
+@keyframes slide-in-from-top {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-in-slow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out;
 }
@@ -188,6 +296,51 @@ body {
   animation: bounce-in 0.6s ease-out;
 }
 
+/* New animation classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-rotate {
+  animation: rotate 20s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-diamond-pulse {
+  animation: diamond-pulse 3s ease-in-out infinite;
+}
+
+.animate-text-glow {
+  animation: text-glow 2s ease-in-out infinite;
+}
+
+.animate-typewriter {
+  animation: typewriter 3s steps(40, end) 0.5s both;
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+.animate-slide-in-top {
+  animation: slide-in-from-top 0.8s ease-out;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s ease-out;
+}
+
+.animate-fade-in-slow {
+  animation: fade-in-slow 2s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out;
+}
+
 .delay-100 {
   animation-delay: 0.1s;
 }
@@ -198,6 +351,26 @@ body {
 
 .delay-400 {
   animation-delay: 0.4s;
+}
+
+.delay-600 {
+  animation-delay: 0.6s;
+}
+
+.delay-800 {
+  animation-delay: 0.8s;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+.delay-1200 {
+  animation-delay: 1.2s;
+}
+
+.delay-1500 {
+  animation-delay: 1.5s;
 }
 
 /* Button cursor pointer */
@@ -233,4 +406,181 @@ input[type="reset"] {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #588e1a; 
+}
+
+/* Image overlay styles */
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.floating-shape {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Industrial/Artistic Graphics */
+.industrial-circle {
+  width: 80px;
+  height: 80px;
+  border: 3px solid rgba(102, 156, 39, 0.4);
+  border-radius: 50%;
+  position: relative;
+}
+
+.industrial-circle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(102, 156, 39, 0.3);
+  border-radius: 50%;
+}
+
+.industrial-square {
+  width: 60px;
+  height: 60px;
+  border: 3px solid rgba(102, 156, 39, 0.4);
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.industrial-square::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(102, 156, 39, 0.3);
+  transform: rotate(-45deg);
+}
+
+.industrial-triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 52px solid rgba(102, 156, 39, 0.3);
+  position: relative;
+}
+
+.industrial-triangle::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid rgba(102, 156, 39, 0.2);
+}
+
+.industrial-hexagon {
+  width: 70px;
+  height: 40px;
+  background: rgba(102, 156, 39, 0.2);
+  position: relative;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.industrial-hexagon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 30px;
+  background: rgba(102, 156, 39, 0.1);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* Enhanced Slogan Design */
+.slogan-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+  border: 3px solid #669c27;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+}
+
+/* Responsive Diamond Design */
+@media (max-width: 768px) {
+  .diamond-container {
+    width: 280px !important;
+    height: 280px !important;
+  }
+  
+  .diamond-text h3 {
+    font-size: 1.5rem !important;
+  }
+  
+  .diamond-text h2 {
+    font-size: 2rem !important;
+  }
+  
+  .diamond-text p {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .diamond-container {
+    width: 240px !important;
+    height: 240px !important;
+  }
+  
+  .diamond-text h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  .diamond-text h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .diamond-text p {
+    font-size: 0.8rem !important;
+  }
+}
+
+.slogan-text {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #353c4a;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slogan-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #669c27;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.typewriter-cursor {
+  border-right: 4px solid #669c27;
+  animation: blink 1s infinite;
+  margin-left: 5px;
 }

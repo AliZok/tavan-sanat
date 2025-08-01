@@ -99,13 +99,43 @@ export default function Component() {
                 </button>
               </div>
             </div>
-            <Image
-              src="/blue-industry.jpg"
-              width="750"
-              height="500"
-              alt="Air Quality Monitoring - Industrial Environment"
-              className="mx-auto aspect-[3/2] overflow-hidden object-cover sm:w-full lg:order-last lg:aspect-[4/3] shadow-2xl animate-fade-in-right"
-            />
+            <div className="relative mx-auto aspect-[3/2] overflow-hidden sm:w-full lg:order-last lg:aspect-[4/3] shadow-2xl animate-fade-in-right">
+              <Image
+                src="/blue-industry.jpg"
+                width="750"
+                height="500"
+                alt="Air Quality Monitoring - Industrial Environment"
+                className="w-full h-full object-cover"
+              />
+              
+              {/* Animated Graphic Shape - Diamond */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="relative w-96 h-96 animate-scale-in delay-600 diamond-container">
+                  {/* Outer Diamond */}
+                  <div className="absolute inset-0 transform rotate-45 border-8 border-[#669c27] bg-transparent animate-diamond-pulse"></div>
+                  
+                  {/* Inner Diamond */}
+                  <div className="absolute inset-8 transform rotate-45 border-4 border-white bg-transparent"></div>
+                  
+                  {/* Animated Slogan */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 diamond-text">
+                    <div className="text-center">
+                      <h3 className="text-3xl font-bold mb-2 animate-slide-in-top delay-800 animate-text-glow">
+                        WELCOME TO
+                      </h3>
+                      <h2 className="text-4xl font-extrabold animate-slide-up delay-1000 animate-text-glow">
+                        TAVAN SANAT
+                      </h2>
+                      <p className="text-lg font-semibold mt-2 animate-fade-in-slow delay-1200 animate-text-glow">
+                        Engineering Excellence
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
           </div>
         </section>
 
