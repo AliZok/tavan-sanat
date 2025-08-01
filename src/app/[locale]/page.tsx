@@ -108,31 +108,31 @@ export default function Component() {
                 className="w-full h-full object-cover"
               />
               
-              {/* Animated Graphic Shape - Diamond */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative w-96 h-96 animate-scale-in delay-600 diamond-container">
-                  {/* Outer Diamond */}
-                  <div className="absolute inset-0 transform rotate-45 border-8 border-[#669c27] bg-transparent animate-diamond-pulse"></div>
-                  
-                  {/* Inner Diamond */}
-                  <div className="absolute inset-8 transform rotate-45 border-4 border-white bg-transparent"></div>
-                  
-                  {/* Animated Slogan */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 diamond-text">
-                    <div className="text-center">
-                      <h3 className="text-3xl font-bold mb-2 animate-slide-in-top delay-800 animate-text-glow">
-                        WELCOME TO
-                      </h3>
-                      <h2 className="text-4xl font-extrabold animate-slide-up delay-1000 animate-text-glow">
-                        TAVAN SANAT
-                      </h2>
-                      <p className="text-lg font-semibold mt-2 animate-fade-in-slow delay-1200 animate-text-glow">
-                        Engineering Excellence
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                             {/* Animated Graphic Shape - Diamond */}
+               <div className="absolute inset-0 flex items-center justify-center opacity-0" style={{ animationDelay: '0.6s', animation: 'fadeIn 0.1s ease-out forwards' }}>
+                 <div className="relative w-96 h-96 animate-scale-in-with-opacity delay-600 diamond-container">
+                   {/* Outer Diamond */}
+                   <div className="absolute inset-0 transform rotate-45 border-8 border-[#669c27] bg-transparent animate-diamond-pulse"></div>
+                   
+                   {/* Inner Diamond */}
+                   <div className="absolute inset-8 transform rotate-45 border-4 border-white bg-transparent"></div>
+                   
+                   {/* Animated Slogan */}
+                   <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 diamond-text">
+                     <div className="text-center">
+                       <h3 className="text-3xl font-bold mb-2 animate-slide-in-top delay-800 animate-text-glow">
+                         WELCOME TO
+                       </h3>
+                       <h2 className="text-4xl font-extrabold animate-slide-up delay-1000 animate-text-glow">
+                         TAVAN SANAT
+                       </h2>
+                       <p className="text-lg font-semibold mt-2 animate-fade-in-slow delay-1200 animate-text-glow">
+                         Engineering Excellence
+                       </p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
               
               
             </div>
