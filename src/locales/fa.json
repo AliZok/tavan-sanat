@@ -85,6 +85,15 @@
       "privacy": "سیاست حریم خصوصی"
     }
   },
+  "contact": {
+    "title": "ارتباط با ما",
+    "phone": "تلفن:",
+    "email": "ایمیل:",
+    "address": "آدرس:",
+    "phoneNumber": "021-66859042",
+    "emailAddress": "CRM@TSAI.COM",
+    "addressText": "تهران خیابان آزادی خیابان کارون شمالی کوچه سید عباسی پلاک 18 واحد 2"
+  },
   "language": {
     "en": "English",
     "fa": "فارسی"

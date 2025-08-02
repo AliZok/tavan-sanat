@@ -85,6 +85,15 @@
       "privacy": "Privacy Policy"
     }
   },
+  "contact": {
+    "title": "Contact Us",
+    "phone": "Phone:",
+    "email": "Email:",
+    "address": "Address:",
+    "phoneNumber": "021-66859042",
+    "emailAddress": "CRM@TSAI.COM",
+    "addressText": "Tehran, Azadi Street, Karun North Street, Seyed Abbasi Alley, No. 18, Unit 2"
+  },
   "language": {
     "en": "English",
     "fa": "فارسی"

@@ -302,24 +302,21 @@ export default function Component() {
                 <div className="w-full h-4 bg-[#669c27]"></div>
                 <div className="  p-4">
                   <h3 className="font-bold text-3xl text-[#353c4a] mb-4 py-2">
-                    ارتباط با ما
+                    {translations.contact.title}
                   </h3>
                   <div>
                     <div>
                       <div className="flex gap-2 mb-3">
-                        <div>تلفن:</div>
-                        <div>021-66859042</div>
+                        <div>{translations.contact.phone}</div>
+                        <div>{translations.contact.phoneNumber}</div>
                       </div>
                       <div className="flex gap-2 mb-3">
-                        <div>ایمیل:</div>
-                        <div>CRM@TSAI.COM</div>
+                        <div>{translations.contact.email}</div>
+                        <div>{translations.contact.emailAddress}</div>
                       </div>
                       <div className="flex gap-2 mb-3">
-                        <div>آدرس:</div>
-                        <div>
-                          تهران خیابان آزادی خیابان کارون شمالی کوچه سید عباسی
-                          پلاک 18 واحد 2
-                        </div>
+                        <div>{translations.contact.address}</div>
+                        <div>{translations.contact.addressText}</div>
                       </div>
                     </div>
                   </div>
