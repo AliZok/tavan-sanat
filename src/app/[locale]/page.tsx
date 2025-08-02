@@ -31,26 +31,26 @@ export default function Component() {
           <span className="ml-3 text-xl font-extrabold text-[#353c4a] tracking-tight">{translations.header.brand}</span>
         </Link>
         <nav className="ml-auto flex gap-6 sm:gap-8 items-center">
+        <Link
+            href="#"
+            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
+            prefetch={false}
+          >
+            {translations.header.nav.home}
+          </Link>
+        <Link
+            href="#"
+            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
+            prefetch={false}
+          >
+            {translations.header.nav.products}
+          </Link>
           <Link
             href="#"
             className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
             prefetch={false}
           >
             {translations.header.nav.services}
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
-            prefetch={false}
-          >
-            {translations.header.nav.about}
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
-            prefetch={false}
-          >
-            {translations.header.nav.technology}
           </Link>
           <Link
             href="#"
@@ -132,6 +132,179 @@ export default function Component() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+                {/* Brand Logos Section - Third Section */}
+        <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-r from-gray-50 to-white">
+          <div className="max-w-4xl mx-auto px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-6 text-center mb-12">
+              <div className="space-y-3">
+                <h2 className="text-3xl font-extrabold tracking-tighter sm:text-4xl text-[#353c4a]">
+                  {translations.partners.title}
+                </h2>
+                <p className="max-w-[600px] text-[#353c4a] md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
+                  {translations.partners.subtitle}
+                </p>
+              </div>
+            </div>
+            
+            {/* Brand Logos Carousel */}
+            <div className="relative overflow-hidden py-8">
+              <div className="flex animate-scroll space-x-6 md:space-x-8 lg:space-x-10">
+                 {/* First set of logos */}
+                 <div className="flex space-x-6 md:space-x-8 lg:space-x-10 flex-shrink-0">
+                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                     <Image
+                       src="/customers-logo/customer1.jpg"
+                       alt="Brand Partner 1"
+                       width={192}
+                       height={112}
+                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                     />
+                   </div>
+                                       <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                      <Image
+                        src="/customers-logo/customer2.jpg"
+                        alt="Brand Partner 2"
+                        width={192}
+                        height={112}
+                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                      <Image
+                        src="/customers-logo/customer3.jpg"
+                        alt="Brand Partner 3"
+                        width={192}
+                        height={112}
+                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                      <Image
+                        src="/customers-logo/customer4.jpg"
+                        alt="Brand Partner 4"
+                        width={192}
+                        height={112}
+                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                      <Image
+                        src="/customers-logo/customer5.jpg"
+                        alt="Brand Partner 5"
+                        width={192}
+                        height={112}
+                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                      <Image
+                        src="/customers-logo/customer6.jpg"
+                        alt="Brand Partner 6"
+                        width={192}
+                        height={112}
+                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                      <Image
+                        src="/customers-logo/customer7.jpg"
+                        alt="Brand Partner 7"
+                        width={192}
+                        height={112}
+                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                      <Image
+                        src="/customers-logo/customer8.jpg"
+                        alt="Brand Partner 8"
+                        width={192}
+                        height={112}
+                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                 </div>
+                 
+                 {/* Duplicate set for seamless loop */}
+                 <div className="flex space-x-6 md:space-x-8 lg:space-x-10 flex-shrink-0">
+                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                     <Image
+                       src="/customers-logo/customer1.jpg"
+                       alt="Brand Partner 1"
+                       width={192}
+                       height={112}
+                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                     />
+                   </div>
+                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                     <Image
+                       src="/customers-logo/customer2.jpg"
+                       alt="Brand Partner 2"
+                       width={192}
+                       height={112}
+                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                     />
+                   </div>
+                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                     <Image
+                       src="/customers-logo/customer3.jpg"
+                       alt="Brand Partner 3"
+                       width={192}
+                       height={112}
+                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                     />
+                   </div>
+                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                     <Image
+                       src="/customers-logo/customer4.jpg"
+                       alt="Brand Partner 4"
+                       width={192}
+                       height={112}
+                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                     />
+                   </div>
+                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                     <Image
+                       src="/customers-logo/customer5.jpg"
+                       alt="Brand Partner 5"
+                       width={192}
+                       height={112}
+                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                     />
+                   </div>
+                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                     <Image
+                       src="/customers-logo/customer6.jpg"
+                       alt="Brand Partner 6"
+                       width={192}
+                       height={112}
+                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                     />
+                   </div>
+                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                     <Image
+                       src="/customers-logo/customer7.jpg"
+                       alt="Brand Partner 7"
+                       width={192}
+                       height={112}
+                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                     />
+                   </div>
+                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                     <Image
+                       src="/customers-logo/customer8.jpg"
+                       alt="Brand Partner 8"
+                       width={192}
+                       height={112}
+                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                     />
+                   </div>
+                 </div>
+               </div>
+             </div>
           </div>
         </section>
 
@@ -248,6 +421,179 @@ export default function Component() {
                 <p className="text-[#353c4a]">
                   {translations.process.steps.insights.description}
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Customer Logos Slider Section */}
+        <section className="w-full py-16 md:py-28 lg:py-36 bg-white">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
+              <div className="space-y-3">
+                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-[#353c4a]">
+                  {translations.customers.title}
+                </h2>
+                <p className="max-w-[900px] text-[#353c4a] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  {translations.customers.subtitle}
+                </p>
+              </div>
+            </div>
+            
+            {/* Customer Logos Slider */}
+            <div className="relative overflow-hidden py-4">
+              <div className="flex animate-scroll space-x-16 md:space-x-24 lg:space-x-32">
+                {/* First set of logos */}
+                <div className="flex space-x-16 md:space-x-24 lg:space-x-32 flex-shrink-0">
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer1.jpg"
+                      alt="Customer 1"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer2.jpg"
+                      alt="Customer 2"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer3.jpg"
+                      alt="Customer 3"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer4.jpg"
+                      alt="Customer 4"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer5.jpg"
+                      alt="Customer 5"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer6.jpg"
+                      alt="Customer 6"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer7.jpg"
+                      alt="Customer 7"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer8.jpg"
+                      alt="Customer 8"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                </div>
+                
+                {/* Duplicate set for seamless loop */}
+                <div className="flex space-x-16 md:space-x-24 lg:space-x-32 flex-shrink-0">
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer1.jpg"
+                      alt="Customer 1"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer2.jpg"
+                      alt="Customer 2"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer3.jpg"
+                      alt="Customer 3"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer4.jpg"
+                      alt="Customer 4"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer5.jpg"
+                      alt="Customer 5"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer6.jpg"
+                      alt="Customer 6"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer7.jpg"
+                      alt="Customer 7"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
+                    <Image
+                      src="/customers-logo/customer8.jpg"
+                      alt="Customer 8"
+                      width={192}
+                      height={112}
+                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

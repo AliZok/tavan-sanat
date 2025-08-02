@@ -2,10 +2,13 @@
   "header": {
     "brand": "Tavan Sanat Ayandeh Iranian",
     "nav": {
+      "home": "Home",
       "services": "Services",
       "about": "About Us",
       "technology": "Technology",
-      "contact": "Contact"
+      "contact": "Contact",
+      "products": "Products "
+
     },
     "cta": "Get a Quote"
   },
@@ -20,6 +23,7 @@
   "company": {
     "title": "Company Profile",
     "description": "Tavan Sanat Ayandeh Iranian (TSAI) is an engineering and trading company established to execute industrial projects and supply equipment for various industries. We collaborate with Ofogh Naft Gaz Khavarmiyaneh (Middle East Oil and Gas Horizon) and our experienced local and international specialists provide engineering and trading services in oil, gas, petrochemical, steel, and ferroalloy sectors. Our broad scope of activity has led us to categorize different sections to effectively meet customer needs.",
+    "description2": "With our extensive experience in the mentioned fields, we are proud to collaborate with most industries and large organizations including metal and steel industries, oil, gas, petrochemical and refinery industries, power plants, agriculture and industry, Environmental Protection Organization, water and wastewater, cement, health centers and universities, and other related industries.",
     "certifications": {
       "iso9001": "ISO 9001:2008 COMPANY",
       "iso14001": "ISO 14001:2004 COMPANY",
@@ -65,6 +69,14 @@
         "description": "Receive clear, actionable reports and recommendations to improve air quality."
       }
     }
+  },
+  "customers": {
+    "title": "Trusted by Industry Leaders",
+    "subtitle": "We are proud to serve leading companies across various industries with our innovative solutions and reliable services."
+  },
+  "partners": {
+    "title": "Our Trusted Partners",
+    "subtitle": "We work with leading brands and companies across various industries"
   },
   "cta": {
     "title": "Ready to Transform Your Environment?",

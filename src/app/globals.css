@@ -608,3 +608,22 @@ input[type="reset"] {
   animation: blink 1s infinite;
   margin-left: 5px;
 }
+
+/* Infinite Carousel Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+/* Pause animation on hover */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
