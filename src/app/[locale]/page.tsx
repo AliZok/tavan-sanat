@@ -292,6 +292,18 @@ export default function Component() {
             </div>
           </div>
         </section>
+        <section>
+          <div className="container">
+            <div className="p-6">
+              <div className="mb-1">
+                این شرکت با داشتن افراد متخصص توانمند خدمات زیر را ارائه می دهد:
+              </div>
+              سرویس، تعمیر و نگهداری، کالیبراسیون آنالایزر های سنجش آلودگی هوا
+              مشاوره جهت خرید تجهیزات سنجش آلودگی هوا، آب و فاضلاب فروش قطعات
+              یدکی و مصرفی ایستگاه های سنجش آلودگی هوا
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer className="bg-gray-100">
