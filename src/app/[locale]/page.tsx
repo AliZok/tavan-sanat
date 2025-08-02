@@ -68,73 +68,27 @@ export default function Component() {
 
       {/* Hero Section */}
       <main className="flex-1">
-        <section className="w-full py-6 md:py-12 lg:py-16 xl:py-22 bg-gradient-to-br from-[#669c27]/5 to-white relative overflow-hidden">
+        <section className="w-full min-h-[calc(100vh-4rem)] py-6 md:py-12 lg:py-16 xl:py-22 bg-gradient-to-br from-[#669c27]/5 to-white relative overflow-hidden">
           <div 
             className="absolute inset-0 pointer-events-none"
             style={{ 
-              backgroundImage: "url('/blue-industry3.jpg')",
+              backgroundImage: "url('/nav-back.png')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
-              opacity: 0.2,
+              opacity: 1,
               zIndex: 1
             }}
           ></div>
           
-          <div className="container px-4 md:px-6 grid gap-8 lg:grid-cols-[1fr_550px] lg:gap-12 xl:grid-cols-[1fr_600px] items-center relative z-10">
-            <div className="flex flex-col justify-center space-y-6">
-              <div className="space-y-4">
-                <h1 className="text-4xl font-extrabold tracking-tighter sm:text-6xl xl:text-7xl/none text-[#353c4a] leading-tight animate-fade-in-up mb-4" dangerouslySetInnerHTML={{ __html: translations.hero.title }}>
-                </h1>
-                <p className="max-w-[700px] text-[#353c4a] md:text-xl/relaxed lg:text-lg/relaxed xl:text-xl/relaxed animate-fade-in-up delay-200">
-                  {translations.hero.subtitle}
-                </p>
-              </div>
-              <div className="flex flex-col gap-4 min-[400px]:flex-row animate-fade-in-up delay-400">
-                <button className="inline-flex h-12 items-center justify-center bg-[#669c27] px-8 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:bg-[--color-dark-green] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#669c27] focus:ring-offset-2">
-                  {translations.hero.buttons.discover} <ChevronRight className="ml-2 h-5 w-5" />
-                </button>
-                <button className="inline-flex h-12 items-center justify-center bg-white px-8 text-base font-semibold shadow-lg transition-all duration-300 hover:bg-[--color-secondary-blue]/10 hover:text-[--color-dark-blue] focus:outline-none focus:ring-2 focus:ring-[--color-secondary-blue] focus:ring-offset-2 text-[--color-secondary-blue]">
-                  {translations.hero.buttons.demo}
-                </button>
-              </div>
-            </div>
-            <div className="relative mx-auto aspect-[3/2] overflow-hidden sm:w-full lg:order-last lg:aspect-[4/3] shadow-2xl animate-fade-in-right">
-              <Image
-                src="/blue-industry.jpg"
-                width="750"
-                height="500"
-                alt="Air Quality Monitoring - Industrial Environment"
-                className="w-full h-full object-cover"
-              />
-              
-                             {/* Animated Graphic Shape - Diamond */}
-               <div className="absolute inset-0 flex items-center justify-center opacity-0" style={{ animationDelay: '0.6s', animation: 'fadeIn 0.1s ease-out forwards' }}>
-                 <div className="relative w-96 h-96 animate-scale-in-with-opacity delay-600 diamond-container">
-                   {/* Outer Diamond */}
-                   <div className="absolute inset-0 transform rotate-45 border-8 border-[#669c27] bg-transparent animate-diamond-pulse"></div>
-                   
-                   {/* Inner Diamond */}
-                   <div className="absolute inset-8 transform rotate-45 border-4 border-white bg-transparent"></div>
-                   
-                   {/* Animated Slogan */}
-                   <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 diamond-text">
-                     <div className="text-center">
-                       <h3 className="text-3xl font-bold mb-2 animate-slide-in-top delay-800 animate-text-glow">
-                         WELCOME TO
-                       </h3>
-                       <h2 className="text-4xl font-extrabold animate-slide-up delay-1000 animate-text-glow">
-                         TAVAN SANAT
-                       </h2>
-                       <p className="text-lg font-semibold mt-2 animate-fade-in-slow delay-1200 animate-text-glow">
-                         Engineering Excellence
-                       </p>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-              
-              
+          <div className="container px-4 md:px-6 flex items-start justify-center relative z-10 pt-[25vh]">
+            <div className="text-left">
+                             <h1 className="text-lg font-extrabold tracking-tighter text-white leading-tight animate-fade-in-up mb-4">
+                 WELCOME TO
+               </h1>
+                             <h2 className="text-[47px] font-extrabold tracking-tighter text-white leading-tight animate-fade-in-up delay-200 mb-6">
+                TAVAN SANATE AYANDE IRANIAN
+              </h2>
             </div>
           </div>
         </section>
