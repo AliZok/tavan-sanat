@@ -284,6 +284,42 @@ export default function Component() {
           </div>
         </section>
       </main>
+
+      <footer className="bg-gray-100">
+        <div className="py-24">
+          <div className="max-w-[700px] mx-auto">
+            <div className="footer-box bg-white">
+              <div className="">
+                <div className="w-full h-4 bg-[#669c27]"></div>
+                <div className="  p-4">
+                  <h3 className="font-bold text-3xl text-[#353c4a] mb-4 py-2">
+                    ارتباط با ما
+                  </h3>
+                  <div>
+                    <div>
+                      <div className="flex gap-2 mb-3">
+                        <div>تلفن:</div>
+                        <div>021-66859042</div>
+                      </div>
+                      <div className="flex gap-2 mb-3">
+                        <div>ایمیل:</div>
+                        <div>CRM@TSAI.COM</div>
+                      </div>
+                      <div className="flex gap-2 mb-3">
+                        <div>آدرس:</div>
+                        <div>
+                          تهران خیابان آزادی خیابان کارون شمالی کوچه سید عباسی
+                          پلاک 18 واحد 2
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
