@@ -17,7 +17,7 @@ export default function Component() {
   return (
     <div className="flex flex-col min-h-screen" dir={direction}>
       {/* Header */}
-      <header className="px-4 lg:px-6 h-16 flex items-center bg-gradient-to-r from-white to-[#669c27]/5 shadow-lg">
+      <header className="fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 h-16 flex items-center bg-[#ffffffe0] shadow-lg">
         <Link href="/" className="flex items-center justify-center" prefetch={false}>
           {/* <Cloud className="h-8 w-8 text-[#669c27] animate-pulse" /> */}
           <Image
@@ -60,14 +60,11 @@ export default function Component() {
             {translations.header.nav.contact}
           </Link>
           <LanguageSwitcher currentLocale={locale} />
-          <button className="inline-flex h-10 items-center justify-center bg-[#669c27] px-6 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:bg-[--color-dark-green] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#669c27] focus:ring-offset-2">
-            {translations.header.cta}
-          </button>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         <section className="w-full min-h-[calc(100vh-4rem)] py-6 md:py-12 lg:py-16 xl:py-22 bg-gradient-to-br from-[#669c27]/5 to-white relative overflow-hidden">
           <div 
             className="absolute inset-0 pointer-events-none"
