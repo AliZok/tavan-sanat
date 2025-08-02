@@ -12,6 +12,8 @@ import {
   Twitter,
   Linkedin,
   Instagram,
+  ChevronUp,
+  ArrowUp,
 } from 'lucide-react';
 import { useParams } from 'next/navigation';
 import { useState } from 'react';
@@ -26,6 +28,13 @@ export default function Component() {
   const locale = (params.locale as Locale) || 'en';
   const translations = getTranslations(locale);
   const direction = getDirection(locale);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   const settingsTest = {
     dots: true,
     infinite: true,
@@ -320,6 +329,15 @@ export default function Component() {
           </div>
         </div>
       </footer>
+
+      {/* Scroll to Top Button */}
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-8 right-8 w-12 h-12 border-[#669c27] border-3  text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
+        aria-label="Scroll to top"
+      >
+        <ArrowUp className="w-6 h-6" color="#669c27" />
+      </button>
     </div>
   );
 }
