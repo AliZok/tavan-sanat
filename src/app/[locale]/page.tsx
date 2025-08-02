@@ -1,24 +1,82 @@
 'use client';
 
-import Link from "next/link"
-import Image from "next/image"
-import { BarChart, Cloud, Cpu, Globe, ChevronRight, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import Link from 'next/link';
+import Image from 'next/image';
+import {
+  BarChart,
+  Cloud,
+  Cpu,
+  Globe,
+  ChevronRight,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from 'lucide-react';
 import { useParams } from 'next/navigation';
 import { useState } from 'react';
 import { getTranslations, getDirection, type Locale } from '../../lib/i18n';
 import LanguageSwitcher from '../../components/LanguageSwitcher';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default function Component() {
   const params = useParams();
   const locale = (params.locale as Locale) || 'en';
   const translations = getTranslations(locale);
   const direction = getDirection(locale);
+  const settingsTest = {
+    dots: true,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
 
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+    ],
+  };
   return (
     <div className="flex flex-col min-h-screen" dir={direction}>
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 h-16 flex items-center bg-[#ffffffe0] shadow-lg">
-        <Link href="/" className="flex items-center justify-center" prefetch={false}>
+        <Link
+          href="/"
+          className="flex items-center justify-center"
+          prefetch={false}
+        >
           {/* <Cloud className="h-8 w-8 text-[#669c27] animate-pulse" /> */}
           <Image
             src="/my-logo.png"
@@ -28,17 +86,19 @@ export default function Component() {
             className="h-8 w-8"
           />
           <span className="sr-only">{translations.header.brand}</span>
-          <span className="ml-3 text-xl font-extrabold text-[#353c4a] tracking-tight">{translations.header.brand}</span>
+          <span className="ml-3 text-xl font-extrabold text-[#353c4a] tracking-tight">
+            {translations.header.brand}
+          </span>
         </Link>
         <nav className="ml-auto flex gap-6 sm:gap-8 items-center">
-        <Link
+          <Link
             href="#"
             className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
             prefetch={false}
           >
             {translations.header.nav.home}
           </Link>
-        <Link
+          <Link
             href="#"
             className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
             prefetch={false}
@@ -65,25 +125,25 @@ export default function Component() {
 
       {/* Hero Section */}
       <main className="flex-1 pt-16">
-        <section className="w-full min-h-[calc(100vh-4rem)] py-6 md:py-12 lg:py-16 xl:py-22 bg-gradient-to-br from-[#669c27]/5 to-white relative overflow-hidden">
-          <div 
+        <section className="w-full items-center flex min-h-[calc(100vh-4rem)] py-6 md:py-12 lg:py-16 xl:py-22 bg-gradient-to-br from-[#669c27]/5 to-white relative overflow-hidden">
+          <div
             className="absolute inset-0 pointer-events-none"
-            style={{ 
+            style={{
               backgroundImage: "url('/nav-back.png')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               opacity: 1,
-              zIndex: 1
+              zIndex: 1,
             }}
           ></div>
-          
+
           <div className="container px-4 md:px-6 flex items-start justify-center relative z-10 pt-[25vh]">
             <div className="text-left">
-                             <h1 className="text-lg font-extrabold tracking-tighter text-white leading-tight animate-fade-in-up mb-4">
-                 WELCOME TO
-               </h1>
-                             <h2 className="text-[47px] font-extrabold tracking-tighter text-white leading-tight animate-fade-in-up delay-200 mb-6">
+              <h1 className="text-lg font-extrabold tracking-tighter text-white leading-tight animate-fade-in-up mb-4">
+                WELCOME TO
+              </h1>
+              <h2 className="text-[47px] font-extrabold tracking-tighter text-white leading-tight animate-fade-in-up delay-200 mb-6">
                 TAVAN SANATE AYANDE IRANIAN
               </h2>
             </div>
@@ -93,17 +153,17 @@ export default function Component() {
         {/* Company Profile Section */}
         <section className="w-full min-h-[100vh] bg-[#669c27] relative overflow-hidden flex items-center justify-center  ">
           {/* Background Image */}
-          <div 
+          <div
             className="absolute inset-0 pointer-events-none"
             style={{
               backgroundImage: `url("/bg2.png")`,
               backgroundSize: 'auto 50%',
               backgroundPosition: 'top left',
-              backgroundRepeat: 'no-repeat'
+              backgroundRepeat: 'no-repeat',
             }}
           ></div>
-          
-                     <div className="container px-4 md:px-6 relative z-10 flex items-center justify-center h-full pt-[40px]">
+
+          <div className="container px-4 md:px-6 relative z-10 flex items-center justify-center h-full pt-[40px]">
             <div className="flex flex-col items-center justify-center space-y-8 text-center">
               {/* Main Heading */}
               <div className="text-right w-full">
@@ -111,10 +171,10 @@ export default function Component() {
                   {translations.company.title}
                 </h2>
               </div>
-              
+
               {/* Company Description */}
               <div className="max-w-4xl mx-auto text-center" dir={direction}>
-                <p className="text-[12px] md:text-[16px] lg:text-[18px] text-white leading-relaxed text-justify" >
+                <p className="text-[12px] md:text-[16px] lg:text-[18px] text-white leading-relaxed text-justify">
                   {translations.company.description}
                 </p>
                 <p className="text-[12px] md:text-[16px] lg:text-[18px] text-white leading-relaxed text-justify">
@@ -122,12 +182,21 @@ export default function Component() {
                 </p>
               </div>
 
-              
               {/* Scroll Indicator */}
               <div className={`mt-12 animate-bounce w-full flex justify-start`}>
                 <div className="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  <svg
+                    className="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                    />
                   </svg>
                 </div>
               </div>
@@ -135,540 +204,86 @@ export default function Component() {
           </div>
         </section>
 
-                {/* Brand Logos Section - Third Section */}
+        {/* Brand Logos Section - Third Section */}
         <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-r from-gray-50 to-white">
-          <div className="max-w-4xl mx-auto px-4 md:px-6">
+          <div className="max-w-[1200px] mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center mb-12">
               <div className="space-y-3">
                 <h2 className="text-3xl font-extrabold tracking-tighter sm:text-4xl text-[#353c4a]">
-                  {translations.partners.title}
-                </h2>
-                <p className="max-w-[600px] text-[#353c4a] md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed">
-                  {translations.partners.subtitle}
-                </p>
-              </div>
-            </div>
-            
-            {/* Brand Logos Carousel */}
-            <div className="relative overflow-hidden py-8">
-              <div className="flex animate-scroll space-x-6 md:space-x-8 lg:space-x-10">
-                 {/* First set of logos */}
-                 <div className="flex space-x-6 md:space-x-8 lg:space-x-10 flex-shrink-0">
-                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                     <Image
-                       src="/customers-logo/customer1.jpg"
-                       alt="Brand Partner 1"
-                       width={192}
-                       height={112}
-                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                     />
-                   </div>
-                                       <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                      <Image
-                        src="/customers-logo/customer2.jpg"
-                        alt="Brand Partner 2"
-                        width={192}
-                        height={112}
-                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                      <Image
-                        src="/customers-logo/customer3.jpg"
-                        alt="Brand Partner 3"
-                        width={192}
-                        height={112}
-                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                      <Image
-                        src="/customers-logo/customer4.jpg"
-                        alt="Brand Partner 4"
-                        width={192}
-                        height={112}
-                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                      <Image
-                        src="/customers-logo/customer5.jpg"
-                        alt="Brand Partner 5"
-                        width={192}
-                        height={112}
-                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                      <Image
-                        src="/customers-logo/customer6.jpg"
-                        alt="Brand Partner 6"
-                        width={192}
-                        height={112}
-                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                      <Image
-                        src="/customers-logo/customer7.jpg"
-                        alt="Brand Partner 7"
-                        width={192}
-                        height={112}
-                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                    <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                      <Image
-                        src="/customers-logo/customer8.jpg"
-                        alt="Brand Partner 8"
-                        width={192}
-                        height={112}
-                        className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                 </div>
-                 
-                 {/* Duplicate set for seamless loop */}
-                 <div className="flex space-x-6 md:space-x-8 lg:space-x-10 flex-shrink-0">
-                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                     <Image
-                       src="/customers-logo/customer1.jpg"
-                       alt="Brand Partner 1"
-                       width={192}
-                       height={112}
-                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                     />
-                   </div>
-                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                     <Image
-                       src="/customers-logo/customer2.jpg"
-                       alt="Brand Partner 2"
-                       width={192}
-                       height={112}
-                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                     />
-                   </div>
-                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                     <Image
-                       src="/customers-logo/customer3.jpg"
-                       alt="Brand Partner 3"
-                       width={192}
-                       height={112}
-                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                     />
-                   </div>
-                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                     <Image
-                       src="/customers-logo/customer4.jpg"
-                       alt="Brand Partner 4"
-                       width={192}
-                       height={112}
-                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                     />
-                   </div>
-                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                     <Image
-                       src="/customers-logo/customer5.jpg"
-                       alt="Brand Partner 5"
-                       width={192}
-                       height={112}
-                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                     />
-                   </div>
-                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                     <Image
-                       src="/customers-logo/customer6.jpg"
-                       alt="Brand Partner 6"
-                       width={192}
-                       height={112}
-                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                     />
-                   </div>
-                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                     <Image
-                       src="/customers-logo/customer7.jpg"
-                       alt="Brand Partner 7"
-                       width={192}
-                       height={112}
-                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                     />
-                   </div>
-                   <div className="flex items-center justify-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                     <Image
-                       src="/customers-logo/customer8.jpg"
-                       alt="Brand Partner 8"
-                       width={192}
-                       height={112}
-                       className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                     />
-                   </div>
-                 </div>
-               </div>
-             </div>
-          </div>
-        </section>
-
-        {/* Features Section */}
-        <section className="w-full py-16 md:py-28 lg:py-36 bg-gradient-to-b from-gray-50 to-white">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-6 text-center">
-              <div className="space-y-3">
-                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-[#353c4a]">
-                  {translations.features.title}
-                </h2>
-                <p className="max-w-[900px] text-[#353c4a] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  {translations.features.subtitle}
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-6xl items-stretch gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-3 mt-16">
-              <div className="flex flex-col items-center justify-between p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white h-full">
-                <div className="flex flex-col items-center">
-                  <BarChart className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in" />
-                  <h3 className="text-2xl font-bold text-[#353c4a]">{translations.features.items.data.title}</h3>
-                </div>
-                <p className="text-[#353c4a] text-base mt-4">
-                  {translations.features.items.data.description}
-                </p>
-              </div>
-              <div className="flex flex-col items-center justify-between p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white h-full">
-                <div className="flex flex-col items-center">
-                  <Cpu className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in delay-100" />
-                  <h3 className="text-2xl font-bold text-[#353c4a]">{translations.features.items.analytics.title}</h3>
-                </div>
-                <p className="text-[#353c4a] text-base mt-4">
-                  {translations.features.items.analytics.description}
-                </p>
-              </div>
-              <div className="flex flex-col items-center justify-between p-8 text-center shadow-xl border border-[#669c27]/20 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-white h-full">
-                <div className="flex flex-col items-center">
-                  <Globe className="h-14 w-14 text-[#669c27] mb-5 animate-bounce-in delay-200" />
-                  <h3 className="text-2xl font-bold text-[#353c4a]">{translations.features.items.impact.title}</h3>
-                </div>
-                <p className="text-[#353c4a] text-base mt-4">
-                  {translations.features.items.impact.description}
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* About/Mission Section */}
-        <section className="w-full py-16 md:py-28 lg:py-36 bg-gradient-to-r from-white to-[#669c27]/10">
-          <div className="container px-4 md:px-6 grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
-            <Image
-              src="/blue-industry23.jpg"
-              width="750"
-              height="500"
-              alt="About Us - Advanced Technology"
-              className="mx-auto aspect-[3/2] overflow-hidden object-cover object-center sm:w-full shadow-2xl animate-fade-in-left"
-            />
-            <div className="flex flex-col justify-center space-y-6">
-              <div className="space-y-4">
-                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-[#353c4a]">
-                  {translations.mission.title}
-                </h2>
-                <p className="max-w-[700px] text-[#353c4a] md:text-xl/relaxed lg:text-lg/relaxed xl:text-xl/relaxed">
-                  {translations.mission.description}
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="w-full py-16 md:py-28 lg:py-36 bg-gray-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-6 text-center">
-              <div className="space-y-3">
-                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-[#353c4a]">
-                  {translations.process.title}
-                </h2>
-                <p className="max-w-[900px] text-[#353c4a] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  {translations.process.subtitle}
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-6xl items-stretch gap-10 sm:grid-cols-2 md:gap-14 lg:grid-cols-3 mt-16">
-              <div className="flex flex-col items-center justify-between text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl h-full">
-                <div className="flex flex-col items-center">
-                  <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
-                    <Cloud className="h-8 w-8" />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#353c4a] mb-2">{translations.process.steps.deployment.title}</h3>
-                </div>
-                <p className="text-[#353c4a]">
-                  {translations.process.steps.deployment.description}
-                </p>
-              </div>
-              <div className="flex flex-col items-center justify-between text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl h-full">
-                <div className="flex flex-col items-center">
-                  <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
-                    <BarChart className="h-8 w-8" />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#353c4a] mb-2">{translations.process.steps.analysis.title}</h3>
-                </div>
-                <p className="text-[#353c4a]">
-                  {translations.process.steps.analysis.description}
-                </p>
-              </div>
-              <div className="flex flex-col items-center justify-between text-center p-6 bg-white shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl h-full">
-                <div className="flex flex-col items-center">
-                  <div className="flex items-center justify-center h-16 w-16 bg-[#669c27]/10 text-[#669c27] mb-6">
-                    <Cpu className="h-8 w-8" />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#353c4a] mb-2">{translations.process.steps.insights.title}</h3>
-                </div>
-                <p className="text-[#353c4a]">
-                  {translations.process.steps.insights.description}
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Customer Logos Slider Section */}
-        <section className="w-full py-16 md:py-28 lg:py-36 bg-white">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
-              <div className="space-y-3">
-                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl text-[#353c4a]">
                   {translations.customers.title}
                 </h2>
-                <p className="max-w-[900px] text-[#353c4a] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  {translations.customers.subtitle}
-                </p>
               </div>
             </div>
-            
-            {/* Customer Logos Slider */}
-            <div className="relative overflow-hidden py-4">
-              <div className="flex animate-scroll space-x-16 md:space-x-24 lg:space-x-32">
-                {/* First set of logos */}
-                <div className="flex space-x-16 md:space-x-24 lg:space-x-32 flex-shrink-0">
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer1.jpg"
-                      alt="Customer 1"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer2.jpg"
-                      alt="Customer 2"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer3.jpg"
-                      alt="Customer 3"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer4.jpg"
-                      alt="Customer 4"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer5.jpg"
-                      alt="Customer 5"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer6.jpg"
-                      alt="Customer 6"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer7.jpg"
-                      alt="Customer 7"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer8.jpg"
-                      alt="Customer 8"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
+            <div className="slider-container">
+              <Slider {...settingsTest}>
+                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                  <Image
+                    src="/customers-logo/customer1.jpg"
+                    alt="Brand Partner 8"
+                    width={192}
+                    height={112}
+                    className="mx-auto max-w-full max-h-full object-contain transition-all duration-300"
+                  />
                 </div>
-                
-                {/* Duplicate set for seamless loop */}
-                <div className="flex space-x-16 md:space-x-24 lg:space-x-32 flex-shrink-0">
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer1.jpg"
-                      alt="Customer 1"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer2.jpg"
-                      alt="Customer 2"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer3.jpg"
-                      alt="Customer 3"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer4.jpg"
-                      alt="Customer 4"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer5.jpg"
-                      alt="Customer 5"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer6.jpg"
-                      alt="Customer 6"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer7.jpg"
-                      alt="Customer 7"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                  <div className="flex items-center justify-center w-32 h-20 md:w-40 md:h-24 lg:w-48 lg:h-28">
-                    <Image
-                      src="/customers-logo/customer8.jpg"
-                      alt="Customer 8"
-                      width={192}
-                      height={112}
-                      className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
+                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                  <Image
+                    src="/customers-logo/customer2.jpg"
+                    alt="Brand Partner 8"
+                    width={192}
+                    height={112}
+                    className="mx-auto max-w-full max-h-full object-contain transition-all duration-300"
+                  />
                 </div>
-              </div>
+                <div className="h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                  <Image
+                    src="/customers-logo/customer3.jpg"
+                    alt="Brand Partner 8"
+                    width={192}
+                    height={112}
+                    className="mx-auto max-w-full max-h-full object-contain  transition-all duration-300"
+                  />
+                </div>
+                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                  <Image
+                    src="/customers-logo/customer5.jpg"
+                    alt="Brand Partner 8"
+                    width={192}
+                    height={112}
+                    className="mx-auto max-w-full max-h-full object-contain  transition-all duration-300"
+                  />
+                </div>
+                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                  <Image
+                    src="/customers-logo/customer6.jpg"
+                    alt="Brand Partner 8"
+                    width={192}
+                    height={112}
+                    className="mx-auto max-w-full max-h-full object-contain  transition-all duration-300"
+                  />
+                </div>
+                <div className="h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                  <Image
+                    src="/customers-logo/customer7.jpg"
+                    alt="Brand Partner 8"
+                    width={192}
+                    height={112}
+                    className="mx-auto max-w-full max-h-full object-contain  transition-all duration-300"
+                  />
+                </div>
+                <div className="text-center h-28 !flex items-end justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                  <Image
+                    src="/customers-logo/customer8.jpg"
+                    alt="Brand Partner 8"
+                    width={192}
+                    height={112}
+                    className="mx-auto max-w-full max-h-full object-contain  transition-all duration-300"
+                  />
+                </div>
+              </Slider>
             </div>
-          </div>
-        </section>
-
-        {/* Call to Action Section */}
-        <section className="w-full py-16 md:py-28 lg:py-36 bg-gradient-to-br from-[#669c27] to-[--color-dark-green] text-white shadow-inner">
-          <div className="container px-4 md:px-6 flex flex-col items-center justify-center space-y-6 text-center">
-            <h2 className="text-4xl font-extrabold tracking-tighter sm:text-5xl lg:text-6xl leading-tight">
-              {translations.cta.title}
-            </h2>
-            <p className="max-w-[800px] text-lg md:text-xl lg:text-2xl opacity-90">
-              {translations.cta.subtitle}
-            </p>
-            <button className="inline-flex h-14 items-center justify-center px-10 text-base font-semibold text-white shadow-xl transition-all duration-300 hover:bg-[#669c27] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[--color-secondary-blue] focus:ring-offset-2">
-              {translations.cta.button} <ChevronRight className="ml-2 h-5 w-5" />
-            </button>
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="flex flex-col gap-4 sm:flex-row py-8 w-full shrink-0 items-center px-4 md:px-6 border-t bg-gray-100">
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          <Link href="#" className="flex items-center justify-center" prefetch={false}>
-            <Cloud className="h-6 w-6 text-[#669c27]" />
-            <span className="ml-2 text-lg font-bold text-[#353c4a]">{translations.header.brand}</span>
-          </Link>
-          <p className="text-sm text-[#353c4a] text-center sm:text-left">
-            {translations.footer.copyright}
-          </p>
-        </div>
-        <nav className="sm:ml-auto flex gap-6 sm:gap-8 items-center">
-          <Link href="#" className="text-sm hover:underline underline-offset-4 text-[#353c4a]" prefetch={false}>
-            {translations.footer.links.terms}
-          </Link>
-          <Link href="#" className="text-sm hover:underline underline-offset-4 text-[#353c4a]" prefetch={false}>
-            {translations.footer.links.privacy}
-          </Link>
-          <div className="flex gap-4">
-            <Link
-              href="#"
-              className="text-[#353c4a] hover:text-[--color-secondary-blue] transition-colors duration-300"
-              aria-label="Facebook"
-              prefetch={false}
-            >
-              <Facebook className="h-5 w-5" />
-            </Link>
-            <Link
-              href="#"
-              className="text-[#353c4a] hover:text-[--color-secondary-blue] transition-colors duration-300"
-              aria-label="Twitter"
-              prefetch={false}
-            >
-              <Twitter className="h-5 w-5" />
-            </Link>
-            <Link
-              href="#"
-              className="text-[#353c4a] hover:text-[--color-secondary-blue] transition-colors duration-300"
-              aria-label="LinkedIn"
-              prefetch={false}
-            >
-              <Linkedin className="h-5 w-5" />
-            </Link>
-            <Link
-              href="#"
-              className="text-[#353c4a] hover:text-[--color-secondary-blue] transition-colors duration-300"
-              aria-label="Instagram"
-              prefetch={false}
-            >
-              <Instagram className="h-5 w-5" />
-            </Link>
-          </div>
-        </nav>
-      </footer>
     </div>
-  )
-} 
+  );
+}

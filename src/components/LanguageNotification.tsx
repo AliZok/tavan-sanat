@@ -10,10 +10,10 @@ interface LanguageNotificationProps {
   onClose: () => void;
 }
 
-export default function LanguageNotification({ 
-  currentLocale, 
-  showNotification, 
-  onClose 
+export default function LanguageNotification({
+  currentLocale,
+  showNotification,
+  onClose,
 }: LanguageNotificationProps) {
   const translations = getTranslations(currentLocale);
 
@@ -48,4 +48,4 @@ export default function LanguageNotification({
       </div>
     </div>
   );
-} 
+}

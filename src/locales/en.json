@@ -8,7 +8,6 @@
       "technology": "Technology",
       "contact": "Contact",
       "products": "Products "
-
     },
     "cta": "Get a Quote"
   },
@@ -71,10 +70,6 @@
     }
   },
   "customers": {
-    "title": "Trusted by Industry Leaders",
-    "subtitle": "We are proud to serve leading companies across various industries with our innovative solutions and reliable services."
-  },
-  "partners": {
     "title": "Our Trusted Partners",
     "subtitle": "We work with leading brands and companies across various industries"
   },
@@ -94,4 +89,4 @@
     "en": "English",
     "fa": "فارسی"
   }
-} 
+}

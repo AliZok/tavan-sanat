@@ -14,11 +14,13 @@ A modern, responsive website for AirSense Analytics with full internationalizati
 ## Language Support
 
 ### English (en)
+
 - Default language
 - Left-to-right (LTR) layout
 - Latin font family
 
 ### Persian (فارسی) (fa)
+
 - Right-to-left (RTL) layout
 - Vazirmatn font for optimal Persian text rendering
 - Proper number formatting (Persian numerals)
@@ -27,23 +29,27 @@ A modern, responsive website for AirSense Analytics with full internationalizati
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd tavan-sanat
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -75,21 +81,25 @@ src/
 ## Internationalization Features
 
 ### Translation Files
+
 - Located in `src/locales/`
 - JSON format for easy maintenance
 - Structured by sections (header, hero, features, etc.)
 
 ### Language Switching
+
 - Globe icon in the header navigation
 - Dropdown menu with language options
 - Maintains current page when switching languages
 
 ### RTL Support
+
 - Automatic direction switching for Persian
 - Proper margin and padding adjustments
 - Persian font optimization
 
 ### Locale Detection
+
 - Browser language preference detection
 - Cookie-based language persistence
 - Automatic redirects to appropriate locale
@@ -106,12 +116,14 @@ src/
 ### Modifying Translations
 
 Edit the JSON files in `src/locales/`:
+
 - `en.json` for English translations
 - `fa.json` for Persian translations
 
 ### Styling
 
 The CSS includes comprehensive RTL support:
+
 - Automatic margin/padding direction switching
 - Persian font optimization
 - Animation support for both directions
@@ -119,11 +131,13 @@ The CSS includes comprehensive RTL support:
 ## Build and Deployment
 
 ### Production Build
+
 ```bash
 npm run build
 ```
 
 ### Start Production Server
+
 ```bash
 npm start
 ```

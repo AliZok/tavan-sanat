@@ -26,4 +26,4 @@ export function formatDate(date: Date, locale: Locale): string {
     month: 'long',
     day: 'numeric',
   }).format(date);
-} 
+}
