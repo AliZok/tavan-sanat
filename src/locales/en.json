@@ -17,6 +17,15 @@
       "demo": "Request a Demo"
     }
   },
+  "company": {
+    "title": "Company Profile",
+    "description": "Tavan Sanat Ayandeh Iranian (TSAI) is an engineering and trading company established to execute industrial projects and supply equipment for various industries. We collaborate with Ofogh Naft Gaz Khavarmiyaneh (Middle East Oil and Gas Horizon) and our experienced local and international specialists provide engineering and trading services in oil, gas, petrochemical, steel, and ferroalloy sectors. Our broad scope of activity has led us to categorize different sections to effectively meet customer needs.",
+    "certifications": {
+      "iso9001": "ISO 9001:2008 COMPANY",
+      "iso14001": "ISO 14001:2004 COMPANY",
+      "ohsas18001": "OHSAS 18001:2007 COMPANY"
+    }
+  },
   "features": {
     "title": "Our Advanced Capabilities",
     "subtitle": "Leveraging cutting-edge technology and deep expertise to deliver unparalleled insights into air quality, ensuring a healthier environment for all.",

@@ -93,6 +93,50 @@ export default function Component() {
           </div>
         </section>
 
+        {/* Company Profile Section */}
+        <section className="w-full min-h-[100vh] bg-[#669c27] relative overflow-hidden flex items-center justify-center  ">
+          {/* Background Pattern */}
+          <div 
+            className="absolute inset-0 pointer-events-none opacity-10"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.3'%3E%3Cpath d='M30 0l30 30-30 30L0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+              backgroundSize: '60px 60px',
+              backgroundPosition: 'top left'
+            }}
+          ></div>
+          
+                     <div className="container px-4 md:px-6 relative z-10 flex items-center justify-center h-full">
+            <div className="flex flex-col items-center justify-center space-y-8 text-center">
+              {/* Main Heading */}
+              <div className="text-right w-full">
+                <h2 className="text-4xl font-extrabold tracking-tighter sm:text-4xl text-white">
+                  {translations.company.title}
+                </h2>
+              </div>
+              
+              {/* Company Description */}
+              <div className="max-w-4xl mx-auto text-center" dir={direction}>
+                <p className="text-[12px] md:text-[16px] lg:text-[18px] text-white leading-relaxed text-justify" >
+                  {translations.company.description}
+                </p>
+                <p className="text-[12px] md:text-[16px] lg:text-[18px] text-white leading-relaxed text-justify">
+                  {translations.company.description2}
+                </p>
+              </div>
+
+              
+              {/* Scroll Indicator */}
+              <div className={`mt-12 animate-bounce w-full flex justify-start`}>
+                <div className="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Features Section */}
         <section className="w-full py-16 md:py-28 lg:py-36 bg-gradient-to-b from-gray-50 to-white">
           <div className="container px-4 md:px-6">
