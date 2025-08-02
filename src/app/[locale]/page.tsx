@@ -214,7 +214,7 @@ export default function Component() {
         </section>
 
         {/* Brand Logos Section - Third Section */}
-        <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-r from-gray-50 to-white">
+        <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-r from-gray-50 to-white text-[#353c4a]">
           <div className="max-w-[1200px] mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center mb-12">
               <div className="space-y-3">
@@ -297,7 +297,7 @@ export default function Component() {
       <footer className="bg-gray-100">
         <div className="py-24">
           <div className="max-w-[700px] mx-auto">
-            <div className="footer-box bg-white">
+            <div className="footer-box bg-white text-[#353c4a] shadow-md">
               <div className="">
                 <div className="w-full h-4 bg-[#669c27]"></div>
                 <div className="  p-4">
