@@ -103,7 +103,7 @@ export default function Component() {
             }}
           ></div>
           
-                     <div className="container px-4 md:px-6 relative z-10 flex items-center justify-center h-full">
+                     <div className="container px-4 md:px-6 relative z-10 flex items-center justify-center h-full pt-[40px]">
             <div className="flex flex-col items-center justify-center space-y-8 text-center">
               {/* Main Heading */}
               <div className="text-right w-full">
