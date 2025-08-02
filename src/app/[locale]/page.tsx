@@ -95,13 +95,14 @@ export default function Component() {
 
         {/* Company Profile Section */}
         <section className="w-full min-h-[100vh] bg-[#669c27] relative overflow-hidden flex items-center justify-center  ">
-          {/* Background Pattern */}
+          {/* Background Image */}
           <div 
-            className="absolute inset-0 pointer-events-none opacity-10"
+            className="absolute inset-0 pointer-events-none"
             style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.3'%3E%3Cpath d='M30 0l30 30-30 30L0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-              backgroundSize: '60px 60px',
-              backgroundPosition: 'top left'
+              backgroundImage: `url("/bg2.png")`,
+              backgroundSize: 'auto 50%',
+              backgroundPosition: 'top left',
+              backgroundRepeat: 'no-repeat'
             }}
           ></div>
           
