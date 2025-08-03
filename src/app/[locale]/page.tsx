@@ -235,15 +235,6 @@ export default function Component() {
               <Slider {...settingsTest}>
                 <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
                   <Image
-                    src="/customers-logo/customer1.jpg"
-                    alt="Brand Partner 8"
-                    width={192}
-                    height={112}
-                    className="mx-auto max-w-full max-h-full object-contain transition-all duration-300"
-                  />
-                </div>
-                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
-                  <Image
                     src="/customers-logo/customer2.jpg"
                     alt="Brand Partner 8"
                     width={192}
@@ -320,12 +311,12 @@ export default function Component() {
             <div className="footer-box bg-white text-[#353c4a] shadow-md">
               <div className="">
                 <div className="w-full h-4 bg-[#669c27]"></div>
-                <div className="  p-4">
+                <div className="p-4">
                   <h3 className="font-bold text-3xl text-[#353c4a] mb-4 py-2">
                     {translations.contact.title}
                   </h3>
-                  <div className="flex flex-col md:flex-row gap-6 items-start">
-                    <div className="flex-1">
+                  <div className="flex flex-col lg:flex-row gap-6">
+                    <div className="w-full lg:w-1/2">
                       <div className="flex gap-2 mb-3">
                         <div>{translations.contact.phone}</div>
                         <div>{translations.contact.phoneNumber}</div>
@@ -338,38 +329,19 @@ export default function Component() {
                         <div>{translations.contact.email}</div>
                         <div>{translations.contact.emailAddress}</div>
                       </div>
-                      <div className="flex gap-2 mb-3 items-center">
+                      <div className="flex gap-2 mb-3 ">
                         <div>{translations.contact.address}</div>
                         <div className="flex items-center gap-2">
                           <span>{translations.contact.addressText}</span>
-                          {/* <a
-                            href="https://maps.google.com/?q=Tehran,Iran"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center w-6 h-6 bg-[#669c27] text-white rounded-full hover:bg-[#5a8a22] transition-colors duration-200 cursor-pointer"
-                            title="View on map"
-                          >
-                            <svg
-                              className="w-3 h-3"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                fillRule="evenodd"
-                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                          </a> */}
                         </div>
                       </div>
                     </div>
-                    <div className="flex-shrink-0">
-                      <div className="relative w-[100px] h-[100px] bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+                    <div className="w-full lg:w-1/2">
+                      <div className="relative w-full h-[300px] bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
                         <iframe
                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207444.47121066667!2d51.3890!3d35.6892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Iran!5e0!3m2!1sen!2s!4v1234567890"
-                          width="100"
-                          height="100"
+                          width="100%"
+                          height="100%"
                           style={{ border: 0 }}
                           allowFullScreen
                           loading="lazy"
