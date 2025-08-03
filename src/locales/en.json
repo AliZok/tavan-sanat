@@ -85,13 +85,19 @@
       "privacy": "Privacy Policy"
     }
   },
+  "services": {
+    "title": "This company, with its specialized and capable personnel, provides the following services:",
+    "description": "Service, repair and maintenance, calibration of air pollution measurement analyzers, consultation for purchasing air, water and wastewater pollution measurement equipment, sale of spare parts and consumables for air pollution measurement stations"
+  },
   "contact": {
     "title": "Contact Us",
     "phone": "Phone:",
     "email": "Email:",
+    "mobile": "Mobile:",
     "address": "Address:",
     "phoneNumber": "021-66859042",
-    "emailAddress": "CRM@TSAI.COM",
+    "mobileNumber": "09120628762",
+    "emailAddress": "CRM@tsai-co.com",
     "addressText": "Tehran, Azadi Street, Karun North Street, Seyed Abbasi Alley, No. 18, Unit 2"
   },
   "language": {

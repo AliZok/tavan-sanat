@@ -292,21 +292,21 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section>
-          <div className="container">
-            <div className="p-6">
-              <div className="mb-1">
-                این شرکت با داشتن افراد متخصص توانمند خدمات زیر را ارائه می دهد:
+        <section className="bg-[#1734350f] py-8">
+          <div className="max-w-[700px] mx-auto">
+            <div className="max-w-4xl mx-auto bg-white shadow-md p-8">
+              <div className="mb-4 text-lg font-semibold text-[#353c4a]">
+                {translations.services.title}
               </div>
-              سرویس، تعمیر و نگهداری، کالیبراسیون آنالایزر های سنجش آلودگی هوا
-              مشاوره جهت خرید تجهیزات سنجش آلودگی هوا، آب و فاضلاب فروش قطعات
-              یدکی و مصرفی ایستگاه های سنجش آلودگی هوا
+              <div className="text-gray-700 leading-relaxed">
+                {translations.services.description}
+              </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="bg-gray-100">
+      <footer className="bg-gray-50">
         <div className="py-24">
           <div className="max-w-[700px] mx-auto">
             <div className="footer-box bg-white text-[#353c4a] shadow-md">
@@ -321,6 +321,10 @@ export default function Component() {
                       <div className="flex gap-2 mb-3">
                         <div>{translations.contact.phone}</div>
                         <div>{translations.contact.phoneNumber}</div>
+                      </div>
+                      <div className="flex gap-2 mb-3">
+                        <div>{translations.contact.mobile}</div>
+                        <div>{translations.contact.mobileNumber}</div>
                       </div>
                       <div className="flex gap-2 mb-3">
                         <div>{translations.contact.email}</div>
