@@ -103,31 +103,35 @@ export default function Component() {
         <nav className="ml-auto flex gap-6 sm:gap-8 items-center">
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
+            className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
             prefetch={false}
           >
             {translations.header.nav.home}
+            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
           </Link>
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
+            className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
             prefetch={false}
           >
             {translations.header.nav.products}
+            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
           </Link>
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
+            className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
             prefetch={false}
           >
             {translations.header.nav.services}
+            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
           </Link>
           <Link
             href="#"
-            className="text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a]"
+            className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
             prefetch={false}
           >
             {translations.header.nav.contact}
+            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
           </Link>
           <button
             onClick={() => (window.location.href = 'tel:02166859042')}
@@ -221,7 +225,6 @@ export default function Component() {
           </div>
         </section>
 
-        {/* Brand Logos Section - Third Section */}
         <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-r from-gray-50 to-white text-[#353c4a]">
           <div className="max-w-[1200px] mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center mb-12">
