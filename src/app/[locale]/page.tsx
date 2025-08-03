@@ -14,6 +14,7 @@ import {
   Instagram,
   ChevronUp,
   ArrowUp,
+  Phone,
 } from 'lucide-react';
 import { useParams } from 'next/navigation';
 import { useState } from 'react';
@@ -128,6 +129,13 @@ export default function Component() {
           >
             {translations.header.nav.contact}
           </Link>
+          <button
+            onClick={() => (window.location.href = 'tel:02166859042')}
+            className="flex items-center justify-center w-9 h-9 bg-[#669c27] text-white rounded-full hover:bg-[#5a8a22] transition-colors duration-300 shadow-md"
+            aria-label="Call us"
+          >
+            <Phone className="w-5 h-5" />
+          </button>
           <LanguageSwitcher currentLocale={locale} />
         </nav>
       </header>
