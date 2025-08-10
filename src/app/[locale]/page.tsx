@@ -156,13 +156,34 @@ export default function Component() {
                   >
                     {translations.products.flueGasAnalyzer}
                   </Link>
-                  <Link
-                    href="#"
-                    className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
-                    onClick={() => setIsProductsOpen(false)}
-                  >
-                    {translations.products.flueDustAnalyzer}
-                  </Link>
+                  <div className="relative group">
+                    <div className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27] cursor-pointer">
+                      {translations.products.flueDustAnalyzer}
+                    </div>
+                    {/* Sub-items dropdown - positioned to the left on larger screens, above on smaller screens */}
+                    <div
+                      className="absolute top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50
+                      lg:right-full lg:mr-1 lg:top-0 lg:w-48
+                      md:right-full md:mr-1 md:top-0 md:w-40
+                      sm:left-0 sm:top-full sm:mt-1 sm:w-full
+                      bg-white rounded-lg shadow-xl border border-gray-200 py-2"
+                    >
+                      <Link
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
+                        onClick={() => setIsProductsOpen(false)}
+                      >
+                        {translations.products.flueDustAnalyzerSubItems.laser}
+                      </Link>
+                      <Link
+                        href="#"
+                        className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
+                        onClick={() => setIsProductsOpen(false)}
+                      >
+                        {translations.products.flueDustAnalyzerSubItems.tiribo}
+                      </Link>
+                    </div>
+                  </div>
                   <Link
                     href="#"
                     className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"

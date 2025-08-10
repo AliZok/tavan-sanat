@@ -14,6 +14,10 @@
   "products": {
     "flueGasAnalyzer": "آنالایزر آنلاین گاز دودکش",
     "flueDustAnalyzer": "آنالایزر آنلاین غبار دودکش",
+    "flueDustAnalyzerSubItems": {
+      "laser": "لیزری",
+      "tiribo": "تیریبو"
+    },
     "ambientGasAnalyzer": "آنالایزر آنلاین گاز محیطی",
     "ambientDustAnalyzer": "آنالایزر آنلاین غبار محیطی",
     "gcAnalyzer": "آنالایزر آنلاین GC"

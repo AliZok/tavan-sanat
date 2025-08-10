@@ -14,6 +14,10 @@
   "products": {
     "flueGasAnalyzer": "Online Flue Gas Analyzer",
     "flueDustAnalyzer": "Online Flue Dust Analyzer",
+    "flueDustAnalyzerSubItems": {
+      "laser": "Laser",
+      "tiribo": "Tiribo"
+    },
     "ambientGasAnalyzer": "Online Ambient Gas Analyzer",
     "ambientDustAnalyzer": "Online Ambient Dust Analyzer",
     "gcAnalyzer": "Online GC Analyzer"
