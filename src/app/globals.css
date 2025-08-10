@@ -676,3 +676,19 @@ input[type='reset'] {
     transform: translateX(-50%);
   }
 }
+
+/* Dropdown Animation */
+@keyframes dropdown-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-enter {
+  animation: dropdown-fade-in 0.2s ease-out;
+}

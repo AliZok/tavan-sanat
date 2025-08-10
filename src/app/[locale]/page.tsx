@@ -15,9 +15,10 @@ import {
   ChevronUp,
   ArrowUp,
   Phone,
+  ChevronDown,
 } from 'lucide-react';
 import { useParams } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { getTranslations, getDirection, type Locale } from '../../lib/i18n';
 import LanguageSwitcher from '../../components/LanguageSwitcher';
 import Slider from 'react-slick';
@@ -29,6 +30,25 @@ export default function Component() {
   const locale = (params.locale as Locale) || 'en';
   const translations = getTranslations(locale);
   const direction = getDirection(locale);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const productsDropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        productsDropdownRef.current &&
+        !productsDropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsProductsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -109,14 +129,65 @@ export default function Component() {
             {translations.header.nav.home}
             <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
           </Link>
-          <Link
-            href="#"
-            className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
-            prefetch={false}
-          >
-            {translations.header.nav.products}
-            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
-          </Link>
+          <div className="relative" ref={productsDropdownRef}>
+            <button
+              onClick={() => setIsProductsOpen(!isProductsOpen)}
+              className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group flex items-center gap-1"
+            >
+              {translations.header.nav.products}
+              <ChevronDown
+                className={`w-4 h-4 transition-transform duration-200 ${isProductsOpen ? 'rotate-180' : ''}`}
+              />
+              <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
+            </button>
+
+            {/* Products Dropdown Menu */}
+            {isProductsOpen && (
+              <>
+                {/* Dropdown Arrow */}
+                <div className="absolute top-full left-6 w-0 h-0 border-l-4 border-r-4 border-b-4 border-transparent border-b-white z-50"></div>
+                <div className="absolute top-full left-6 w-0 h-0 border-l-4 border-r-4 border-b-4 border-transparent border-b-gray-200 z-40"></div>
+
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50 dropdown-enter md:w-64 w-48 backdrop-blur-sm bg-white/95">
+                  <Link
+                    href="#"
+                    className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
+                    onClick={() => setIsProductsOpen(false)}
+                  >
+                    {translations.products.flueGasAnalyzer}
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
+                    onClick={() => setIsProductsOpen(false)}
+                  >
+                    {translations.products.flueDustAnalyzer}
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
+                    onClick={() => setIsProductsOpen(false)}
+                  >
+                    {translations.products.ambientGasAnalyzer}
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
+                    onClick={() => setIsProductsOpen(false)}
+                  >
+                    {translations.products.ambientDustAnalyzer}
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
+                    onClick={() => setIsProductsOpen(false)}
+                  >
+                    {translations.products.gcAnalyzer}
+                  </Link>
+                </div>
+              </>
+            )}
+          </div>
           <Link
             href="#"
             className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"

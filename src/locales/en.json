@@ -11,6 +11,13 @@
     },
     "cta": "Get a Quote"
   },
+  "products": {
+    "flueGasAnalyzer": "Online Flue Gas Analyzer",
+    "flueDustAnalyzer": "Online Flue Dust Analyzer",
+    "ambientGasAnalyzer": "Online Ambient Gas Analyzer",
+    "ambientDustAnalyzer": "Online Ambient Dust Analyzer",
+    "gcAnalyzer": "Online GC Analyzer"
+  },
   "hero": {
     "title": "Pioneering Air Quality Solutions for a Healthier Tomorrow",
     "subtitle": "Empowering a healthier planet through precise environmental monitoring, advanced analytics, and actionable insights for a sustainable future.",
