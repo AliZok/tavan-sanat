@@ -150,7 +150,15 @@ export default function Component() {
 
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50 dropdown-enter md:w-64 w-48 backdrop-blur-sm bg-white/95">
                   <Link
-                    href="#"
+                    href={`/${locale}/products`}
+                    className="block px-4 py-2 text-sm font-semibold text-[#669c27] hover:bg-[#669c27]/10 transition-all duration-200 border-l-2 border-[#669c27]"
+                    onClick={() => setIsProductsOpen(false)}
+                  >
+                    View All Products
+                  </Link>
+                  <div className="border-t border-gray-200 my-2"></div>
+                  <Link
+                    href={`/${locale}/products/1`}
                     className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
                     onClick={() => setIsProductsOpen(false)}
                   >
@@ -169,14 +177,14 @@ export default function Component() {
                       bg-white rounded-lg shadow-xl border border-gray-200 py-2"
                     >
                       <Link
-                        href="#"
+                        href={`/${locale}/products/2`}
                         className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
                         onClick={() => setIsProductsOpen(false)}
                       >
                         {translations.products.flueDustAnalyzerSubItems.laser}
                       </Link>
                       <Link
-                        href="#"
+                        href={`/${locale}/products/6`}
                         className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
                         onClick={() => setIsProductsOpen(false)}
                       >
@@ -185,21 +193,21 @@ export default function Component() {
                     </div>
                   </div>
                   <Link
-                    href="#"
+                    href={`/${locale}/products/3`}
                     className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
                     onClick={() => setIsProductsOpen(false)}
                   >
                     {translations.products.ambientGasAnalyzer}
                   </Link>
                   <Link
-                    href="#"
+                    href={`/${locale}/products/4`}
                     className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
                     onClick={() => setIsProductsOpen(false)}
                   >
                     {translations.products.ambientDustAnalyzer}
                   </Link>
                   <Link
-                    href="#"
+                    href={`/${locale}/products/5`}
                     className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
                     onClick={() => setIsProductsOpen(false)}
                   >
