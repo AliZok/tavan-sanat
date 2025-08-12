@@ -169,39 +169,32 @@ export default function Component() {
                       {translations.products.flueDustAnalyzer}
                       {/* Submenu arrow - positioned based on locale */}
                       <div
-                        className={`absolute top-1/2 transform -translate-y-1/2 w-0 h-0 border-2 border-transparent ${
+                        className={`absolute top-1/2 transform -translate-y-1/2 w-0 h-0 ${
                           locale === 'en'
                             ? 'right-3 border-l-4 border-l-gray-400'
                             : 'left-3 border-r-4 border-r-gray-400'
                         }`}
                       ></div>
                     </div>
-                    {/* Sub-items dropdown - positioned based on locale: left for English, right for Farsi */}
+                    {/* Sub-items dropdown - positioned based on locale */}
                     <div
-                      className={`absolute top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50
-                      ${
-                        locale === 'en'
-                          ? 'lg:right-full lg:mr-2 md:right-full md:mr-2'
-                          : 'lg:left-full lg:ml-2 md:left-full md:ml-2'
-                      }
-                      lg:top-0 lg:w-48
-                      md:top-0 md:w-40
-                      sm:left-0 sm:top-full sm:mt-1 sm:w-full
-                      bg-white shadow-xl border border-gray-200 py-2`}
+                      className={`absolute top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 w-48 bg-white shadow-xl border border-gray-200 py-2 ${
+                        locale === 'en' ? 'left-full ml-2' : 'right-full mr-2'
+                      }`}
                     >
-                      {/* Submenu arrow - positioned based on locale */}
+                      {/* Submenu arrow pointing based on locale */}
                       <div
-                        className={`absolute top-4 w-0 h-0 border-4 border-transparent ${
+                        className={`absolute top-4 w-0 h-0 ${
                           locale === 'en'
-                            ? 'lg:right-0 lg:mr-[-8px] lg:border-l-4 lg:border-l-white md:right-0 md:mr-[-8px] md:border-l-4 md:border-l-white'
-                            : 'lg:left-0 lg:ml-[-8px] lg:border-r-4 lg:border-r-white md:left-0 md:ml-[-8px] md:border-r-4 md:border-r-white'
+                            ? 'left-0 ml-[-8px] border-r-4 border-r-white'
+                            : 'right-0 mr-[-8px] border-l-4 border-l-white'
                         }`}
                       ></div>
                       <div
-                        className={`absolute top-4 w-0 h-0 border-4 border-transparent ${
+                        className={`absolute top-4 w-0 h-0 ${
                           locale === 'en'
-                            ? 'lg:right-0 lg:mr-[-9px] lg:border-l-4 lg:border-l-gray-200 md:right-0 md:mr-[-9px] md:border-l-4 md:border-l-gray-200'
-                            : 'lg:left-0 lg:ml-[-9px] lg:border-r-4 lg:border-r-gray-200 md:left-0 md:ml-[-9px] md:border-r-4 md:border-r-gray-200'
+                            ? 'left-0 ml-[-9px] border-r-4 border-r-gray-200'
+                            : 'right-0 mr-[-9px] border-l-4 border-l-gray-200'
                         }`}
                       ></div>
                       <Link

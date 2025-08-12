@@ -86,9 +86,10 @@ export default function ProductsPage() {
             {/* Products Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map(product => (
-                <div
+                <Link
                   key={product.id}
-                  className="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                  href={`/${locale}/products/${product.id}`}
+                  className="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
                 >
                   <div className="relative h-64">
                     <Image
@@ -109,12 +110,13 @@ export default function ProductsPage() {
                       <a
                         href="tel:09120628762"
                         className="inline-flex items-center px-4 py-2 bg-[#669c27] text-white hover:bg-[#5a8a22] transition-colors duration-300"
+                        onClick={e => e.stopPropagation()}
                       >
                         Call
                       </a>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
