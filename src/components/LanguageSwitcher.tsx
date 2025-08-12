@@ -33,7 +33,7 @@ export default function LanguageSwitcher({
   return (
     <button
       onClick={toggleLanguage}
-      className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-[#669c27] transition-all duration-300 hover:bg-gray-100 border border-gray-200 hover:border-[#669c27] focus:outline-none focus:ring-2 focus:ring-[#669c27] focus:ring-offset-2 rounded-md"
+      className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 hover:text-[#669c27] transition-all duration-300 hover:bg-gray-100 border border-gray-200 hover:border-[#669c27] focus:outline-none focus:ring-2 focus:ring-[#669c27] focus:ring-offset-2"
       aria-label="Toggle language"
     >
       <span className="text-xs">{currentLocale === 'en' ? 'EN' : 'FA'}</span>

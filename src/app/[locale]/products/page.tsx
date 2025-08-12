@@ -88,7 +88,7 @@ export default function ProductsPage() {
               {products.map(product => (
                 <div
                   key={product.id}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                  className="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
                 >
                   <div className="relative h-64">
                     <Image
@@ -111,7 +111,7 @@ export default function ProductsPage() {
                       </span>
                       <Link
                         href={`/${locale}/products/${product.id}`}
-                        className="inline-flex items-center px-4 py-2 bg-[#669c27] text-white rounded-lg hover:bg-[#5a8a22] transition-colors duration-300"
+                        className="inline-flex items-center px-4 py-2 bg-[#669c27] text-white hover:bg-[#5a8a22] transition-colors duration-300"
                       >
                         View Details
                       </Link>

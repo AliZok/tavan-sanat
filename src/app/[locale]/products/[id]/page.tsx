@@ -140,7 +140,7 @@ export default function ProductPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Product Image */}
               <div className="space-y-4">
-                <div className="relative h-96 rounded-lg overflow-hidden shadow-lg bg-gray-100">
+                <div className="relative h-96 overflow-hidden shadow-lg bg-gray-100">
                   {/* Use regular img tag for better compatibility */}
                   <img
                     src={product.image}

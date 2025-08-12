@@ -27,11 +27,11 @@ const Footer: React.FC = () => {
           </h2>
 
           {/* Contact Information Card */}
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 md:p-12 max-w-2xl w-full shadow-2xl">
+          <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-8 md:p-12 max-w-2xl w-full shadow-2xl">
             <div className="space-y-6 text-lg md:text-xl">
               {/* Phone */}
               <div className="flex items-center justify-center space-x-4 rtl:space-x-reverse">
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-green-500 flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
 
               {/* Fax */}
               <div className="flex items-center justify-center space-x-4 rtl:space-x-reverse">
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-green-500 flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
 
               {/* Email */}
               <div className="flex items-center justify-center space-x-4 rtl:space-x-reverse">
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-green-500 flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
 
               {/* Address */}
               <div className="flex items-start justify-center space-x-4 rtl:space-x-reverse mt-8">
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="w-12 h-12 bg-green-500 flex items-center justify-center flex-shrink-0 mt-1">
                   <svg
                     className="w-6 h-6 text-white"
                     fill="none"
@@ -125,9 +125,9 @@ const Footer: React.FC = () => {
 
           {/* Bottom decorative elements */}
           <div className="mt-12 flex items-center justify-center space-x-8 rtl:space-x-reverse">
-            <div className="w-16 h-1 bg-green-400 rounded-full"></div>
-            <div className="w-8 h-8 bg-green-400 rounded-full"></div>
-            <div className="w-16 h-1 bg-green-400 rounded-full"></div>
+            <div className="w-16 h-1 bg-green-400"></div>
+            <div className="w-8 h-8 bg-green-400"></div>
+            <div className="w-16 h-1 bg-green-400"></div>
           </div>
         </div>
       </div>

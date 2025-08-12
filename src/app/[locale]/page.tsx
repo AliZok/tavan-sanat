@@ -148,7 +148,7 @@ export default function Component() {
                 <div className="absolute top-full left-6 w-0 h-0 border-l-4 border-r-4 border-b-4 border-transparent border-b-white z-50"></div>
                 <div className="absolute top-full left-6 w-0 h-0 border-l-4 border-r-4 border-b-4 border-transparent border-b-gray-200 z-40"></div>
 
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50 dropdown-enter md:w-64 w-48 backdrop-blur-sm bg-white/95">
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-xl border border-gray-200 py-2 z-50 dropdown-enter md:w-64 w-48 backdrop-blur-sm bg-white/95">
                   <Link
                     href={`/${locale}/products`}
                     className="block px-4 py-2 text-sm font-semibold text-[#669c27] hover:bg-[#669c27]/10 transition-all duration-200 border-l-2 border-[#669c27]"
@@ -187,7 +187,7 @@ export default function Component() {
                       lg:top-0 lg:w-48
                       md:top-0 md:w-40
                       sm:left-0 sm:top-full sm:mt-1 sm:w-full
-                      bg-white rounded-lg shadow-xl border border-gray-200 py-2`}
+                      bg-white shadow-xl border border-gray-200 py-2`}
                     >
                       {/* Submenu arrow - positioned based on locale */}
                       <div
@@ -263,7 +263,7 @@ export default function Component() {
           </Link>
           <button
             onClick={() => (window.location.href = 'tel:02166859042')}
-            className="flex items-center justify-center w-9 h-9 bg-[#669c27] text-white rounded-full hover:bg-[#5a8a22] transition-colors duration-300 shadow-md"
+            className="flex items-center justify-center w-9 h-9 bg-[#669c27] text-white hover:bg-[#5a8a22] transition-colors duration-300 shadow-md"
             aria-label="Call us"
           >
             <Phone className="w-5 h-5" />
@@ -333,7 +333,7 @@ export default function Component() {
 
               {/* Scroll Indicator */}
               <div className={`mt-12 animate-bounce w-full flex justify-start`}>
-                <div className="w-10 h-10 border-2 border-white rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 border-2 border-white flex items-center justify-center">
                   <svg
                     className="w-4 h-4 text-white"
                     fill="none"
@@ -364,7 +364,7 @@ export default function Component() {
             </div>
             <div className="slider-container">
               <Slider {...settingsTest}>
-                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md mx-2">
                   <Image
                     src="/customers-logo/customer2.jpg"
                     alt="Brand Partner 8"
@@ -373,7 +373,7 @@ export default function Component() {
                     className="mx-auto max-w-full max-h-full object-contain transition-all duration-300"
                   />
                 </div>
-                <div className="h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                <div className="h-28 !flex items-center justify-center w-full bg-white shadow-md mx-2">
                   <Image
                     src="/customers-logo/customer3.jpg"
                     alt="Brand Partner 8"
@@ -382,7 +382,7 @@ export default function Component() {
                     className="mx-auto max-w-full max-h-full object-contain  transition-all duration-300"
                   />
                 </div>
-                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md mx-2">
                   <Image
                     src="/customers-logo/customer5.jpg"
                     alt="Brand Partner 8"
@@ -391,7 +391,7 @@ export default function Component() {
                     className="mx-auto max-w-full max-h-full object-contain  transition-all duration-300"
                   />
                 </div>
-                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                <div className=" h-28 !flex items-center justify-center w-full bg-white shadow-md mx-2">
                   <Image
                     src="/customers-logo/customer6.jpg"
                     alt="Brand Partner 8"
@@ -400,7 +400,7 @@ export default function Component() {
                     className="mx-auto max-w-full max-h-full object-contain  transition-all duration-300"
                   />
                 </div>
-                <div className="h-28 !flex items-center justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                <div className="h-28 !flex items-center justify-center w-full bg-white shadow-md mx-2">
                   <Image
                     src="/customers-logo/customer7.jpg"
                     alt="Brand Partner 8"
@@ -409,7 +409,7 @@ export default function Component() {
                     className="mx-auto max-w-full max-h-full object-contain  transition-all duration-300"
                   />
                 </div>
-                <div className="text-center h-28 !flex items-end justify-center w-full bg-white shadow-md rounded-lg mx-2">
+                <div className="text-center h-28 !flex items-end justify-center w-full bg-white shadow-md mx-2">
                   <Image
                     src="/customers-logo/customer8.jpg"
                     alt="Brand Partner 8"
@@ -468,7 +468,7 @@ export default function Component() {
                       </div>
                     </div>
                     <div className="w-full lg:w-1/2">
-                      <div className="relative w-full h-[300px] bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
+                      <div className="relative w-full h-[300px] bg-gray-200 overflow-hidden border border-gray-300">
                         <iframe
                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207444.47121066667!2d51.3890!3d35.6892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Iran!5e0!3m2!1sen!2s!4v1234567890"
                           width="100%"
@@ -486,8 +486,8 @@ export default function Component() {
                           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10"
                           title="View on map"
                         >
-                          <div className="w-6 h-6 bg-red-500 rounded-full border-2 border-white shadow-lg flex items-center justify-center hover:bg-red-600 transition-colors duration-200">
-                            <div className="w-2 h-2 bg-white rounded-full"></div>
+                          <div className="w-6 h-6 bg-red-500 border-2 border-white shadow-lg flex items-center justify-center hover:bg-red-600 transition-colors duration-200">
+                            <div className="w-2 h-2 bg-white"></div>
                           </div>
                         </a>
                       </div>
@@ -503,7 +503,7 @@ export default function Component() {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-12 h-12 border-[#669c27] border-3  text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
+        className="fixed bottom-8 right-8 w-12 h-12 border-[#669c27] border-3  text-white shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
         aria-label="Scroll to top"
       >
         <ArrowUp className="w-6 h-6" color="#669c27" />
