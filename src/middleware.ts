@@ -12,6 +12,7 @@ const staticFileExtensions = [
   '.jpg',
   '.jpeg',
   '.gif',
+  '.webp',
   '.svg',
   '.ico',
   '.css',
@@ -25,6 +26,11 @@ const staticFileExtensions = [
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
+  // Debug logging for image requests
+  if (pathname.includes('/images/')) {
+    console.log('Middleware: Processing image request:', pathname);
+  }
+
   // Skip locale redirection for excluded routes
   if (excludedRoutes.includes(pathname)) {
     return NextResponse.next();
@@ -33,6 +39,10 @@ export function middleware(request: NextRequest) {
   // Skip locale redirection for static files
   const isStaticFile = staticFileExtensions.some(ext => pathname.endsWith(ext));
   if (isStaticFile) {
+    console.log(
+      'Middleware: Static file detected, skipping locale redirect:',
+      pathname
+    );
     return NextResponse.next();
   }
 

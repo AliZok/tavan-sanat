@@ -8,11 +8,7 @@ import {
   getDirection,
   type Locale,
 } from '../../../../lib/i18n';
-import {
-  getProductById,
-  getRelatedProducts,
-  Product,
-} from '../../../../lib/productData';
+import { getProductById, Product } from '../../../../lib/productData';
 import { useState, useEffect } from 'react';
 
 export default function ProductPage() {
@@ -23,14 +19,15 @@ export default function ProductPage() {
   const direction = getDirection(locale);
 
   const [product, setProduct] = useState<Product | null>(null);
-  const [relatedProducts, setRelatedProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     const currentProduct = getProductById(productId);
     if (currentProduct) {
+      console.log('Product loaded:', currentProduct);
+      console.log('Product image path:', currentProduct.image);
       setProduct(currentProduct);
-      const related = getRelatedProducts(productId, currentProduct.category, 3);
-      setRelatedProducts(related);
+    } else {
+      console.error('Product not found for ID:', productId);
     }
   }, [productId]);
 
@@ -39,25 +36,12 @@ export default function ProductPage() {
       <div
         className="flex flex-col min-h-screen items-center justify-center"
         dir={direction}
-      >
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-600 mb-4">
-            Product Not Found
-          </h1>
-          <Link
-            href={`/${locale}/products`}
-            className="text-[#669c27] hover:underline"
-          >
-            Back to Products
-          </Link>
-        </div>
-      </div>
+      ></div>
     );
   }
 
   return (
     <div className="flex flex-col min-h-screen" dir={direction}>
-      {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 h-16 flex items-center bg-[#ffffffe0] shadow-lg">
         <Link
           href={`/${locale}`}
@@ -156,13 +140,50 @@ export default function ProductPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Product Image */}
               <div className="space-y-4">
-                <div className="relative h-96 rounded-lg overflow-hidden shadow-lg">
-                  <Image
+                <div className="relative h-96 rounded-lg overflow-hidden shadow-lg bg-gray-100">
+                  {/* Use regular img tag for better compatibility */}
+                  <img
                     src={product.image}
                     alt={product.name}
-                    fill
-                    className="object-cover"
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    onError={e => {
+                      console.error(
+                        'Primary image failed to load:',
+                        product.image
+                      );
+                      const target = e.target as HTMLImageElement;
+
+                      // Try fallback paths
+                      const fallbackPaths = [
+                        `/images/${product.id === 1 || product.id === 3 || product.id === 5 ? '1.png' : '2.webp'}`,
+                        '/images/1.png',
+                        '/images/2.webp',
+                      ];
+
+                      let currentIndex = 0;
+                      const tryNextFallback = () => {
+                        if (currentIndex < fallbackPaths.length) {
+                          console.log(
+                            'Trying fallback image:',
+                            fallbackPaths[currentIndex]
+                          );
+                          target.src = fallbackPaths[currentIndex];
+                          currentIndex++;
+                        } else {
+                          console.error('All fallback images failed');
+                          target.style.display = 'none';
+                        }
+                      };
+
+                      target.onerror = tryNextFallback;
+                      tryNextFallback();
+                    }}
+                    onLoad={() => {
+                      console.log('Image loaded successfully:', product.image);
+                    }}
                   />
+                  {/* Image overlay for better text readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
                 </div>
               </div>
 
@@ -177,10 +198,6 @@ export default function ProductPage() {
                   </p>
                 </div>
 
-                <div className="text-3xl font-bold text-[#669c27]">
-                  {product.price}
-                </div>
-
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold text-[#353c4a]">
                     Description
@@ -189,99 +206,10 @@ export default function ProductPage() {
                     {product.longDescription}
                   </p>
                 </div>
-
-                {/* Specifications */}
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-[#353c4a]">
-                    Specifications
-                  </h3>
-                  <ul className="space-y-2">
-                    {product.specifications.map(
-                      (spec: string, index: number) => (
-                        <li key={index} className="flex items-start">
-                          <span className="w-2 h-2 bg-[#669c27] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                          <span className="text-gray-600">{spec}</span>
-                        </li>
-                      )
-                    )}
-                  </ul>
-                </div>
-
-                {/* Features */}
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-[#353c4a]">
-                    Key Features
-                  </h3>
-                  <ul className="space-y-2">
-                    {product.features.map((feature: string, index: number) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-[#669c27] rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                        <span className="text-gray-600">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                  <button className="px-8 py-3 bg-[#669c27] text-white rounded-lg hover:bg-[#5a8a22] transition-colors duration-300 font-semibold">
-                    Request Quote
-                  </button>
-                  <button className="px-8 py-3 border-2 border-[#669c27] text-[#669c27] rounded-lg hover:bg-[#669c27] hover:text-white transition-colors duration-300 font-semibold">
-                    Download Brochure
-                  </button>
-                </div>
               </div>
             </div>
           </div>
         </section>
-
-        {/* Related Products */}
-        {relatedProducts.length > 0 && (
-          <section className="py-16 bg-gray-50">
-            <div className="container mx-auto px-4 md:px-6">
-              <h2 className="text-3xl font-bold text-[#353c4a] text-center mb-12">
-                Related Products
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {relatedProducts.map(relatedProduct => (
-                  <div
-                    key={relatedProduct.id}
-                    className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-                  >
-                    <div className="relative h-48">
-                      <Image
-                        src={relatedProduct.image}
-                        alt={relatedProduct.name}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <h3 className="text-lg font-bold text-[#353c4a] mb-3">
-                        {relatedProduct.name}
-                      </h3>
-                      <p className="text-gray-600 mb-4 line-clamp-2">
-                        {relatedProduct.description}
-                      </p>
-                      <div className="flex items-center justify-between">
-                        <span className="text-xl font-bold text-[#669c27]">
-                          {relatedProduct.price}
-                        </span>
-                        <Link
-                          href={`/${locale}/products/${relatedProduct.id}`}
-                          className="inline-flex items-center px-4 py-2 bg-[#669c27] text-white rounded-lg hover:bg-[#5a8a22] transition-colors duration-300"
-                        >
-                          View Details
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
       </main>
     </div>
   );

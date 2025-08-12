@@ -103,7 +103,7 @@ export default function Component() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 h-16 flex items-center bg-[#ffffffe0] shadow-lg">
         <Link
-          href="/"
+          href={`/${locale}`}
           className="flex items-center justify-center"
           prefetch={false}
         >
@@ -122,7 +122,7 @@ export default function Component() {
         </Link>
         <nav className="ml-auto flex gap-6 sm:gap-8 items-center">
           <Link
-            href="#"
+            href={`/${locale}`}
             className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
             prefetch={false}
           >
@@ -167,15 +167,43 @@ export default function Component() {
                   <div className="relative group">
                     <div className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27] cursor-pointer">
                       {translations.products.flueDustAnalyzer}
+                      {/* Submenu arrow - positioned based on locale */}
+                      <div
+                        className={`absolute top-1/2 transform -translate-y-1/2 w-0 h-0 border-2 border-transparent ${
+                          locale === 'en'
+                            ? 'right-3 border-l-4 border-l-gray-400'
+                            : 'left-3 border-r-4 border-r-gray-400'
+                        }`}
+                      ></div>
                     </div>
-                    {/* Sub-items dropdown - positioned to the left on larger screens, above on smaller screens */}
+                    {/* Sub-items dropdown - positioned based on locale: left for English, right for Farsi */}
                     <div
-                      className="absolute top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50
-                      lg:right-full lg:mr-1 lg:top-0 lg:w-48
-                      md:right-full md:mr-1 md:top-0 md:w-40
+                      className={`absolute top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50
+                      ${
+                        locale === 'en'
+                          ? 'lg:right-full lg:mr-2 md:right-full md:mr-2'
+                          : 'lg:left-full lg:ml-2 md:left-full md:ml-2'
+                      }
+                      lg:top-0 lg:w-48
+                      md:top-0 md:w-40
                       sm:left-0 sm:top-full sm:mt-1 sm:w-full
-                      bg-white rounded-lg shadow-xl border border-gray-200 py-2"
+                      bg-white rounded-lg shadow-xl border border-gray-200 py-2`}
                     >
+                      {/* Submenu arrow - positioned based on locale */}
+                      <div
+                        className={`absolute top-4 w-0 h-0 border-4 border-transparent ${
+                          locale === 'en'
+                            ? 'lg:right-0 lg:mr-[-8px] lg:border-l-4 lg:border-l-white md:right-0 md:mr-[-8px] md:border-l-4 md:border-l-white'
+                            : 'lg:left-0 lg:ml-[-8px] lg:border-r-4 lg:border-r-white md:left-0 md:ml-[-8px] md:border-r-4 md:border-r-white'
+                        }`}
+                      ></div>
+                      <div
+                        className={`absolute top-4 w-0 h-0 border-4 border-transparent ${
+                          locale === 'en'
+                            ? 'lg:right-0 lg:mr-[-9px] lg:border-l-4 lg:border-l-gray-200 md:right-0 md:mr-[-9px] md:border-l-4 md:border-l-gray-200'
+                            : 'lg:left-0 lg:ml-[-9px] lg:border-r-4 lg:border-r-gray-200 md:left-0 md:ml-[-9px] md:border-r-4 md:border-r-gray-200'
+                        }`}
+                      ></div>
                       <Link
                         href={`/${locale}/products/2`}
                         className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200 border-l-2 border-transparent hover:border-[#669c27]"
