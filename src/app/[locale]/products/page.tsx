@@ -106,15 +106,12 @@ export default function ProductsPage() {
                       {product.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <span className="text-2xl font-bold text-[#669c27]">
-                        {product.price}
-                      </span>
-                      <Link
-                        href={`/${locale}/products/${product.id}`}
+                      <a
+                        href="tel:09120628762"
                         className="inline-flex items-center px-4 py-2 bg-[#669c27] text-white hover:bg-[#5a8a22] transition-colors duration-300"
                       >
-                        View Details
-                      </Link>
+                        Call
+                      </a>
                     </div>
                   </div>
                 </div>
