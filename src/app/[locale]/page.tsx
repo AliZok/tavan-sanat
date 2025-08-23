@@ -171,15 +171,15 @@ export default function Component() {
                       <div
                         className={`absolute top-1/2 transform -translate-y-1/2 w-0 h-0 ${
                           locale === 'en'
-                            ? 'right-3 border-l-4 border-l-gray-400'
+                            ? 'left-3 border-r-4 border-r-gray-400'
                             : 'left-3 border-r-4 border-r-gray-400'
                         }`}
                       ></div>
                     </div>
                     {/* Sub-items dropdown - positioned based on locale */}
                     <div
-                      className={`absolute top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 w-48 bg-white shadow-xl border border-gray-200 py-2 ${
-                        locale === 'en' ? 'left-full ml-2' : 'right-full mr-2'
+                      className={`absolute top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 w-40 bg-white shadow-xl border border-gray-200 py-2 ${
+                        locale === 'en' ? 'left-full ml-2' : 'left-full ml-2'
                       }`}
                     >
                       {/* Submenu arrow pointing based on locale */}
@@ -187,14 +187,14 @@ export default function Component() {
                         className={`absolute top-4 w-0 h-0 ${
                           locale === 'en'
                             ? 'left-0 ml-[-8px] border-r-4 border-r-white'
-                            : 'right-0 mr-[-8px] border-l-4 border-l-white'
+                            : 'left-0 ml-[-8px] border-r-4 border-r-white'
                         }`}
                       ></div>
                       <div
                         className={`absolute top-4 w-0 h-0 ${
                           locale === 'en'
                             ? 'left-0 ml-[-9px] border-r-4 border-r-gray-200'
-                            : 'right-0 mr-[-9px] border-l-4 border-l-gray-200'
+                            : 'left-0 ml-[-9px] border-r-4 border-r-gray-200'
                         }`}
                       ></div>
                       <Link
