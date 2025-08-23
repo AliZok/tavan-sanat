@@ -138,11 +138,11 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    name: 'Tiribo Dust Analyzer',
+    name: 'Tribo Dust Analyzer',
     description:
       'Advanced triboelectric dust monitoring technology for industrial applications.',
     longDescription:
-      'The Tiribo Dust Analyzer uses innovative triboelectric technology to detect and measure dust particles in industrial processes. This system is particularly effective in high-temperature and high-dust environments where traditional optical methods may be limited.',
+      'The Tribo Dust Analyzer uses innovative triboelectric technology to detect and measure dust particles in industrial processes. This system is particularly effective in high-temperature and high-dust environments where traditional optical methods may be limited.',
     price: '$16,500',
     image: 'http://localhost:3000/images/2.webp',
     category: 'flueDustAnalyzer',
