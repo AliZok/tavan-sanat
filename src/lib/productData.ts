@@ -13,7 +13,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: 1,
-    name: 'Flue Gas Analyzer',
+    name: 'flueGasAnalyzer',
     description:
       'Advanced gas analysis system for industrial applications. This high-precision instrument provides real-time monitoring and analysis of flue gas emissions, helping industries maintain compliance with environmental regulations while optimizing combustion efficiency.',
     longDescription:
@@ -38,7 +38,7 @@ export const products: Product[] = [
   },
   {
     id: 2,
-    name: 'Laser Dust Analyzer',
+    name: 'laser',
     description:
       'High-precision laser-based dust measurement system for industrial dust monitoring applications.',
     longDescription:
@@ -63,7 +63,7 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    name: 'hello',
+    name: 'ambientGasAnalyzer',
     description:
       'Environmental monitoring system for air quality assessment and pollution control.',
     longDescription:
@@ -88,7 +88,7 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    name: 'Ambient Dust Analyzer',
+    name: 'ambientDustAnalyzer',
     description:
       'Comprehensive dust monitoring and analysis solution for environmental applications.',
     longDescription:
@@ -113,7 +113,7 @@ export const products: Product[] = [
   },
   {
     id: 5,
-    name: 'GC Analyzer',
+    name: 'gcAnalyzer',
     description:
       'Gas chromatography system for detailed analysis of complex gas mixtures.',
     longDescription:
@@ -138,12 +138,37 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    name: 'Tribo Dust Analyzer',
+    name: 'duragDfw',
     description:
       'Advanced triboelectric dust monitoring technology for industrial applications.',
     longDescription:
       'The Tribo Dust Analyzer uses innovative triboelectric technology to detect and measure dust particles in industrial processes. This system is particularly effective in high-temperature and high-dust environments where traditional optical methods may be limited.',
     price: '$16,500',
+    image: 'http://localhost:3000/images/2.webp',
+    category: 'flueDustAnalyzer',
+    specifications: [
+      'Measurement Range: 0.01-1000 mg/m³',
+      'Accuracy: ±10% of reading',
+      'Response Time: <5 seconds',
+      'Operating Temperature: -50°C to +800°C',
+      'Power Supply: 24V DC',
+    ],
+    features: [
+      'Triboelectric detection',
+      'High-temperature operation',
+      'Self-cleaning mechanism',
+      'Rugged construction',
+      'Low power consumption',
+    ],
+  },
+  {
+    id: 7,
+    name: 'tiribo',
+    description:
+      'Advanced triboelectric dust monitoring technology for industrial applications.',
+    longDescription:
+      'The Tribo Dust Analyzer uses innovative triboelectric technology to detect and measure dust particles in industrial processes. This system is particularly effective in high-temperature and high-dust environments where traditional optical methods may be limited.',
+    price: '$16,000',
     image: 'http://localhost:3000/images/2.webp',
     category: 'flueDustAnalyzer',
     specifications: [

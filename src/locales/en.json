@@ -16,12 +16,19 @@
     "flueGasAnalyzer": "Online Flue Gas Analyzer",
     "flueDustAnalyzer": "Online Flue Dust Analyzer",
     "flueDustAnalyzerSubItems": {
-      "laser": "Laser",
-      "tiribo": "Tribo"
+      "laser": "Laser Dust Analyzer",
+      "tiribo": "Tribo Dust Analyzer",
+      "duragDfw": "DURAG-Dfw"
     },
     "ambientGasAnalyzer": "Online Quality Gas Analyzer",
     "ambientDustAnalyzer": "Online Ambient Dust Analyzer",
-    "gcAnalyzer": "Online GC Analyzer"
+    "gcAnalyzer": "Online GC Analyzer",
+    "productNames": {
+      "flueGasAnalyzer": "Flue Gas Analyzer",
+      "ambientGasAnalyzer": "Ambient Gas Analyzer",
+      "ambientDustAnalyzer": "Ambient Dust Analyzer",
+      "gcAnalyzer": "GC Analyzer"
+    }
   },
   "hero": {
     "title": "Pioneering Air Quality Solutions for a Healthier Tomorrow",

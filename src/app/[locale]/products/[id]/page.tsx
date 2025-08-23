@@ -75,7 +75,29 @@ export default function ProductPage() {
                   <div className="flex items-center">
                     <span className="mx-2 text-gray-400">/</span>
                     <span className="text-sm font-medium text-gray-500">
-                      {product.name}
+                      {(() => {
+                        if (
+                          product.name.startsWith('duragDfw') ||
+                          product.name.startsWith('laser') ||
+                          product.name.startsWith('tiribo')
+                        ) {
+                          return (
+                            translations.products.flueDustAnalyzerSubItems[
+                              product.name as keyof typeof translations.products.flueDustAnalyzerSubItems
+                            ] || product.name
+                          );
+                        } else if (
+                          translations.products.productNames &&
+                          translations.products.productNames[
+                            product.name as keyof typeof translations.products.productNames
+                          ]
+                        ) {
+                          return translations.products.productNames[
+                            product.name as keyof typeof translations.products.productNames
+                          ];
+                        }
+                        return product.name;
+                      })()}
                     </span>
                   </div>
                 </li>
@@ -141,7 +163,29 @@ export default function ProductPage() {
               <div className="space-y-6">
                 <div>
                   <h1 className="text-4xl font-bold text-[#353c4a] mb-4">
-                    {product.name}
+                    {(() => {
+                      if (
+                        product.name.startsWith('duragDfw') ||
+                        product.name.startsWith('laser') ||
+                        product.name.startsWith('tiribo')
+                      ) {
+                        return (
+                          translations.products.flueDustAnalyzerSubItems[
+                            product.name as keyof typeof translations.products.flueDustAnalyzerSubItems
+                          ] || product.name
+                        );
+                      } else if (
+                        translations.products.productNames &&
+                        translations.products.productNames[
+                          product.name as keyof typeof translations.products.productNames
+                        ]
+                      ) {
+                        return translations.products.productNames[
+                          product.name as keyof typeof translations.products.productNames
+                        ];
+                      }
+                      return product.name;
+                    })()}
                   </h1>
                   <p className="text-xl text-gray-600 leading-relaxed">
                     {product.description}

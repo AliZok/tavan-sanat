@@ -49,7 +49,29 @@ export default function ProductsPage() {
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-[#353c4a] mb-3">
-                      {product.name}
+                      {(() => {
+                        if (
+                          product.name.startsWith('duragDfw') ||
+                          product.name.startsWith('laser') ||
+                          product.name.startsWith('tiribo')
+                        ) {
+                          return (
+                            translations.products.flueDustAnalyzerSubItems[
+                              product.name as keyof typeof translations.products.flueDustAnalyzerSubItems
+                            ] || product.name
+                          );
+                        } else if (
+                          translations.products.productNames &&
+                          translations.products.productNames[
+                            product.name as keyof typeof translations.products.productNames
+                          ]
+                        ) {
+                          return translations.products.productNames[
+                            product.name as keyof typeof translations.products.productNames
+                          ];
+                        }
+                        return product.name;
+                      })()}
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-3">
                       {product.description}

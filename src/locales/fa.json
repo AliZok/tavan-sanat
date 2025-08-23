@@ -16,12 +16,19 @@
     "flueGasAnalyzer": "آنالایزر آنلاین گاز دودکش",
     "flueDustAnalyzer": "آنالایزر آنلاین غبار دودکش",
     "flueDustAnalyzerSubItems": {
-      "laser": "لیزری",
-      "tiribo": "تیریبو"
+      "laser": "آنالایزر غبار لیزری",
+      "tiribo": "آنالایزر غبار تریبوالکتریک",
+      "duragDfw": "آنالایزر غبار تریبوالکتریک DURAG-Dfw"
     },
     "ambientGasAnalyzer": "آنالایزر آنلاین کیفیت گاز",
     "ambientDustAnalyzer": "آنالایزر آنلاین غبار محیطی",
-    "gcAnalyzer": "آنالایزر آنلاین GC"
+    "gcAnalyzer": "آنالایزر آنلاین GC",
+    "productNames": {
+      "flueGasAnalyzer": "آنالایزر گاز دودکش",
+      "ambientGasAnalyzer": "آنالایزر کیفیت گاز محیطی",
+      "ambientDustAnalyzer": "آنالایزر غبار محیطی",
+      "gcAnalyzer": "آنالایزر GC"
+    }
   },
   "hero": {
     "title": " کیفیت هوا&nbsp;&nbsp;&nbsp;&nbsp;<br>فردایی سالم‌تر",
