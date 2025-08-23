@@ -12,6 +12,7 @@
     "cta": "Get a Quote"
   },
   "products": {
+    "viewAll": "View All Products",
     "flueGasAnalyzer": "Online Flue Gas Analyzer",
     "flueDustAnalyzer": "Online Flue Dust Analyzer",
     "flueDustAnalyzerSubItems": {
@@ -114,5 +115,17 @@
   "language": {
     "en": "English",
     "fa": "فارسی"
+  },
+  "pages": {
+    "products": {
+      "title": "Our Products",
+      "subtitle": "Discover our comprehensive range of advanced air quality monitoring and analysis solutions",
+      "callButton": "Call",
+      "breadcrumb": {
+        "home": "Home",
+        "products": "Products"
+      },
+      "description": "Description"
+    }
   }
 }

@@ -10,6 +10,7 @@ import {
 } from '../../../../lib/i18n';
 import { getProductById, Product } from '../../../../lib/productData';
 import { useState, useEffect } from 'react';
+import Header from '../../../../components/Header';
 
 export default function ProductPage() {
   const params = useParams();
@@ -42,58 +43,7 @@ export default function ProductPage() {
 
   return (
     <div className="flex flex-col min-h-screen" dir={direction}>
-      <header className="fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 h-16 flex items-center bg-[#ffffffe0] shadow-lg">
-        <Link
-          href={`/${locale}`}
-          className="flex items-center justify-center"
-          prefetch={false}
-        >
-          <Image
-            src="/my-logo.png"
-            alt={translations.header.brand}
-            width={32}
-            height={32}
-            className="h-8 w-8"
-          />
-          <span className="sr-only">{translations.header.brand}</span>
-          <span className="ml-3 text-xl font-extrabold text-[#353c4a] tracking-tight">
-            {translations.header.brand}
-          </span>
-        </Link>
-        <nav className="ml-auto flex gap-6 sm:gap-8 items-center">
-          <Link
-            href={`/${locale}`}
-            className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
-            prefetch={false}
-          >
-            {translations.header.nav.home}
-            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
-          </Link>
-          <Link
-            href={`/${locale}/products`}
-            className="relative text-sm font-semibold text-[#669c27] transition-colors duration-300 group"
-          >
-            {translations.header.nav.products}
-            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
-          </Link>
-          <Link
-            href="#"
-            className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
-            prefetch={false}
-          >
-            {translations.header.nav.services}
-            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
-          </Link>
-          <Link
-            href="#"
-            className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
-            prefetch={false}
-          >
-            {translations.header.nav.contact}
-            <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
-          </Link>
-        </nav>
-      </header>
+      <Header />
 
       {/* Main Content */}
       <main className="flex-1 pt-16">
@@ -107,7 +57,7 @@ export default function ProductPage() {
                     href={`/${locale}`}
                     className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-[#669c27]"
                   >
-                    Home
+                    {translations.pages.products.breadcrumb.home}
                   </Link>
                 </li>
                 <li>
@@ -117,7 +67,7 @@ export default function ProductPage() {
                       href={`/${locale}/products`}
                       className="text-sm font-medium text-gray-700 hover:text-[#669c27]"
                     >
-                      Products
+                      {translations.pages.products.breadcrumb.products}
                     </Link>
                   </div>
                 </li>
@@ -200,7 +150,7 @@ export default function ProductPage() {
 
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold text-[#353c4a]">
-                    Description
+                    {translations.pages.products.description}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
                     {product.longDescription}

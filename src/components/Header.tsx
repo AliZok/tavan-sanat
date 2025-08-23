@@ -86,7 +86,7 @@ export default function Header() {
                   className="block px-4 py-2 text-sm font-semibold text-[#669c27] hover:bg-[#669c27]/10 transition-all duration-200 border-l-2 border-[#669c27]"
                   onClick={() => setIsProductsOpen(false)}
                 >
-                  View All Products
+                  {translations.products.viewAll}
                 </Link>
                 <div className="border-t border-gray-200 my-2"></div>
                 <Link

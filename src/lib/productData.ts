@@ -63,7 +63,7 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    name: 'Ambient Gas Analyzer',
+    name: 'hello',
     description:
       'Environmental monitoring system for air quality assessment and pollution control.',
     longDescription:

@@ -12,6 +12,7 @@
     "cta": "درخواست قیمت"
   },
   "products": {
+    "viewAll": "مشاهده همه محصولات",
     "flueGasAnalyzer": "آنالایزر آنلاین گاز دودکش",
     "flueDustAnalyzer": "آنالایزر آنلاین غبار دودکش",
     "flueDustAnalyzerSubItems": {
@@ -114,5 +115,17 @@
   "language": {
     "en": "English",
     "fa": "فارسی"
+  },
+  "pages": {
+    "products": {
+      "title": "محصولات ما",
+      "subtitle": "مجموعه کاملی از راه‌حل‌های پیشرفته نظارت و تحلیل کیفیت هوا را کشف کنید",
+      "callButton": "تماس",
+      "breadcrumb": {
+        "home": "خانه",
+        "products": "محصولات"
+      },
+      "description": "توضیحات"
+    }
   }
 }
