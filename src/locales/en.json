@@ -14,7 +14,7 @@
   "products": {
     "viewAll": "View All Products",
     "flueGasAnalyzer": "Online Flue Gas Analyzer",
-    "flueDustAnalyzer": "Online Flue Dust Analyzer",
+    "flueDustAnalyzer": "Dust Monitoring",
     "flueDustAnalyzerSubItems": {
       "laser": "Laser Dust Analyzer",
       "tiribo": "Tribo Dust Analyzer",

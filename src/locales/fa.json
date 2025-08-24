@@ -16,7 +16,7 @@
     "flueGasAnalyzer": "آنالایزر آنلاین گاز دودکش",
     "flueDustAnalyzer": "آنالایزر آنلاین غبار دودکش",
     "flueDustAnalyzerSubItems": {
-      "laser": "آنالایزر غبار لیزری",
+      "laser": "آنالایزر آنلاین غبار دودکش",
       "tiribo": "آنالایزر غبار تریبوالکتریک",
       "duragDfw": "آنالایزر غبار تریبوالکتریک DURAG-Dfw"
     },

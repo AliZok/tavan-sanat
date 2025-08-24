@@ -88,7 +88,7 @@ export const products: Product[] = [
       'Low maintenance design',
     ],
     // Persian translations
-    name_fa: 'آنالایزر غبار لیزری',
+    name_fa: 'آنالایزر آنلاین غبار دودکش',
     description_fa:
       'سیستم اندازه‌گیری غبار با دقت بالا مبتنی بر لیزر برای کاربردهای نظارت بر غبار صنعتی.',
     longDescription_fa:
