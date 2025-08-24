@@ -74,6 +74,9 @@ export default function ProductPage() {
                     <span className="mx-2 text-gray-400">/</span>
                     <span className="text-sm font-medium text-gray-500">
                       {(() => {
+                        if (locale === 'fa' && product.name_fa) {
+                          return product.name_fa;
+                        }
                         if (
                           product.name.startsWith('duragDfw') ||
                           product.name.startsWith('laser') ||
@@ -162,6 +165,9 @@ export default function ProductPage() {
                 <div>
                   <h1 className="text-4xl font-bold text-[#353c4a] mb-4">
                     {(() => {
+                      if (locale === 'fa' && product.name_fa) {
+                        return product.name_fa;
+                      }
                       if (
                         product.name.startsWith('duragDfw') ||
                         product.name.startsWith('laser') ||
@@ -186,7 +192,9 @@ export default function ProductPage() {
                     })()}
                   </h1>
                   <p className="text-xl text-gray-600 leading-relaxed">
-                    {product.description}
+                    {locale === 'fa' && product.description_fa
+                      ? product.description_fa
+                      : product.description}
                   </p>
                 </div>
 
@@ -195,7 +203,9 @@ export default function ProductPage() {
                     {translations.pages.products.description}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
-                    {product.longDescription}
+                    {locale === 'fa' && product.longDescription_fa
+                      ? product.longDescription_fa
+                      : product.longDescription}
                   </p>
                 </div>
               </div>
