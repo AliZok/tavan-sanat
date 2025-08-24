@@ -276,52 +276,6 @@ export const products: Product[] = [
   },
 
   {
-    id: 8,
-    name: 'faiSwam5a',
-    description:
-      'Advanced ambient dust monitoring system with high precision PM2.5 and PM10 measurement capabilities.',
-    longDescription:
-      'The FAI Instruments Swam 5a is a state-of-the-art ambient dust analyzer that provides continuous monitoring of particulate matter in ambient air. This system features advanced beta attenuation technology for accurate PM2.5 and PM10 measurements, making it ideal for environmental monitoring stations and air quality assessment applications.',
-    price: '$22,000',
-    image: 'http://localhost:3000/images/fai-instruments.jpg',
-    category: 'ambientDustAnalyzer',
-    specifications: [
-      'Measurement Range: 0.1-10000 μg/m³',
-      'Accuracy: ±2% of reading',
-      'Response Time: <10 seconds',
-      'Operating Temperature: -20°C to +50°C',
-      'Power Supply: 12V DC or 110/220V AC',
-    ],
-    features: [
-      'PM2.5 and PM10 simultaneous monitoring',
-      'Beta attenuation measurement method',
-      'Automatic calibration system',
-      'Advanced data validation',
-      'Network connectivity and remote access',
-    ],
-    // Persian translations
-    name_fa: 'FAI Instruments Swam 5a',
-    madeIn: 'ساخت ایتالیا',
-    description_fa:
-      'سیستم پیشرفته نظارت بر غبار محیط با قابلیت‌های اندازه‌گیری دقیق PM2.5 و PM10.',
-    longDescription_fa:
-      'این آنالایزر قابلیت اندازه‌گیری کیفیت هوا و ذرات معلق  PM10 و PM2.5 به صورت همزمان را دارد و در مناطق شهری در ایستگاه های سنجش آلودگی هوا مورد استفاده قرار می‌گیرد.',
-    specifications_fa: [
-      'محدوده اندازه‌گیری: ۰.۱-۱۰۰۰۰ میکروگرم بر متر مکعب',
-      'دقت: ±۲٪ از قرائت',
-      'زمان پاسخ: کمتر از ۱۰ ثانیه',
-      'دمای عملیاتی: ۲۰- تا +۵۰ درجه سانتیگراد',
-      'منبع تغذیه: ۱۲ ولت DC یا ۱۱۰/۲۲۰ ولت AC',
-    ],
-    features_fa: [
-      'نظارت همزمان PM2.5 و PM10',
-      'روش اندازه‌گیری تضعیف بتا',
-      'سیستم کالیبراسیون خودکار',
-      'اعتبارسنجی پیشرفته داده',
-      'اتصال شبکه و دسترسی از راه دور',
-    ],
-  },
-  {
     id: 9,
     name: 'metoneBAM1020',
     description:
