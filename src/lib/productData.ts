@@ -274,51 +274,7 @@ export const products: Product[] = [
       'فناوری پیشرفته نظارت بر غبار تریبوالکتریک برای کاربردهای صنعتی.',
     longDescription_fa: `این آنالایزر جهت اندازه‌گیری ذرات معلق خروجی دودکش جهت مانیتور کردن خروجی سیستم فیلترینگ صنایع می باشد.`,
   },
-  {
-    id: 7,
-    name: 'tiribo',
-    description:
-      'Advanced triboelectric dust monitoring technology for industrial applications.',
-    longDescription:
-      'The Tribo Dust Analyzer uses innovative triboelectric technology to detect and measure dust particles in industrial processes. This system is particularly effective in high-temperature and high-dust environments where traditional optical methods may be limited.',
-    price: '$16,000',
-    image: 'http://localhost:3000/images/2.webp',
-    category: 'flueDustAnalyzer',
-    specifications: [
-      'Measurement Range: 0.01-1000 mg/m³',
-      'Accuracy: ±10% of reading',
-      'Response Time: <5 seconds',
-      'Operating Temperature: -50°C to +800°C',
-      'Power Supply: 24V DC',
-    ],
-    features: [
-      'Triboelectric detection',
-      'High-temperature operation',
-      'Self-cleaning mechanism',
-      'Rugged construction',
-      'Low power consumption',
-    ],
-    // Persian translations
-    name_fa: 'آنالایزر غبار تریبوالکتریک',
-    description_fa:
-      'فناوری پیشرفته نظارت بر غبار تریبوالکتریک برای کاربردهای صنعتی.',
-    longDescription_fa:
-      'آنالایزر غبار تریبوالکتریک از فناوری نوآورانه تریبوالکتریک برای تشخیص و اندازه‌گیری ذرات غبار در فرآیندهای صنعتی استفاده می‌کند. این سیستم به ویژه در محیط‌های با دمای بالا و غبار زیاد که روش‌های نوری سنتی ممکن است محدود باشند، مؤثر است.',
-    specifications_fa: [
-      'محدوده اندازه‌گیری: ۰.۰۱-۱۰۰۰ میلی‌گرم بر متر مکعب',
-      'دقت: ±۱۰٪ از قرائت',
-      'زمان پاسخ: کمتر از ۵ ثانیه',
-      'دمای عملیاتی: ۵۰- تا +۸۰۰ درجه سانتیگراد',
-      'منبع تغذیه: ۲۴ ولت DC',
-    ],
-    features_fa: [
-      'تشخیص تریبوالکتریک',
-      'عملیات با دمای بالا',
-      'مکانیزم خودتمیزکننده',
-      'ساختار محکم',
-      'مصرف انرژی کم',
-    ],
-  },
+
   {
     id: 8,
     name: 'faiSwam5a',
