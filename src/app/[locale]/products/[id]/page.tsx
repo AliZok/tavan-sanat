@@ -24,8 +24,6 @@ export default function ProductPage() {
   useEffect(() => {
     const currentProduct = getProductById(productId);
     if (currentProduct) {
-      console.log('Product loaded:', currentProduct);
-      console.log('Product image path:', currentProduct.image);
       setProduct(currentProduct);
     } else {
       console.error('Product not found for ID:', productId);

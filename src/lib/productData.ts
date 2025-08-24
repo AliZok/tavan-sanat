@@ -69,7 +69,7 @@ export const products: Product[] = [
     longDescription:
       'The Ambient Gas Analyzer is designed for continuous monitoring of ambient air quality in urban and industrial areas. It provides comprehensive data on various air pollutants, helping environmental agencies and industries track air quality trends and ensure compliance with air quality standards.',
     price: '$18,000',
-    image: 'http://localhost:3000/images/1.png',
+    image: 'http://localhost:3000/images/tribo-dust-analyzer.jpg',
     category: 'ambientGasAnalyzer',
     specifications: [
       'Measurement Range: 0-5000 ppb',

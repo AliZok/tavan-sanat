@@ -252,7 +252,7 @@ export default function Component() {
               <div className="">
                 <div className="w-full h-4 bg-[#669c27]"></div>
                 <div className="p-4">
-                  <h3 className="font-bold text-3xl text-[#353c4a] mb-4 py-2">
+                  <h3 className="font-bold text-center text-3xl text-[#353c4a] mb-4 py-2">
                     {translations.contact.title}
                   </h3>
                   <div className="flex flex-col lg:flex-row gap-6">
