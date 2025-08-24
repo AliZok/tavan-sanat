@@ -13,7 +13,7 @@
   },
   "products": {
     "viewAll": "View All Products",
-    "flueGasAnalyzer": "Online Flue Gas Analyzer",
+    "flueGasAnalyzer": "Continuous Emissions Monitoring",
     "flueDustAnalyzer": "Dust Monitoring",
     "flueDustAnalyzerSubItems": {
       "laser": "Laser Dust Analyzer",
@@ -28,7 +28,7 @@
     },
     "gcAnalyzer": "Online GC Analyzer",
     "productNames": {
-      "flueGasAnalyzer": "Flue Gas Analyzer",
+      "flueGasAnalyzer": "Continuous Emissions Monitoring",
       "ambientGasAnalyzer": "Ambient Gas Analyzer",
       "ambientDustAnalyzer": "Ambient Dust Analyzer",
       "gcAnalyzer": "GC Analyzer",

@@ -24,9 +24,9 @@ export const products: Product[] = [
     description:
       'Advanced gas analysis system for industrial applications. This high-precision instrument provides real-time monitoring and analysis of flue gas emissions, helping industries maintain compliance with environmental regulations while optimizing combustion efficiency.',
     longDescription:
-      'The Flue Gas Analyzer is a state-of-the-art analytical instrument designed for continuous monitoring of flue gas emissions in industrial processes. It features advanced sensor technology that can detect and measure multiple gas components including CO, CO2, NOx, SO2, and O2 with exceptional accuracy and reliability.',
+      'The Continuous Emissions Monitoring is a state-of-the-art analytical instrument designed for continuous monitoring of flue gas emissions in industrial processes. It features advanced sensor technology that can detect and measure multiple gas components including CO, CO2, NOx, SO2, and O2 with exceptional accuracy and reliability.',
     price: '$15,000',
-    image: 'http://localhost:3000/images/1.png',
+    image: 'http://localhost:3000/images/gas.jpg',
     category: 'flueGasAnalyzer',
     specifications: [
       'Measurement Range: 0-1000 ppm',
@@ -43,11 +43,11 @@ export const products: Product[] = [
       'Remote monitoring support',
     ],
     // Persian translations
-    name_fa: 'آنالایزر گاز دودکش',
-    description_fa:
-      'سیستم پیشرفته تحلیل گاز برای کاربردهای صنعتی. این ابزار با دقت بالا، نظارت و تحلیل زمان واقعی از انتشارات گاز دودکش را فراهم می‌کند و به صنایع کمک می‌کند تا ضمن بهینه‌سازی راندمان احتراق، با مقررات زیست‌محیطی مطابقت داشته باشند.',
-    longDescription_fa:
-      'آنالایزر گاز دودکش یک ابزار تحلیلی پیشرفته است که برای نظارت مداوم بر انتشارات گاز دودکش در فرآیندهای صنعتی طراحی شده است. این دستگاه دارای فناوری حسگر پیشرفته‌ای است که می‌تواند اجزای گاز متعدد از جمله CO، CO2، NOx، SO2 و O2 را با دقت و قابلیت اطمینان استثنایی تشخیص داده و اندازه‌گیری کند.',
+    name_fa: 'آنالایزر آنلاین گاز دودکش MRU Instruments (SWG 300)',
+    madeIn: 'ساخت ایتالیا',
+    description_fa: `سیستم آنالیز گاز پیشرفته برای کاربردهای صنعتی`,
+    longDescription_fa: `این آنالایزر جهت استفاده کامل CEM برای پایش آلاینده‌ها می باشد، این آنالایزر گاز بر پایه روش استخراجی و خشک-سرد طراحی شده است.
+دستگاه SWG 300 قادر است تا ۸ نوع گاز را با استفاده از فناوری بهینه‌شده NDIR شرکت MRU اندازه‌گیری کند، با دقت بالاتر و بدون خطای صفر.`,
     specifications_fa: [
       'محدوده اندازه‌گیری: ۰-۱۰۰۰ ppm',
       'دقت: ±۲٪ از مقیاس کامل',
