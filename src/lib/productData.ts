@@ -204,7 +204,7 @@ export const products: Product[] = [
     longDescription:
       'The GC Analyzer is a sophisticated gas chromatography system designed for detailed analysis of complex gas mixtures. It provides high-resolution separation and identification of individual components, making it ideal for research laboratories and quality control applications.',
     price: '$25,000',
-    image: 'http://localhost:3000/images/1.png',
+    image: 'http://localhost:3000/images/tribo-dust-analyzer.jpg',
     category: 'gcAnalyzer',
     specifications: [
       'Column Temperature: 40°C to 400°C',
@@ -249,7 +249,7 @@ export const products: Product[] = [
     longDescription:
       'The Tribo Dust Analyzer uses innovative triboelectric technology to detect and measure dust particles in industrial processes. This system is particularly effective in high-temperature and high-dust environments where traditional optical methods may be limited.',
     price: '$16,500',
-    image: 'http://localhost:3000/images/2.webp',
+    image: 'http://localhost:3000/images/tribo-dust-analyzer.jpg',
     category: 'flueDustAnalyzer',
     specifications: [
       'Measurement Range: 0.01-1000 mg/m³',
@@ -269,22 +269,7 @@ export const products: Product[] = [
     name_fa: 'آنالایزر غبار تریبوالکتریک DURAG-Dfw',
     description_fa:
       'فناوری پیشرفته نظارت بر غبار تریبوالکتریک برای کاربردهای صنعتی.',
-    longDescription_fa:
-      'آنالایزر غبار تریبوالکتریک از فناوری نوآورانه تریبوالکتریک برای تشخیص و اندازه‌گیری ذرات غبار در فرآیندهای صنعتی استفاده می‌کند. این سیستم به ویژه در محیط‌های با دمای بالا و غبار زیاد که روش‌های نوری سنتی ممکن است محدود باشند، مؤثر است.',
-    specifications_fa: [
-      'محدوده اندازه‌گیری: ۰.۰۱-۱۰۰۰ میلی‌گرم بر متر مکعب',
-      'دقت: ±۱۰٪ از قرائت',
-      'زمان پاسخ: کمتر از ۵ ثانیه',
-      'دمای عملیاتی: ۵۰- تا +۸۰۰ درجه سانتیگراد',
-      'منبع تغذیه: ۲۴ ولت DC',
-    ],
-    features_fa: [
-      'تشخیص تریبوالکتریک',
-      'عملیات با دمای بالا',
-      'مکانیزم خودتمیزکننده',
-      'ساختار محکم',
-      'مصرف انرژی کم',
-    ],
+    longDescription_fa: `این آنالایزر جهت اندازه‌گیری ذرات معلق خروجی دودکش جهت مانیتور کردن خروجی سیستم فیلترینگ صنایع می باشد.`,
   },
   {
     id: 7,

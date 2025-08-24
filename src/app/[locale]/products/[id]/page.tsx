@@ -128,18 +128,16 @@ export default function ProductPage() {
 
                       // Try fallback paths
                       const fallbackPaths = [
-                        `/images/${product.id === 1 || product.id === 3 || product.id === 5 ? '1.png' : '2.webp'}`,
-                        '/images/1.png',
-                        '/images/2.webp',
+                        `/images/tribo-dust-analyzer.jpg`,
+                        `/images/tribo-dust-analyzer.jpg`,
+                        `/images/tribo-dust-analyzer.jpg`,
+                        '/images/tribo-dust-analyzer.jpg',
+                        '/images/tribo-dust-analyzer.jpg',
                       ];
 
                       let currentIndex = 0;
                       const tryNextFallback = () => {
                         if (currentIndex < fallbackPaths.length) {
-                          console.log(
-                            'Trying fallback image:',
-                            fallbackPaths[currentIndex]
-                          );
                           target.src = fallbackPaths[currentIndex];
                           currentIndex++;
                         } else {
@@ -156,7 +154,6 @@ export default function ProductPage() {
                     }}
                   />
                   {/* Image overlay for better text readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
                 </div>
               </div>
 
@@ -206,6 +203,11 @@ export default function ProductPage() {
                     {locale === 'fa' && product.longDescription_fa
                       ? product.longDescription_fa
                       : product.longDescription}
+                  </p>
+
+                  <p className="text-gray-600 leading-relaxed">
+                    جهت کسب اطلاعات بیشتر با کارشناسان این شرکت تماس حاصل
+                    فرمایید.
                   </p>
                 </div>
               </div>
