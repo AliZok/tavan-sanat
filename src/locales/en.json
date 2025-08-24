@@ -20,7 +20,7 @@
       "tiribo": "Tribo Dust Analyzer",
       "duragDfw": "DURAG-Dfw"
     },
-    "ambientGasAnalyzer": "Online Quality Gas Analyzer",
+    "ambientGasAnalyzer": "Air Quality Gas Analyzer",
     "ambientDustAnalyzer": "Online Ambient Dust Analyzer",
     "gcAnalyzer": "Online GC Analyzer",
     "productNames": {

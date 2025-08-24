@@ -115,7 +115,7 @@ export const products: Product[] = [
     longDescription:
       'The Ambient Gas Analyzer is designed for continuous monitoring of ambient air quality in urban and industrial areas. It provides comprehensive data on various air pollutants, helping environmental agencies and industries track air quality trends and ensure compliance with air quality standards.',
     price: '$18,000',
-    image: 'http://localhost:3000/images/tribo-dust-analyzer.jpg',
+    image: 'http://localhost:3000/images/Teledyne API.jpg',
     category: 'ambientGasAnalyzer',
     specifications: [
       'Measurement Range: 0-5000 ppb',
@@ -132,11 +132,12 @@ export const products: Product[] = [
       'Mobile app integration',
     ],
     // Persian translations
-    name_fa: 'آنالایزر کیفیت گاز محیطی',
+    name_fa: 'آنالایزر آنلاین گاز محیط Teledyne API',
     description_fa:
       'سیستم نظارت زیست‌محیطی برای ارزیابی کیفیت هوا و کنترل آلودگی.',
-    longDescription_fa:
-      'آنالایزر کیفیت گاز محیطی برای نظارت مداوم بر کیفیت هوای محیطی در مناطق شهری و صنعتی طراحی شده است. این دستگاه داده‌های جامعی در مورد آلاینده‌های هوای مختلف ارائه می‌دهد و به سازمان‌های زیست‌محیطی و صنایع کمک می‌کند تا روندهای کیفیت هوا را پیگیری کرده و با استانداردهای کیفیت هوا مطابقت داشته باشند.',
+    longDescription_fa: `از این آنالایزر جهت اندازه‌گیری گازها و آلاینده های محیطی و شهری جهت اندازه گیری گازهایی همچون
+(O3-CO-SO2-NOX - H2S,...)
+ مورد استفاده قرار می‌گیرد.`,
     specifications_fa: [
       'محدوده اندازه‌گیری: ۰-۵۰۰۰ ppb',
       'دقت: ±۱٪ از قرائت',
