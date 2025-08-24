@@ -21,10 +21,10 @@ export const products: Product[] = [
   {
     id: 1,
     name: 'flueGasAnalyzer',
-    description:
-      'Advanced gas analysis system for industrial applications. This high-precision instrument provides real-time monitoring and analysis of flue gas emissions, helping industries maintain compliance with environmental regulations while optimizing combustion efficiency.',
-    longDescription:
-      'The Continuous Emissions Monitoring is a state-of-the-art analytical instrument designed for continuous monitoring of flue gas emissions in industrial processes. It features advanced sensor technology that can detect and measure multiple gas components including CO, CO2, NOx, SO2, and O2 with exceptional accuracy and reliability.',
+    description: 'Advanced gas analysis system for industrial applications.',
+    longDescription: `Complete CEM system for emissions monitoring
+      The multi-component gas analyzer SWG 300-1 is based on extractive, cold-dry method
+      The SWG 300 can measure up to 8 gas components, using MRU optimized NDIR technology, with improved accuracy and without zero offset.`,
     price: '$15,000',
     image: 'http://localhost:3000/images/gas.jpg',
     category: 'flueGasAnalyzer',
@@ -225,7 +225,7 @@ export const products: Product[] = [
       'Remote operation capability',
     ],
     // Persian translations
-    name_fa: 'گاز کارماتوگراف AMA instruments GC 5000',
+    name_fa: 'گاز کارماتوگراف AMA instruments (GC 5000)',
     description_fa:
       'سیستم کروماتوگرافی گازی برای تحلیل دقیق مخلوط‌های گازی پیچیده.',
     longDescription_fa:

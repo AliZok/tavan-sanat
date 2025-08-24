@@ -20,10 +20,10 @@ export default function ProductsPage() {
       {/* Main Content */}
       <main className="flex-1 pt-16">
         {/* Hero Section */}
-        <section className="w-full py-16 md:py-24 bg-gradient-to-br from-[#669c27]/5 to-white">
+        <section className="w-full py-12 md:py-16 bg-gradient-to-br from-[#669c27]/5 to-white">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-extrabold text-[#353c4a] mb-6">
+              <h1 className="text-3xl md:text-4xl font-extrabold text-[#353c4a] mb-6">
                 {translations.pages.products.title}
               </h1>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
