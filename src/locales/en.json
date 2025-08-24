@@ -22,12 +22,18 @@
     },
     "ambientGasAnalyzer": "Air Quality Gas Analyzer",
     "ambientDustAnalyzer": "Air Particulate Monitors",
+    "ambientDustAnalyzerSubItems": {
+      "faiSwam5a": "FAI Instruments Swam 5a",
+      "metoneBAM1020": "Metone BAM1020"
+    },
     "gcAnalyzer": "Online GC Analyzer",
     "productNames": {
       "flueGasAnalyzer": "Flue Gas Analyzer",
       "ambientGasAnalyzer": "Ambient Gas Analyzer",
       "ambientDustAnalyzer": "Ambient Dust Analyzer",
-      "gcAnalyzer": "GC Analyzer"
+      "gcAnalyzer": "GC Analyzer",
+      "faiSwam5a": "FAI Instruments Swam 5a",
+      "metoneBAM1020": "Metone BAM1020"
     }
   },
   "hero": {

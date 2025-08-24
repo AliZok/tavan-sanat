@@ -88,6 +88,15 @@ export default function ProductPage() {
                             ] || product.name
                           );
                         } else if (
+                          product.name.startsWith('faiSwam5a') ||
+                          product.name.startsWith('metoneBAM1020')
+                        ) {
+                          return (
+                            translations.products.ambientDustAnalyzerSubItems[
+                              product.name as keyof typeof translations.products.ambientDustAnalyzerSubItems
+                            ] || product.name
+                          );
+                        } else if (
                           translations.products.productNames &&
                           translations.products.productNames[
                             product.name as keyof typeof translations.products.productNames
@@ -173,6 +182,15 @@ export default function ProductPage() {
                         return (
                           translations.products.flueDustAnalyzerSubItems[
                             product.name as keyof typeof translations.products.flueDustAnalyzerSubItems
+                          ] || product.name
+                        );
+                      } else if (
+                        product.name.startsWith('faiSwam5a') ||
+                        product.name.startsWith('metoneBAM1020')
+                      ) {
+                        return (
+                          translations.products.ambientDustAnalyzerSubItems[
+                            product.name as keyof typeof translations.products.ambientDustAnalyzerSubItems
                           ] || product.name
                         );
                       } else if (

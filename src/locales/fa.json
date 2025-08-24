@@ -22,12 +22,18 @@
     },
     "ambientGasAnalyzer": "آنالایزر آنلاین کیفیت گاز",
     "ambientDustAnalyzer": "آنالایزر آنلاین غبار محیط",
+    "ambientDustAnalyzerSubItems": {
+      "faiSwam5a": "آنالایزر آنلاین غبار محیط FAI Instruments Swam 5a",
+      "metoneBAM1020": "آنالایزر آنلاین غبار محیط Metone BAM1020"
+    },
     "gcAnalyzer": "آنالایزر آنلاین GC",
     "productNames": {
       "flueGasAnalyzer": "آنالایزر گاز دودکش",
       "ambientGasAnalyzer": "آنالایزر کیفیت گاز محیطی",
       "ambientDustAnalyzer": "آنالایزر آنلاین غبار محیط",
-      "gcAnalyzer": "آنالایزر GC"
+      "gcAnalyzer": "آنالایزر GC",
+      "faiSwam5a": "آنالایزر آنلاین غبار محیط FAI Instruments Swam 5a",
+      "metoneBAM1020": "آنالایزر آنلاین غبار محیط Metone BAM1020"
     }
   },
   "hero": {

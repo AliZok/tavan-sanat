@@ -319,6 +319,98 @@ export const products: Product[] = [
       'مصرف انرژی کم',
     ],
   },
+  {
+    id: 8,
+    name: 'faiSwam5a',
+    description:
+      'Advanced ambient dust monitoring system with high precision PM2.5 and PM10 measurement capabilities.',
+    longDescription:
+      'The FAI Instruments Swam 5a is a state-of-the-art ambient dust analyzer that provides continuous monitoring of particulate matter in ambient air. This system features advanced beta attenuation technology for accurate PM2.5 and PM10 measurements, making it ideal for environmental monitoring stations and air quality assessment applications.',
+    price: '$22,000',
+    image: 'http://localhost:3000/images/fai-instruments.jpg',
+    category: 'ambientDustAnalyzer',
+    specifications: [
+      'Measurement Range: 0.1-10000 μg/m³',
+      'Accuracy: ±2% of reading',
+      'Response Time: <10 seconds',
+      'Operating Temperature: -20°C to +50°C',
+      'Power Supply: 12V DC or 110/220V AC',
+    ],
+    features: [
+      'PM2.5 and PM10 simultaneous monitoring',
+      'Beta attenuation measurement method',
+      'Automatic calibration system',
+      'Advanced data validation',
+      'Network connectivity and remote access',
+    ],
+    // Persian translations
+    name_fa: 'آنالایزر آنلاین غبار محیط FAI Instruments Swam 5a',
+    madeIn: 'ساخت ایتالیا',
+    description_fa:
+      'سیستم پیشرفته نظارت بر غبار محیط با قابلیت‌های اندازه‌گیری دقیق PM2.5 و PM10.',
+    longDescription_fa:
+      'آنالایزر غبار محیط FAI Instruments Swam 5a یک سیستم پیشرفته و مدرن است که نظارت مداوم بر ذرات معلق در هوای محیط را فراهم می‌کند. این سیستم دارای فناوری پیشرفته تضعیف بتا برای اندازه‌گیری دقیق PM2.5 و PM10 است و برای ایستگاه‌های نظارت محیطی و کاربردهای ارزیابی کیفیت هوا ایده‌آل است.',
+    specifications_fa: [
+      'محدوده اندازه‌گیری: ۰.۱-۱۰۰۰۰ میکروگرم بر متر مکعب',
+      'دقت: ±۲٪ از قرائت',
+      'زمان پاسخ: کمتر از ۱۰ ثانیه',
+      'دمای عملیاتی: ۲۰- تا +۵۰ درجه سانتیگراد',
+      'منبع تغذیه: ۱۲ ولت DC یا ۱۱۰/۲۲۰ ولت AC',
+    ],
+    features_fa: [
+      'نظارت همزمان PM2.5 و PM10',
+      'روش اندازه‌گیری تضعیف بتا',
+      'سیستم کالیبراسیون خودکار',
+      'اعتبارسنجی پیشرفته داده',
+      'اتصال شبکه و دسترسی از راه دور',
+    ],
+  },
+  {
+    id: 9,
+    name: 'metoneBAM1020',
+    description:
+      'High-performance beta attenuation monitor for continuous PM2.5 and PM10 measurement in ambient air.',
+    longDescription:
+      'The Metone BAM1020 is a reliable and accurate ambient dust analyzer designed for continuous monitoring of particulate matter. This system utilizes proven beta attenuation technology to provide precise measurements of PM2.5 and PM10 concentrations, making it an essential tool for environmental monitoring and air quality assessment.',
+    price: '$24,500',
+    image: 'http://localhost:3000/images/Metone-BAM1020.jpg',
+    category: 'ambientDustAnalyzer',
+    specifications: [
+      'Measurement Range: 0.1-10000 μg/m³',
+      'Accuracy: ±1.5% of reading',
+      'Response Time: <15 seconds',
+      'Operating Temperature: -30°C to +50°C',
+      'Power Supply: 12V DC or 110/220V AC',
+    ],
+    features: [
+      'PM2.5 and PM10 monitoring',
+      'Beta attenuation technology',
+      'Self-calibrating system',
+      'Data logging and export',
+      'Weather-resistant housing',
+    ],
+    // Persian translations
+    name_fa: 'آنالایزر آنلاین غبار محیط Metone BAM1020',
+    madeIn: 'ساخت آمریکا',
+    description_fa:
+      'مانیتور تضعیف بتای با عملکرد بالا برای اندازه‌گیری مداوم PM2.5 و PM10 در هوای محیط.',
+    longDescription_fa:
+      'آنالایزر غبار محیط Metone BAM1020 یک سیستم قابل اعتماد و دقیق است که برای نظارت مداوم بر ذرات معلق طراحی شده است. این سیستم از فناوری اثبات شده تضعیف بتا برای ارائه اندازه‌گیری‌های دقیق غلظت PM2.5 و PM10 استفاده می‌کند و آن را به ابزاری ضروری برای نظارت محیطی و ارزیابی کیفیت هوا تبدیل می‌کند.',
+    specifications_fa: [
+      'محدوده اندازه‌گیری: ۰.۱-۱۰۰۰۰ میکروگرم بر متر مکعب',
+      'دقت: ±۱.۵٪ از قرائت',
+      'زمان پاسخ: کمتر از ۱۵ ثانیه',
+      'دمای عملیاتی: ۳۰- تا +۵۰ درجه سانتیگراد',
+      'منبع تغذیه: ۱۲ ولت DC یا ۱۱۰/۲۲۰ ولت AC',
+    ],
+    features_fa: [
+      'نظارت PM2.5 و PM10',
+      'فناوری تضعیف بتا',
+      'سیستم خودکالیبره',
+      'ثبت و صادرات داده',
+      'محفظه مقاوم در برابر آب و هوا',
+    ],
+  },
 ];
 
 export function getProductById(id: number): Product | undefined {
