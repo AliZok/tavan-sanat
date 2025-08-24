@@ -72,7 +72,7 @@ export default function ProductPage() {
                 <li aria-current="page">
                   <div className="flex items-center">
                     <span className="mx-2 text-gray-400">/</span>
-                    <span className="text-sm font-medium text-gray-500">
+                    <div className="text-sm font-medium text-gray-500">
                       {(() => {
                         if (locale === 'fa' && product.name_fa) {
                           return product.name_fa;
@@ -99,7 +99,7 @@ export default function ProductPage() {
                         }
                         return product.name;
                       })()}
-                    </span>
+                    </div>
                   </div>
                 </li>
               </ol>
@@ -160,7 +160,7 @@ export default function ProductPage() {
               {/* Product Info */}
               <div className="space-y-6">
                 <div>
-                  <h1 className="text-4xl font-bold text-[#353c4a] mb-4">
+                  <h1 className="text-4xl font-bold text-[#353c4a] mb-3">
                     {(() => {
                       if (locale === 'fa' && product.name_fa) {
                         return product.name_fa;
@@ -188,11 +188,13 @@ export default function ProductPage() {
                       return product.name;
                     })()}
                   </h1>
-                  <p className="text-xl text-gray-600 leading-relaxed">
+
+                  <p className="text-xl text-gray-600 leading-relaxed mb-4">
                     {locale === 'fa' && product.description_fa
                       ? product.description_fa
                       : product.description}
                   </p>
+                  <div className="text-gray-600 text-xs">{product?.madeIn}</div>
                 </div>
 
                 <div className="space-y-4">

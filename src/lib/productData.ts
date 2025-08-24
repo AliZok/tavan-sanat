@@ -8,6 +8,7 @@ export interface Product {
   category: string;
   specifications: string[];
   features: string[];
+  madeIn?: string;
   // Persian translations
   name_fa?: string;
   description_fa?: string;
@@ -161,7 +162,7 @@ export const products: Product[] = [
     longDescription:
       'The Ambient Dust Analyzer provides continuous monitoring of particulate matter in ambient air, helping to assess air quality and identify pollution sources. This system is essential for environmental monitoring stations, research institutions, and regulatory compliance.',
     price: '$14,000',
-    image: 'http://localhost:3000/images/2.webp',
+    image: 'http://localhost:3000/images/fai-instruments.jpg',
     category: 'ambientDustAnalyzer',
     specifications: [
       'Measurement Range: 0.1-10000 μg/m³',
@@ -178,10 +179,11 @@ export const products: Product[] = [
       'Network connectivity',
     ],
     // Persian translations
-    name_fa: 'آنالایزر غبار محیطی',
+    name_fa: 'آنالایزر آنلاین غبار محیط Fai instruments Swam 5a',
+    madeIn: 'ساخت ایتالیا',
     description_fa: 'راه‌حل جامع نظارت و تحلیل غبار برای کاربردهای زیست‌محیطی.',
     longDescription_fa:
-      'آنالایزر غبار محیطی نظارت مداوم بر ذرات معلق در هوای محیطی را فراهم می‌کند و به ارزیابی کیفیت هوا و شناسایی منابع آلودگی کمک می‌کند. این سیستم برای ایستگاه‌های نظارت زیست‌محیطی، مؤسسات تحقیقاتی و مطابقت با مقررات ضروری است.',
+      'این آنالایزر قابلیت اندازه‌گیری کیفیت هوا و ذرات معلق  PM10 و PM2.5 به صورت همزمان را دارد و در مناطق شهری در ایستگاه های سنجش آلودگی هوا مورد استفاده قرار می‌گیرد.',
     specifications_fa: [
       'محدوده اندازه‌گیری: ۰.۱-۱۰۰۰۰ میکروگرم بر متر مکعب',
       'دقت: ±۳٪ از قرائت',
