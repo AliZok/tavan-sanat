@@ -207,7 +207,7 @@ export const products: Product[] = [
     longDescription:
       'The GC Analyzer is a sophisticated gas chromatography system designed for detailed analysis of complex gas mixtures. It provides high-resolution separation and identification of individual components, making it ideal for research laboratories and quality control applications.',
     price: '$25,000',
-    image: 'http://localhost:3000/images/tribo-dust-analyzer.jpg',
+    image: 'http://localhost:3000/images/ama-instruments.jpg',
     category: 'gcAnalyzer',
     specifications: [
       'Column Temperature: 40°C to 400°C',
@@ -228,7 +228,7 @@ export const products: Product[] = [
     description_fa:
       'سیستم کروماتوگرافی گازی برای تحلیل دقیق مخلوط‌های گازی پیچیده.',
     longDescription_fa:
-      'آنالایزر GC یک سیستم کروماتوگرافی گازی پیچیده است که برای تحلیل دقیق مخلوط‌های گازی پیچیده طراحی شده است. این دستگاه جداسازی با وضوح بالا و شناسایی اجزای فردی را فراهم می‌کند و آن را برای آزمایشگاه‌های تحقیقاتی و کاربردهای کنترل کیفیت ایده‌آل می‌کند.',
+      'شرکت AMA Instruments با ارائه‌ی پیشرفته‌ترین سیستم‌های کروماتوگرافی گازی آنلاین (GC Online)، راهکاری مطمئن برای پایش مداوم کیفیت هوا و نظارت بر سایت‌های صنعتی فراهم کرده است. این آنالایزرها با طراحی مقاوم و ایمن، عملکردی پایدار حتی در سخت‌ترین شرایط محیطی دارند. سری GC 4000 گزینه‌ای اقتصادی و دقیق برای پایش چند ترکیب ساده است، در حالی که سری GC 5000 با قابلیت جداسازی پیشرفته و حساسیت فوق‌العاده تا سطح ppt، انتخابی بی‌رقیب برای کاربردهای تخصصی و پروژه‌های حساس در حوزه‌ی محیط‌زیست و صنعت محسوب می‌شود.',
     specifications_fa: [
       'دمای ستون: ۴۰ تا ۴۰۰ درجه سانتیگراد',
       'حساسیت آشکارساز: کمتر از ۱ pg',
