@@ -21,7 +21,7 @@
       "duragDfw": "DURAG-Dfw"
     },
     "ambientGasAnalyzer": "Air Quality Gas Analyzer",
-    "ambientDustAnalyzer": "Online Ambient Dust Analyzer",
+    "ambientDustAnalyzer": "Air Particulate Monitors",
     "gcAnalyzer": "Online GC Analyzer",
     "productNames": {
       "flueGasAnalyzer": "Flue Gas Analyzer",
