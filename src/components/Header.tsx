@@ -16,6 +16,8 @@ export default function Header() {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false);
+  const [isFlueDustOpen, setIsFlueDustOpen] = useState(false);
+  const [isAmbientDustOpen, setIsAmbientDustOpen] = useState(false);
   const productsDropdownRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown when clicking outside
@@ -51,6 +53,8 @@ export default function Header() {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
     setIsMobileProductsOpen(false);
+    setIsFlueDustOpen(false);
+    setIsAmbientDustOpen(false);
   };
 
   return (
@@ -340,93 +344,220 @@ export default function Header() {
                 >
                   {translations.header.nav.products}
                   <ChevronDown
-                    className={`w-5 h-5 transition-transform duration-200 ${isMobileProductsOpen ? 'rotate-180' : ''}`}
+                    className={`w-5 h-5 transition-transform duration-300 ${isMobileProductsOpen ? 'rotate-180' : ''}`}
                   />
                 </button>
 
-                {isMobileProductsOpen && (
-                  <div className="mt-3 space-y-2 pl-4 animate-in slide-in-from-top-2 duration-300">
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-out ${
+                    isMobileProductsOpen
+                      ? 'max-h-96 opacity-100'
+                      : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="mt-3 space-y-2 pl-4">
                     <Link
                       href={`/${locale}/products`}
-                      className="block text-base text-[#669c27] font-semibold py-2 border-l-2 border-[#669c27] pl-3"
+                      className={`block text-base text-[#669c27] font-semibold py-2 border-l-2 border-[#669c27] pl-3 transform transition-all duration-300 ${
+                        isMobileProductsOpen
+                          ? 'translate-x-0 opacity-100'
+                          : 'translate-x-4 opacity-0'
+                      }`}
+                      style={{
+                        transitionDelay: isMobileProductsOpen ? '100ms' : '0ms',
+                      }}
                       onClick={closeMobileMenu}
                     >
                       {translations.products.viewAll}
                     </Link>
                     <Link
                       href={`/${locale}/products/1`}
-                      className="block text-base text-[#353c4a] hover:text-[#669c27] transition-colors duration-300 py-2 pl-3"
+                      className={`block text-base text-[#353c4a] hover:text-[#669c27] transition-all duration-300 py-2 pl-3 transform ${
+                        isMobileProductsOpen
+                          ? 'translate-x-0 opacity-100'
+                          : 'translate-x-4 opacity-0'
+                      }`}
+                      style={{
+                        transitionDelay: isMobileProductsOpen ? '150ms' : '0ms',
+                      }}
                       onClick={closeMobileMenu}
                     >
                       {translations.products.flueGasAnalyzer}
                     </Link>
                     <div className="pl-3">
-                      <div className="text-base text-[#353c4a] py-2 font-medium">
+                      <button
+                        onClick={() => setIsFlueDustOpen(!isFlueDustOpen)}
+                        className={`w-full text-left text-base text-[#353c4a] py-2 font-medium transform transition-all duration-300 flex items-center justify-between ${
+                          isMobileProductsOpen
+                            ? 'translate-x-0 opacity-100'
+                            : 'translate-x-4 opacity-0'
+                        }`}
+                        style={{
+                          transitionDelay: isMobileProductsOpen
+                            ? '200ms'
+                            : '0ms',
+                        }}
+                      >
                         {translations.products.flueDustAnalyzer}
-                      </div>
-                      <div className="pl-4 space-y-1">
-                        <Link
-                          href={`/${locale}/products/2`}
-                          className="block text-sm text-[#353c4a] hover:text-[#669c27] transition-colors duration-300 py-1"
-                          onClick={closeMobileMenu}
-                        >
-                          {translations.products.flueDustAnalyzerSubItems.laser}
-                        </Link>
-                        <Link
-                          href={`/${locale}/products/6`}
-                          className="block text-sm text-[#353c4a] hover:text-[#669c27] transition-colors duration-300 py-1"
-                          onClick={closeMobileMenu}
-                        >
-                          {
-                            translations.products.flueDustAnalyzerSubItems
-                              .tiribo
-                          }
-                        </Link>
+                        <ChevronDown
+                          className={`w-4 h-4 transition-transform duration-300 ${
+                            isFlueDustOpen ? 'rotate-180' : ''
+                          }`}
+                        />
+                      </button>
+                      <div
+                        className={`overflow-hidden transition-all duration-500 ease-out ${
+                          isFlueDustOpen && isMobileProductsOpen
+                            ? 'max-h-32 opacity-100'
+                            : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        <div className="pl-4 space-y-1">
+                          <Link
+                            href={`/${locale}/products/2`}
+                            className={`block text-sm text-[#353c4a] hover:text-[#669c27] transition-all duration-300 py-1 transform ${
+                              isFlueDustOpen && isMobileProductsOpen
+                                ? 'translate-x-0 opacity-100'
+                                : 'translate-x-4 opacity-0'
+                            }`}
+                            style={{
+                              transitionDelay:
+                                isFlueDustOpen && isMobileProductsOpen
+                                  ? '100ms'
+                                  : '0ms',
+                            }}
+                            onClick={closeMobileMenu}
+                          >
+                            {
+                              translations.products.flueDustAnalyzerSubItems
+                                .laser
+                            }
+                          </Link>
+                          <Link
+                            href={`/${locale}/products/6`}
+                            className={`block text-sm text-[#353c4a] hover:text-[#669c27] transition-all duration-300 py-1 transform ${
+                              isFlueDustOpen && isMobileProductsOpen
+                                ? 'translate-x-0 opacity-100'
+                                : 'translate-x-4 opacity-0'
+                            }`}
+                            style={{
+                              transitionDelay:
+                                isFlueDustOpen && isMobileProductsOpen
+                                  ? '150ms'
+                                  : '0ms',
+                            }}
+                            onClick={closeMobileMenu}
+                          >
+                            {
+                              translations.products.flueDustAnalyzerSubItems
+                                .tiribo
+                            }
+                          </Link>
+                        </div>
                       </div>
                     </div>
                     <Link
                       href={`/${locale}/products/3`}
-                      className="block text-base text-[#353c4a] hover:text-[#669c27] transition-colors duration-300 py-2 pl-3"
+                      className={`block text-base text-[#353c4a] hover:text-[#669c27] transition-all duration-300 py-2 pl-3 transform ${
+                        isMobileProductsOpen
+                          ? 'translate-x-0 opacity-100'
+                          : 'translate-x-4 opacity-0'
+                      }`}
+                      style={{
+                        transitionDelay: isMobileProductsOpen ? '350ms' : '0ms',
+                      }}
                       onClick={closeMobileMenu}
                     >
                       {translations.products.ambientGasAnalyzer}
                     </Link>
                     <div className="pl-3">
-                      <div className="text-base text-[#353c4a] py-2 font-medium">
+                      <button
+                        onClick={() => setIsAmbientDustOpen(!isAmbientDustOpen)}
+                        className={`w-full text-left text-base text-[#353c4a] py-2 font-medium transform transition-all duration-300 flex items-center justify-between ${
+                          isMobileProductsOpen
+                            ? 'translate-x-0 opacity-100'
+                            : 'translate-x-4 opacity-0'
+                        }`}
+                        style={{
+                          transitionDelay: isMobileProductsOpen
+                            ? '400ms'
+                            : '0ms',
+                        }}
+                      >
                         {translations.products.ambientDustAnalyzer}
-                      </div>
-                      <div className="pl-4 space-y-1">
-                        <Link
-                          href={`/${locale}/products/8`}
-                          className="block text-sm text-[#353c4a] hover:text-[#669c27] transition-colors duration-300 py-1"
-                          onClick={closeMobileMenu}
-                        >
-                          {
-                            translations.products.ambientDustAnalyzerSubItems
-                              .faiSwam5a
-                          }
-                        </Link>
-                        <Link
-                          href={`/${locale}/products/9`}
-                          className="block text-sm text-[#353c4a] hover:text-[#669c27] transition-colors duration-300 py-1"
-                          onClick={closeMobileMenu}
-                        >
-                          {
-                            translations.products.ambientDustAnalyzerSubItems
-                              .metoneBAM1020
-                          }
-                        </Link>
+                        <ChevronDown
+                          className={`w-4 h-4 transition-transform duration-300 ${
+                            isAmbientDustOpen ? 'rotate-180' : ''
+                          }`}
+                        />
+                      </button>
+                      <div
+                        className={`overflow-hidden transition-all duration-500 ease-out ${
+                          isAmbientDustOpen && isMobileProductsOpen
+                            ? 'max-h-32 opacity-100'
+                            : 'max-h-0 opacity-0'
+                        }`}
+                      >
+                        <div className="pl-4 space-y-1">
+                          <Link
+                            href={`/${locale}/products/8`}
+                            className={`block text-sm text-[#353c4a] hover:text-[#669c27] transition-all duration-300 py-1 transform ${
+                              isAmbientDustOpen && isMobileProductsOpen
+                                ? 'translate-x-0 opacity-100'
+                                : 'translate-x-4 opacity-0'
+                            }`}
+                            style={{
+                              transitionDelay:
+                                isAmbientDustOpen && isMobileProductsOpen
+                                  ? '100ms'
+                                  : '0ms',
+                            }}
+                            onClick={closeMobileMenu}
+                          >
+                            {
+                              translations.products.ambientDustAnalyzerSubItems
+                                .faiSwam5a
+                            }
+                          </Link>
+                          <Link
+                            href={`/${locale}/products/9`}
+                            className={`block text-sm text-[#353c4a] hover:text-[#669c27] transition-all duration-300 py-1 transform ${
+                              isAmbientDustOpen && isMobileProductsOpen
+                                ? 'translate-x-0 opacity-100'
+                                : 'translate-x-4 opacity-0'
+                            }`}
+                            style={{
+                              transitionDelay:
+                                isAmbientDustOpen && isMobileProductsOpen
+                                  ? '150ms'
+                                  : '0ms',
+                            }}
+                            onClick={closeMobileMenu}
+                          >
+                            {
+                              translations.products.ambientDustAnalyzerSubItems
+                                .metoneBAM1020
+                            }
+                          </Link>
+                        </div>
                       </div>
                     </div>
                     <Link
                       href={`/${locale}/products/5`}
-                      className="block text-base text-[#353c4a] hover:text-[#669c27] transition-colors duration-300 py-2 pl-3"
+                      className={`block text-base text-[#353c4a] hover:text-[#669c27] transition-all duration-300 py-2 pl-3 transform ${
+                        isMobileProductsOpen
+                          ? 'translate-x-0 opacity-100'
+                          : 'translate-x-4 opacity-0'
+                      }`}
+                      style={{
+                        transitionDelay: isMobileProductsOpen ? '550ms' : '0ms',
+                      }}
                       onClick={closeMobileMenu}
                     >
                       {translations.products.gcAnalyzer}
                     </Link>
                   </div>
-                )}
+                </div>
               </div>
 
               <Link
