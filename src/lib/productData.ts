@@ -71,7 +71,7 @@ export const products: Product[] = [
     longDescription:
       'The Laser Dust Analyzer utilizes advanced laser scattering technology to provide accurate and reliable dust concentration measurements in industrial environments. This system is ideal for monitoring particulate matter in various industrial processes including cement production, mining, and power generation.',
     price: '$12,500',
-    image: 'http://localhost:3000/images/2.webp',
+    image: 'http://localhost:3000/images/durag.jpg',
     category: 'flueDustAnalyzer',
     specifications: [
       'Measurement Range: 0.1-1000 mg/m³',
