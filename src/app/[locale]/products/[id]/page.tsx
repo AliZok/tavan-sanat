@@ -169,7 +169,7 @@ export default function ProductPage() {
               {/* Product Info */}
               <div className="space-y-6">
                 <div>
-                  <h1 className="text-4xl font-bold text-[#353c4a] mb-3">
+                  <h1 className="text-3xl font-bold text-[#353c4a] mb-3">
                     {(() => {
                       if (locale === 'fa' && product.name_fa) {
                         return product.name_fa;
