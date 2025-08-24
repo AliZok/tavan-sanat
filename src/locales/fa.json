@@ -26,7 +26,7 @@
     "productNames": {
       "flueGasAnalyzer": "آنالایزر گاز دودکش",
       "ambientGasAnalyzer": "آنالایزر کیفیت گاز محیطی",
-      "ambientDustAnalyzer": "آنالایزر غبار محیطی",
+      "ambientDustAnalyzer": "آنالایزر آنلاین غبار محیط",
       "gcAnalyzer": "آنالایزر GC"
     }
   },
