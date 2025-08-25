@@ -213,7 +213,7 @@ export default function Header() {
                         }`}
                       ></div>
                       <Link
-                        href={`/${locale}/products/8`}
+                        href={`/${locale}/products/4`}
                         className="block px-4 py-2 text-sm text-[#353c4a] hover:bg-[#669c27]/10 hover:text-[#669c27] transition-all duration-200"
                         onClick={() => setIsProductsOpen(false)}
                       >
@@ -500,7 +500,7 @@ export default function Header() {
                       >
                         <div className="pl-4 space-y-1">
                           <Link
-                            href={`/${locale}/products/8`}
+                            href={`/${locale}/products/4`}
                             className={`block text-sm text-[#353c4a] hover:text-[#669c27] transition-all duration-300 py-1 transform ${
                               isAmbientDustOpen && isMobileProductsOpen
                                 ? 'translate-x-0 opacity-100'

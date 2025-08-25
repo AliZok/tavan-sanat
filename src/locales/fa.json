@@ -20,7 +20,7 @@
       "tiribo": "آنالایزر غبار تریبوالکتریک",
       "duragDfw": "آنالایزر غبار تریبوالکتریک DURAG-Dfw"
     },
-    "ambientGasAnalyzer": "آنالایزر آنلاین کیفیت گاز",
+    "ambientGasAnalyzer": "آنالایزر آنلاین گاز محیط",
     "ambientDustAnalyzer": "آنالایزر آنلاین غبار محیط",
     "ambientDustAnalyzerSubItems": {
       "faiSwam5a": "FAI Instruments Swam 5a",
@@ -29,7 +29,7 @@
     "gcAnalyzer": "آنالایزر آنلاین GC",
     "productNames": {
       "flueGasAnalyzer": "آنالایزر آنلاین گاز دودکش",
-      "ambientGasAnalyzer": "آنالایزر کیفیت گاز محیطی",
+      "ambientGasAnalyzer": "آنالایزر گاز محیط محیطی",
       "ambientDustAnalyzer": "آنالایزر آنلاین غبار محیط",
       "gcAnalyzer": "آنالایزر GC",
       "faiSwam5a": "FAI Instruments Swam 5a",
