@@ -22,7 +22,7 @@ export default function ProductsPage() {
         {/* Hero Section */}
         <section className="w-full py-12 md:py-16 bg-gradient-to-br from-[#669c27]/5 to-white">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="text-center mb-16">
+            <div className="text-center mb-7">
               <h1 className="text-3xl md:text-4xl font-extrabold text-[#353c4a] mb-6">
                 {translations.pages.products.title}
               </h1>
