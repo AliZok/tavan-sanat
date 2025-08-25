@@ -21,7 +21,8 @@ export const products: Product[] = [
   {
     id: 1,
     name: 'flueGasAnalyzer',
-    description: 'Advanced gas analysis system for industrial applications.',
+    description:
+      'Online flue gas analyzer for measuring pollutant gases emitted from industrial stacks using the extractive method, used in medium to large-scale industries.',
     longDescription: `Complete CEM system for emissions monitoring
       The multi-component gas analyzer SWG 300-1 is based on extractive, cold-dry method
       The SWG 300 can measure up to 8 gas components, using MRU optimized NDIR technology, with improved accuracy and without zero offset.`,
@@ -68,7 +69,7 @@ export const products: Product[] = [
     id: 2,
     name: 'laser',
     description:
-      'High-precision laser-based dust measurement system for industrial dust monitoring applications.',
+      'Online stack dust analyzer for measuring opacity and particulate matter emitted from industrial stacks using the laser method, used in cement and aluminum industries and power plants.',
     longDescription:
       'The Laser Dust Analyzer utilizes advanced laser scattering technology to provide accurate and reliable dust concentration measurements in industrial environments. This system is ideal for monitoring particulate matter in various industrial processes including cement production, mining, and power generation.',
     price: '$12,500',
@@ -113,7 +114,7 @@ export const products: Product[] = [
     id: 3,
     name: 'ambientGasAnalyzer',
     description:
-      'Environmental monitoring system for air quality assessment and pollution control.',
+      'Online ambient gas analyzer used in fixed and mobile air pollution monitoring stations, providing high-accuracy measurement of pollutant gases.',
     longDescription:
       'The Ambient Gas Analyzer is designed for continuous monitoring of ambient air quality in urban and industrial areas. It provides comprehensive data on various air pollutants, helping environmental agencies and industries track air quality trends and ensure compliance with air quality standards.',
     price: '$18,000',
@@ -158,7 +159,7 @@ export const products: Product[] = [
     id: 4,
     name: 'ambientDustAnalyzer',
     description:
-      'Comprehensive dust monitoring and analysis solution for environmental applications.',
+      'Online ambient dust analyzer designed for use in fixed and mobile air quality monitoring stations in urban and industrial environments, simultaneously measuring PM10 and PM2.5.',
     longDescription:
       'The Ambient Dust Analyzer provides continuous monitoring of particulate matter in ambient air, helping to assess air quality and identify pollution sources. This system is essential for environmental monitoring stations, research institutions, and regulatory compliance.',
     price: '$14,000',
@@ -203,7 +204,7 @@ export const products: Product[] = [
     id: 5,
     name: 'gcAnalyzer',
     description:
-      'Gas chromatography system for detailed analysis of complex gas mixtures.',
+      'Gas Chromatograph (GC) analyzer for measuring petroleum derivatives in industrial and urban environments, providing separate data presentation.',
     longDescription:
       'The GC Analyzer is a sophisticated gas chromatography system designed for detailed analysis of complex gas mixtures. It provides high-resolution separation and identification of individual components, making it ideal for research laboratories and quality control applications.',
     price: '$25,000',
@@ -247,7 +248,7 @@ export const products: Product[] = [
     id: 6,
     name: 'duragDfw',
     description:
-      'Advanced triboelectric dust monitoring technology for industrial applications.',
+      'Online stack dust analyzer that measures particulate matter emissions from stacks using the triboelectric method, used for testing the performance of filtration systems (bag filters) in asphalt and steel plants.',
     longDescription:
       'The Tribo Dust Analyzer uses innovative triboelectric technology to detect and measure dust particles in industrial processes. This system is particularly effective in high-temperature and high-dust environments where traditional optical methods may be limited.',
     price: '$16,500',
@@ -277,7 +278,7 @@ export const products: Product[] = [
     id: 9,
     name: 'metoneBAM1020',
     description:
-      'High-performance beta attenuation monitor for continuous PM2.5 and PM10 measurement in ambient air.',
+      'Online ambient dust analyzer for measuring urban particulate matter using the beta source method.',
     longDescription:
       'The Metone BAM1020 is a reliable and accurate ambient dust analyzer designed for continuous monitoring of particulate matter. This system utilizes proven beta attenuation technology to provide precise measurements of PM2.5 and PM10 concentrations, making it an essential tool for environmental monitoring and air quality assessment.',
     price: '$24,500',
@@ -299,7 +300,7 @@ export const products: Product[] = [
     ],
     // Persian translations
     name_fa: 'Metone BAM1020',
-    description_fa: `آنالایزر آنلاین غبار محیطی جهت اندازه‌گیری ذرات معلق شهری با روش beta source مورد استفاده قرار می‌گیرد.`,
+    description_fa: `آنالایزر آنلاین غبار محیطی جهت اندازه‌گیری ذرات معلق شهری با روش Beta Source مورد استفاده قرار می‌گیرد.`,
     longDescription_fa:
       'این آنالایزر جهت اندازه‌گیری ذرات معلق محیطی و شهری مورد استفاده قرار می‌گیرد و قابلیت اندازه گیری PM10 یا PM2.5 به صورت جداگانه را دارد.',
     specifications_fa: [
