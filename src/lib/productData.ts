@@ -26,7 +26,7 @@ export const products: Product[] = [
       The multi-component gas analyzer SWG 300-1 is based on extractive, cold-dry method
       The SWG 300 can measure up to 8 gas components, using MRU optimized NDIR technology, with improved accuracy and without zero offset.`,
     price: '$15,000',
-    image: 'http://localhost:3000/images/gas.jpg',
+    image: '/images/gas.jpg',
     category: 'flueGasAnalyzer',
     specifications: [
       'Measurement Range: 0-1000 ppm',
@@ -71,7 +71,7 @@ export const products: Product[] = [
     longDescription:
       'The Laser Dust Analyzer utilizes advanced laser scattering technology to provide accurate and reliable dust concentration measurements in industrial environments. This system is ideal for monitoring particulate matter in various industrial processes including cement production, mining, and power generation.',
     price: '$12,500',
-    image: 'http://localhost:3000/images/durag.jpg',
+    image: '/images/durag.jpg',
     category: 'flueDustAnalyzer',
     specifications: [
       'Measurement Range: 0.1-1000 mg/m³',
@@ -117,7 +117,7 @@ export const products: Product[] = [
     longDescription:
       'The Ambient Gas Analyzer is designed for continuous monitoring of ambient air quality in urban and industrial areas. It provides comprehensive data on various air pollutants, helping environmental agencies and industries track air quality trends and ensure compliance with air quality standards.',
     price: '$18,000',
-    image: 'http://localhost:3000/images/Teledyne API.jpg',
+    image: '/images/Teledyne API.jpg',
     category: 'ambientGasAnalyzer',
     specifications: [
       'Measurement Range: 0-5000 ppb',
@@ -163,7 +163,7 @@ export const products: Product[] = [
     longDescription:
       'The Ambient Dust Analyzer provides continuous monitoring of particulate matter in ambient air, helping to assess air quality and identify pollution sources. This system is essential for environmental monitoring stations, research institutions, and regulatory compliance.',
     price: '$14,000',
-    image: 'http://localhost:3000/images/fai-instruments.jpg',
+    image: '/images/fai-instruments.jpg',
     category: 'ambientDustAnalyzer',
     specifications: [
       'Measurement Range: 0.1-10000 μg/m³',
@@ -208,7 +208,7 @@ export const products: Product[] = [
     longDescription:
       'The GC Analyzer is a sophisticated gas chromatography system designed for detailed analysis of complex gas mixtures. It provides high-resolution separation and identification of individual components, making it ideal for research laboratories and quality control applications.',
     price: '$25,000',
-    image: 'http://localhost:3000/images/ama-instruments.jpg',
+    image: '/images/ama-instruments.jpg',
     category: 'gcAnalyzer',
     specifications: [
       'Column Temperature: 40°C to 400°C',
@@ -253,7 +253,7 @@ export const products: Product[] = [
     longDescription:
       'The Tribo Dust Analyzer uses innovative triboelectric technology to detect and measure dust particles in industrial processes. This system is particularly effective in high-temperature and high-dust environments where traditional optical methods may be limited.',
     price: '$16,500',
-    image: 'http://localhost:3000/images/tribo-dust-analyzer.jpg',
+    image: '/images/tribo-dust-analyzer.jpg',
     category: 'flueDustAnalyzer',
     specifications: [
       'Measurement Range: 0.01-1000 mg/m³',
@@ -284,7 +284,7 @@ export const products: Product[] = [
     longDescription:
       'The Metone BAM1020 is a reliable and accurate ambient dust analyzer designed for continuous monitoring of particulate matter. This system utilizes proven beta attenuation technology to provide precise measurements of PM2.5 and PM10 concentrations, making it an essential tool for environmental monitoring and air quality assessment.',
     price: '$24,500',
-    image: 'http://localhost:3000/images/Metone-BAM1020.jpg',
+    image: '/images/Metone-BAM1020.jpg',
     category: 'ambientDustAnalyzer',
     specifications: [
       'Measurement Range: 0.1-10000 μg/m³',
