@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { getTranslations, getDirection, type Locale } from '../../../lib/i18n';
-import { products } from '../../../lib/productData';
+import { products, type Product } from '../../../lib/productData';
 import Header from '../../../components/Header';
 
 export default function ProductsPage() {
@@ -33,7 +33,7 @@ export default function ProductsPage() {
 
             {/* Products Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {products.map(product => (
+              {products.map((product: Product) => (
                 <Link
                   key={product.id}
                   href={`/${locale}/products/${product.id}`}
@@ -69,12 +69,16 @@ export default function ProductsPage() {
                           return translations.products.productNames[
                             product.name as keyof typeof translations.products.productNames
                           ];
+                        } else if (locale === 'fa' && product.name_fa) {
+                          return product.name_fa;
                         }
                         return product.name;
                       })()}
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-3">
-                      {product.description}
+                      {locale === 'fa' && product.description_fa
+                        ? product.description_fa
+                        : product.description}
                     </p>
                     <div className="flex items-center justify-between">
                       <a
