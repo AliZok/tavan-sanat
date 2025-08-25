@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { Phone } from 'lucide-react';
 import { useParams } from 'next/navigation';
 import { getTranslations, getDirection, type Locale } from '../../../lib/i18n';
 import { products, type Product } from '../../../lib/productData';
@@ -86,7 +87,21 @@ export default function ProductsPage() {
                         className="inline-flex items-center px-4 py-2 bg-[#669c27] text-white hover:bg-[#5a8a22] transition-colors duration-300"
                         onClick={e => e.stopPropagation()}
                       >
-                        {translations.pages.products.callButton}
+                        {direction === 'rtl' ? (
+                          <>
+                            <span>
+                              {translations.pages.products.callButton}
+                            </span>
+                            <Phone className="ml-2 h-4 w-4" />
+                          </>
+                        ) : (
+                          <>
+                            <Phone className="mr-2 h-4 w-4" />
+                            <span>
+                              {translations.pages.products.callButton}
+                            </span>
+                          </>
+                        )}
                       </a>
                     </div>
                   </div>

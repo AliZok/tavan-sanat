@@ -134,6 +134,7 @@
       "title": "Our Products",
       "subtitle": "Discover our comprehensive range of advanced air quality monitoring and analysis solutions",
       "callButton": "Call",
+      "contactPrompt": "For more information, please contact our specialists.",
       "breadcrumb": {
         "home": "Home",
         "products": "Products"

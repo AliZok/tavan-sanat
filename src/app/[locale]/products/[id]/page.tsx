@@ -212,7 +212,11 @@ export default function ProductPage() {
                       ? product.description_fa
                       : product.description}
                   </p>
-                  <div className="text-gray-600 text-xs">{product?.madeIn}</div>
+                  <div
+                    className={`text-gray-600 text-xs ${direction === 'rtl' ? 'text-right' : 'text-left'}`}
+                  >
+                    {locale === 'fa' ? product?.madeIn : product?.madeIn_en}
+                  </div>
                 </div>
 
                 <div className="space-y-4">
@@ -226,8 +230,7 @@ export default function ProductPage() {
                   </p>
 
                   <p className="text-gray-600 leading-relaxed">
-                    جهت کسب اطلاعات بیشتر با کارشناسان این شرکت تماس حاصل
-                    فرمایید.
+                    {translations.pages.products.contactPrompt}
                   </p>
                 </div>
               </div>

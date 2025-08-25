@@ -9,6 +9,7 @@ export interface Product {
   specifications: string[];
   features: string[];
   madeIn?: string;
+  madeIn_en?: string;
   // Persian translations
   name_fa?: string;
   description_fa?: string;
@@ -46,6 +47,7 @@ export const products: Product[] = [
     // Persian translations
     name_fa: 'آنالایزر آنلاین گاز دودکش MRU Instruments (SWG 300)',
     madeIn: 'ساخت ایتالیا',
+    madeIn_en: 'Made in Italy',
     description_fa: `آنالایزر آنلاین گاز دودکش جهت اندازه گیری گاز های آلاینده خروجی از دودکش های صنایع با روش extractive
 استفاده در صنایع بزرگ تا متوسط`,
     longDescription_fa: `این آنالایزر جهت استفاده کامل CEM برای پایش آلاینده‌ها می باشد، این آنالایزر گاز بر پایه روش استخراجی و خشک-سرد طراحی شده است.
@@ -92,6 +94,7 @@ export const products: Product[] = [
     // Persian translations
     name_fa: 'آنالایزر آنلاین غبار دودکش DURAG-DR220',
     madeIn: 'ساخت آلمان',
+    madeIn_en: 'Made in Germany',
     description_fa: `آنالایزر آنلاین غبار دودکش جهت اندازه گیری تیرگی و ذرات معلق خروجی از دودکش های صنایع به روش لیزری می باشد در صنعت سیمان و آلومینیوم و نیروگاه ها مورد استفاده قرار می‌گیرد.`,
     longDescription_fa: `از این آنالایزر جهت‌ اندازه گیری و پایش پیوسته غبار و تیرگی خروجی از دودکش های صنایع با سطح آلودگی متوسط به بالا استفاده می شود.
 جهت استفاده در صنایع سیمان نیروگاه ها و دیگر صنایع می باشد.`,
@@ -182,6 +185,7 @@ export const products: Product[] = [
     // Persian translations
     name_fa: 'آنالایزر آنلاین غبار محیط Fai instruments Swam 5a',
     madeIn: 'ساخت ایتالیا',
+    madeIn_en: 'Made in Italy',
     description_fa: ` آنالایزر آنلاین غبار محیطی که جهت استفاده در ایستگاه پایش آلودگی هوا ثابت و سیار در و محیط های شهری و صنعتی نصب میگردد که به صورت همزمان 2 پارامتر PM10 و PM2.5 را اندازه گیری می کند.`,
     longDescription_fa:
       'این آنالایزر قابلیت اندازه‌گیری کیفیت هوا و ذرات معلق  PM10 و PM2.5 به صورت همزمان را دارد و در مناطق شهری در ایستگاه های سنجش آلودگی هوا مورد استفاده قرار می‌گیرد.',

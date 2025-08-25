@@ -7,9 +7,9 @@
 
 @theme {
   --color-primary-green: #45a35b;
-  --color-dark-green: #3a8a4d;
+  /* --color-dark-green: #3a8a4d; */
   --color-secondary-blue: #3498db;
-  --color-dark-blue: #2980b9;
+  /* --color-dark-blue: #2980b9; */
 }
 
 @media (prefers-color-scheme: dark) {
