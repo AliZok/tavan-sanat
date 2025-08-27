@@ -246,7 +246,7 @@ export default function Header() {
             )}
           </div>
           <Link
-            href="#"
+            href={`/${locale}/services`}
             className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
             prefetch={false}
           >
@@ -262,7 +262,7 @@ export default function Header() {
             <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
           </Link>
           <button
-            onClick={() => (window.location.href = 'tel:02166859042')}
+            onClick={() => (window.location.href = 'tel:09120628762')}
             className="flex items-center justify-center w-9 h-9 bg-[#669c27] text-white hover:bg-[#5a8a22] transition-colors duration-300 shadow-md"
             aria-label="Call us"
           >
@@ -561,7 +561,7 @@ export default function Header() {
               </div>
 
               <Link
-                href="#"
+                href={`/${locale}/services`}
                 className={`block text-lg font-semibold text-[#353c4a] hover:text-[#669c27] transition-all duration-500 py-3 border-b border-gray-100 transform ${
                   isMobileMenuOpen
                     ? 'translate-x-0 opacity-100'
@@ -605,7 +605,7 @@ export default function Header() {
               <button
                 onClick={() => {
                   closeMobileMenu();
-                  window.location.href = 'tel:02166859042';
+                  window.location.href = 'tel:09120628762';
                 }}
                 className="flex items-center justify-center w-full py-3 bg-[#669c27] text-white hover:bg-[#5a8a22] transition-colors duration-300 shadow-md rounded-lg"
                 aria-label="Call us"
