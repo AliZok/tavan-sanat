@@ -82,10 +82,14 @@ export default function ProductsPage() {
                         : product.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <a
-                        href="tel:09120628762"
+                      <button
+                        type="button"
+                        aria-label={translations.pages.products.callButton}
                         className="inline-flex items-center px-4 py-2 bg-[#669c27] text-white hover:bg-[#5a8a22] transition-colors duration-300"
-                        onClick={e => e.stopPropagation()}
+                        onClick={e => {
+                          e.stopPropagation();
+                          window.location.href = 'tel:09120628762';
+                        }}
                       >
                         {direction === 'rtl' ? (
                           <>
@@ -102,7 +106,7 @@ export default function ProductsPage() {
                             </span>
                           </>
                         )}
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </Link>
