@@ -9,7 +9,7 @@ export default function ServicesPage() {
           {/* Background image with subtle fade */}
           <div
             className="absolute inset-0 bg-center bg-cover opacity-40"
-            style={{ backgroundImage: "url('/nav-back.png')" }}
+            style={{ backgroundImage: "url('/nav-back2.jpg')" }}
           />
           {/* Edge fade overlays */}
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-white/40" />
