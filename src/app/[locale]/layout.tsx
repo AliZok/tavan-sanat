@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import '../globals.css';
 import { getDirection, type Locale } from '../../lib/i18n';
+import WhatsAppIcon from '../../components/WhatsAppIcon';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -44,6 +45,7 @@ export default async function LocaleLayout({
   return (
     <div dir={direction} lang={locale}>
       {children}
+      <WhatsAppIcon />
     </div>
   );
 }
