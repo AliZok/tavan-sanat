@@ -28,7 +28,7 @@ export const products: Product[] = [
       The multi-component gas analyzer SWG 300-1 is based on extractive, cold-dry method
       The SWG 300 can measure up to 8 gas components, using MRU optimized NDIR technology, with improved accuracy and without zero offset.`,
     price: '$15,000',
-    image: '/images/gas.jpg',
+    image: '/images/gas-wide.png',
     category: 'flueGasAnalyzer',
     specifications: [
       'Measurement Range: 0-1000 ppm',
@@ -286,7 +286,7 @@ export const products: Product[] = [
     longDescription:
       'The Metone BAM1020 is a reliable and accurate ambient dust analyzer designed for continuous monitoring of particulate matter. This system utilizes proven beta attenuation technology to provide precise measurements of PM2.5 and PM10 concentrations, making it an essential tool for environmental monitoring and air quality assessment.',
     price: '$24,500',
-    image: '/images/Metone-BAM1020.jpg',
+    image: '/images/metone-bam1020-wide.png',
     category: 'ambientDustAnalyzer',
     specifications: [
       'Measurement Range: 0.1-10000 μg/m³',
