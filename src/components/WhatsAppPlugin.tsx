@@ -55,7 +55,7 @@ export default function WhatsAppPlugin({
         <MessageCircle className="w-6 h-6" />
         {showText && (
           <span className="text-sm font-medium whitespace-nowrap">
-            واتساپ
+            ارتباط با ما
           </span>
         )}
         

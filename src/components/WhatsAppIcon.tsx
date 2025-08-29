@@ -41,7 +41,7 @@ export default function WhatsAppIcon({
         
         {/* Tooltip */}
         <div className="absolute bottom-full left-0 mb-2 px-3 py-2 bg-gray-800 text-white text-xs rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none">
-          واتساپ
+           ارتباط با ما
           <div className="absolute top-full left-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"></div>
         </div>
       </button>
