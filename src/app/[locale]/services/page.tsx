@@ -4,7 +4,7 @@ export default function ServicesPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white" dir="rtl">
       <Header />
-      <main className="flex-1 pt-16">
+      <main className="flex-1 pt-18">
         <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#e8f5e9] via-[#f0f7ff] to-[#e3f2fd]">
           {/* Background image with subtle fade */}
           <div

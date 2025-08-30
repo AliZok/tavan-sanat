@@ -19,7 +19,7 @@ export default function ProductsPage() {
       <Header />
 
       {/* Main Content */}
-      <main className="flex-1 pt-16">
+      <main className="flex-1 pt-18">
         {/* Hero Section */}
         <section className="w-full py-12 md:py-16 bg-gradient-to-br from-[#669c27]/5 to-white">
           <div className="container mx-auto px-4 md:px-6">

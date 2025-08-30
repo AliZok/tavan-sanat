@@ -59,7 +59,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 h-16 flex items-center bg-[#ffffffe0] shadow-lg">
+      <header className="fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 h-18 flex items-center bg-[#ffffffe0] shadow-lg">
         <Link
           href={`/${locale}`}
           className="flex items-center justify-center"
@@ -68,9 +68,9 @@ export default function Header() {
           <Image
             src="/my-logo.png"
             alt={translations.header.brand}
-            width={32}
-            height={32}
-            className="h-8 w-8"
+            width={52}
+            height={52}
+            className="h-[52px] w-[52px]"
           />
           <span className="sr-only">{translations.header.brand}</span>
           <span className="ml-3 text-xl font-extrabold text-[#353c4a] tracking-tight">

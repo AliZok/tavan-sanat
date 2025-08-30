@@ -82,7 +82,7 @@ export default function Component() {
       <Header />
 
       {/* Hero Section */}
-      <main className="flex-1 pt-16">
+      <main className="flex-1 pt-18">
         <section className="w-full items-center flex min-h-[calc(100vh-4rem)] py-6 md:py-12 lg:py-16 xl:py-22 bg-gradient-to-br from-[#669c27]/5 to-white relative overflow-hidden">
           <div
             className="absolute inset-0 pointer-events-none"

@@ -44,7 +44,7 @@ export default function ProductPage() {
       <Header />
 
       {/* Main Content */}
-      <main className="flex-1 pt-16">
+      <main className="flex-1 pt-18">
         {/* Breadcrumb */}
         <div className="bg-gray-50 py-4">
           <div className="container mx-auto px-4 md:px-6">
