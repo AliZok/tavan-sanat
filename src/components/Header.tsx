@@ -254,7 +254,7 @@ export default function Header() {
             <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-[#669c27] transition-all duration-300 ease-out group-hover:w-full"></span>
           </Link>
           <Link
-            href="#"
+            href={`/${locale}/contact`}
             className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
             prefetch={false}
           >
@@ -576,7 +576,7 @@ export default function Header() {
               </Link>
 
               <Link
-                href="#"
+                href={`/${locale}/contact`}
                 className={`block text-lg font-semibold text-[#353c4a] hover:text-[#669c27] transition-all duration-500 py-3 border-b border-gray-100 transform ${
                   isMobileMenuOpen
                     ? 'translate-x-0 opacity-100'
