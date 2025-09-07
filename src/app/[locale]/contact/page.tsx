@@ -32,7 +32,7 @@ export default function ContactPage() {
             <div
               className="absolute inset-0"
               style={{
-                backgroundImage: "url('https://img.freepik.com/photos-premium/contactez-nous-envoyez-concept-marketing-par-e-mail-mettant-accent-ligne-assistance-client_143683-12089.jpg')",
+                backgroundImage: "url('https://www.shutterstock.com/image-photo/concept-contact-us-customer-support-600nw-2505308177.jpg')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
