@@ -45,12 +45,12 @@ export default function ContactPage() {
           </div>
 
           {/* Text Half */}
-          <div className="w-full lg:w-1/2 bg-gray-800 flex items-center justify-center p-8 md:p-12 min-h-[50vh] lg:min-h-full">
+          <div className="w-full lg:w-1/2 bg-white flex items-center justify-center p-8 md:p-12 min-h-[50vh] lg:min-h-full">
             <div className="max-w-lg text-center">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tighter text-white leading-tight mb-6">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tighter text-gray-900 leading-tight mb-6">
                 {locale === 'fa' ? 'تماس با ما' : 'CONTACT US'}
               </h1>
-              <p className="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed mb-8">
+              <p className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed mb-8">
                 {locale === 'fa' 
                   ? 'با تیم متخصص ما در تماس باشید و از خدمات حرفه‌ای ما بهره‌مند شوید.'
                   : 'Get in touch with our expert team and benefit from our professional services'
@@ -77,17 +77,17 @@ export default function ContactPage() {
         </section>
 
         {/* Contact Information Section */}
-        <section className="w-full py-16 md:py-24 bg-gray-800 text-white">
+        <section className="w-full py-16 md:py-24 bg-gray-50 text-gray-900">
           <div className="container px-4 md:px-6">
             <div className="max-w-6xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Contact Details */}
                 <div className="space-y-8">
                   <div>
-                    <h2 className="text-3xl font-bold mb-6 text-white">
+                    <h2 className="text-3xl font-bold mb-6 text-gray-900">
                       {locale === 'fa' ? 'اطلاعات تماس' : 'Contact Information'}
                     </h2>
-                    <p className="text-gray-300 leading-relaxed mb-8">
+                    <p className="text-gray-600 leading-relaxed mb-8">
                       {locale === 'fa' 
                         ? 'تیم ما آماده پاسخگویی به سوالات شما و ارائه خدمات حرفه‌ای در زمینه تجهیزات صنعتی و تحلیل گاز است.'
                         : 'Our team is ready to answer your questions and provide professional services in the field of industrial equipment and gas analysis.'
@@ -97,60 +97,60 @@ export default function ContactPage() {
 
                   {/* Contact Cards */}
                   <div className="space-y-6">
-                    <div className="flex items-start space-x-4 p-6 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors duration-300">
+                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all duration-300">
                       <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
                         <Phone className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-white mb-2">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
                           {locale === 'fa' ? 'تلفن' : 'Phone'}
                         </h3>
-                        <p className="text-gray-300">
+                        <p className="text-gray-700">
                           {translations.contact.phoneNumber}
                         </p>
-                        <p className="text-gray-300">
+                        <p className="text-gray-700">
                           {translations.contact.mobileNumber}
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4 p-6 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors duration-300">
+                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all duration-300">
                       <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
                         <Mail className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-white mb-2">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
                           {locale === 'fa' ? 'ایمیل' : 'Email'}
                         </h3>
-                        <p className="text-gray-300">
+                        <p className="text-gray-700">
                           {translations.contact.emailAddress}
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4 p-6 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors duration-300">
+                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all duration-300">
                       <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
                         <MapPin className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-white mb-2">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
                           {locale === 'fa' ? 'آدرس' : 'Address'}
                         </h3>
-                        <p className="text-gray-300">
+                        <p className="text-gray-700">
                           {translations.contact.addressText}
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4 p-6 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors duration-300">
+                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all duration-300">
                       <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-lg font-semibold text-white mb-2">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">
                           {locale === 'fa' ? 'ساعات کاری' : 'Working Hours'}
                         </h3>
-                        <p className="text-gray-300">
+                        <p className="text-gray-700">
                           {locale === 'fa' 
                             ? 'شنبه تا پنج‌شنبه: 8:00 - 17:00'
                             : 'Saturday to Thursday: 8:00 AM - 5:00 PM'
