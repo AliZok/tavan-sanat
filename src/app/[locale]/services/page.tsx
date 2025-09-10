@@ -33,39 +33,47 @@ export default function ServicesPage() {
   const items = locale === 'fa' ? faServices : enServices;
 
   return (
-    <div className="flex flex-col min-h-screen bg-white" dir={direction}>
+    <div className="flex flex-col min-h-screen bg-gray-900" dir={direction}>
       <Header />
       <main className="flex-1 pt-18">
-        <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#e8f5e9] via-[#f0f7ff] to-[#e3f2fd]">
+        <section className="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden">
+          {/* Background Image */}
           <div
-            className="absolute inset-0 bg-center bg-cover opacity-40"
-            style={{ backgroundImage: "url('/nav-back2.jpg')" }}
+            className="absolute inset-0 bg-center bg-cover bg-no-repeat"
+            style={{ backgroundImage: "url('/images/Value-proposition-compress.webp')" }}
           />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/40 via-transparent to-white/40" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white to-transparent" />
 
-          <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 bg-gradient-to-b from-[#78b62f] to-[#5a8a22] opacity-20 blur-3xl rounded-full" />
-          <div className="pointer-events-none absolute -bottom-28 -left-28 h-80 w-80 bg-gradient-to-tr from-[#2563eb] to-[#78b62f] opacity-20 blur-3xl rounded-full" />
-
-          <div className="relative max-w-3xl mx-auto px-4 md:px-6 bg-white/90 backdrop-blur-md shadow-xl border border-white/60 p-6 md:p-8">
-            <div className="absolute top-[-1px] left-0 right-0 h-2 bg-[#669c27]" />
-            <p className="text-[#353c4a] leading-8 text-justify">
-              {locale === 'fa'
-                ? 'مدیران این شرکت با اتکا به بیش از ده سال تجربه و دانش تخصصی در زمینه تجهیزات سنجش آلودگی هوا و سامانه‌های پایش پیوسته (CEMS)، این مجموعه را بنیان نهاده‌اند تا با تلفیق دانش فنی و تجربه عملی، افق تازه‌ای در ارائه خدمات به مشتریان خود بگشایند.'
-                : 'With over a decade of experience in air pollution measurement equipment and Continuous Emissions Monitoring Systems (CEMS), our leadership team founded this company to combine technical expertise with hands-on experience and open new horizons in delivering services to our clients.'
-              }
-            </p>
-            <p className="mt-6 font-semibold text-[#353c4a]">
-              {t.services.title}
-            </p>
-            <ul className="mt-4 list-disc pr-6 pl-6 space-y-2 text-[#353c4a]">
-              {items.map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
-            </ul>
-            <p className="mt-6 text-[#353c4a]">
-              {t.services.description}
-            </p>
+          {/* Content Box */}
+          <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-6">
+            <div className="bg-black/70 backdrop-blur-sm border-t-4 border-green-600 p-8 md:p-12">
+              {/* Description */}
+              <p className="text-white text-lg leading-relaxed mb-8 text-justify">
+                {locale === 'fa'
+                  ? 'مدیران این شرکت با اتکا به بیش از ده سال تجربه و دانش تخصصی در زمینه تجهیزات سنجش آلودگی هوا و سامانه‌های پایش پیوسته (CEMS)، این مجموعه را بنیان نهاده‌اند تا با تلفیق دانش فنی و تجربه عملی، افق تازه‌ای در ارائه خدمات به مشتریان خود بگشایند.'
+                  : 'With over a decade of experience in air pollution measurement equipment and Continuous Emissions Monitoring Systems (CEMS), our leadership team founded this company to combine technical expertise with hands-on experience and open new horizons in delivering services to our clients.'
+                }
+              </p>
+              
+              {/* Services List */}
+              <div className="space-y-4">
+                <h2 className="text-white text-xl font-semibold mb-4">
+                  {t.services.title}
+                </h2>
+                <ul className="space-y-3">
+                  {items.map((item, idx) => (
+                    <li key={idx} className="flex items-start text-white">
+                      <div className="flex-shrink-0 w-2 h-2 bg-green-600 transform rotate-45 mt-2 mr-3" />
+                      <span className="text-lg leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              {/* Additional Description */}
+              <p className="text-white text-lg leading-relaxed mt-8 text-justify">
+                {t.services.description}
+              </p>
+            </div>
           </div>
         </section>
       </main>
