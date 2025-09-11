@@ -97,7 +97,7 @@ export default function ContactPage() {
 
                   {/* Contact Cards */}
                   <div className="space-y-6">
-                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all duration-300">
+                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 hover:shadow-md transition-all duration-300 min-h-[120px] md:min-h-[140px]">
                       <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
                         <Phone className="w-6 h-6 text-white" />
                       </div>
@@ -114,7 +114,7 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all duration-300">
+                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 hover:shadow-md transition-all duration-300 min-h-[120px] md:min-h-[140px]">
                       <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
                         <Mail className="w-6 h-6 text-white" />
                       </div>
@@ -128,7 +128,7 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all duration-300">
+                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 hover:shadow-md transition-all duration-300 min-h-[120px] md:min-h-[140px]">
                       <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
                         <MapPin className="w-6 h-6 text-white" />
                       </div>
@@ -142,7 +142,7 @@ export default function ContactPage() {
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 rounded-lg hover:shadow-md transition-all duration-300">
+                    <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 hover:shadow-md transition-all duration-300 min-h-[120px] md:min-h-[140px]">
                       <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
                         <Clock className="w-6 h-6 text-white" />
                       </div>
