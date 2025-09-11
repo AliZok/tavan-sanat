@@ -278,27 +278,13 @@ export default function Component() {
                     </div>
                     <div className="w-full lg:w-1/2">
                       <div className="relative w-full h-[300px] bg-gray-200 overflow-hidden border border-gray-300">
-                        <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207444.47121066667!2d51.3890!3d35.6892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Iran!5e0!3m2!1sen!2s!4v1234567890"
-                          width="100%"
-                          height="100%"
-                          style={{ border: 0 }}
-                          allowFullScreen
-                          loading="lazy"
-                          referrerPolicy="no-referrer-when-downgrade"
-                          className="w-full h-full"
-                        ></iframe>
-                        <a
-                          href="https://maps.google.com/?q=Tehran,Iran"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10"
-                          title="View on map"
-                        >
-                          <div className="w-6 h-6 bg-red-500 border-2 border-white shadow-lg flex items-center justify-center hover:bg-red-600 transition-colors duration-200">
-                            <div className="w-2 h-2 bg-white"></div>
-                          </div>
-                        </a>
+                        <Image
+                          src="/images/loc-img.PNG"
+                          alt={locale === 'fa' ? 'موقعیت مکانی' : 'Location'}
+                          fill
+                          className="object-cover"
+                          priority
+                        />
                       </div>
                     </div>
                   </div>
