@@ -59,14 +59,14 @@ export default function ContactPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="tel:09120628762"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-[#669c27] text-white font-semibold rounded-lg hover:bg-[#5a8a22] transition-colors duration-300"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-[#669c27] text-white font-semibold rounded-none hover:bg-[#5a8a22] transition-colors duration-300"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   {locale === 'fa' ? 'تماس مستقیم' : 'Call Now'}
                 </a>
                 <a
                   href={`mailto:${translations.contact.emailAddress}`}
-                  className="inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-[#669c27] text-[#669c27] font-semibold rounded-lg hover:bg-[#669c27] hover:text-white transition-colors duration-300"
+                  className="inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-[#669c27] text-[#669c27] font-semibold rounded-none hover:bg-[#669c27] hover:text-white transition-colors duration-300"
                 >
                   <Mail className="w-5 h-5 mr-2" />
                   {locale === 'fa' ? 'ارسال ایمیل' : 'Send Email'}
@@ -98,7 +98,7 @@ export default function ContactPage() {
                   {/* Contact Cards */}
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 hover:shadow-md transition-all duration-300 min-h-[120px] md:min-h-[140px]">
-                      <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
+                      <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-none flex items-center justify-center">
                         <Phone className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -115,7 +115,7 @@ export default function ContactPage() {
                     </div>
 
                     <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 hover:shadow-md transition-all duration-300 min-h-[120px] md:min-h-[140px]">
-                      <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
+                      <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-none flex items-center justify-center">
                         <Mail className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -129,7 +129,7 @@ export default function ContactPage() {
                     </div>
 
                     <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 hover:shadow-md transition-all duration-300 min-h-[120px] md:min-h-[140px]">
-                      <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
+                      <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-none flex items-center justify-center">
                         <MapPin className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -143,7 +143,7 @@ export default function ContactPage() {
                     </div>
 
                     <div className="flex items-start space-x-4 p-6 bg-white border border-gray-200 hover:shadow-md transition-all duration-300 min-h-[120px] md:min-h-[140px]">
-                      <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-full flex items-center justify-center">
+                      <div className="flex-shrink-0 w-12 h-12 bg-[#669c27] rounded-none flex items-center justify-center">
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -163,7 +163,7 @@ export default function ContactPage() {
 
                 {/* Map Section */}
                 <div className="relative">
-                  <div className="relative w-full h-[500px] bg-gray-200 overflow-hidden border border-gray-300 rounded-lg">
+                  <div className="relative w-full h-[500px] bg-gray-200 overflow-hidden border border-gray-300 rounded-none">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207444.47121066667!2d51.3890!3d35.6892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Iran!5e0!3m2!1sen!2s!4v1234567890"
                       width="100%"
@@ -181,8 +181,8 @@ export default function ContactPage() {
                       className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10"
                       title="View on map"
                     >
-                      <div className="w-8 h-8 bg-[#669c27] border-2 border-white shadow-lg flex items-center justify-center hover:bg-[#5a8a22] transition-colors duration-200 rounded-full">
-                        <div className="w-3 h-3 bg-white rounded-full"></div>
+                      <div className="w-8 h-8 bg-[#669c27] border-2 border-white shadow-lg flex items-center justify-center hover:bg-[#5a8a22] transition-colors duration-200 rounded-none">
+                        <div className="w-3 h-3 bg-white rounded-none"></div>
                       </div>
                     </a>
                   </div>
@@ -209,14 +209,14 @@ export default function ContactPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="tel:09120628762"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#669c27] font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#669c27] font-semibold rounded-none hover:bg-gray-100 transition-colors duration-300"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   {locale === 'fa' ? 'تماس مستقیم' : 'Call Now'}
                 </a>
                 <a
                   href={`mailto:${translations.contact.emailAddress}`}
-                  className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#669c27] transition-colors duration-300"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-none hover:bg-white hover:text-[#669c27] transition-colors duration-300"
                 >
                   <Mail className="w-5 h-5 mr-2" />
                   {locale === 'fa' ? 'ارسال ایمیل' : 'Send Email'}
