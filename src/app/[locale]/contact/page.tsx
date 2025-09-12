@@ -32,7 +32,7 @@ export default function ContactPage() {
             <div
               className="absolute inset-0"
               style={{
-                backgroundImage: "url('/images/Oil-refinery-flare.jpg')",
+                backgroundImage: "url('/images/Value-proposition-compress.webp')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',

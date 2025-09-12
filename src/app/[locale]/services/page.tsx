@@ -40,7 +40,7 @@ export default function ServicesPage() {
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-center bg-cover bg-no-repeat"
-            style={{ backgroundImage: "url('/images/Value-proposition-compress.webp')" }}
+            style={{ backgroundImage: "url('/images/Oil-refinery-flare.jpg')" }}
           />
 
           {/* Content Box */}
