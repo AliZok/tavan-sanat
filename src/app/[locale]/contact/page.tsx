@@ -165,7 +165,7 @@ export default function ContactPage() {
                 <div className="relative">
                   <div className="relative w-full h-[500px] bg-gray-200 overflow-hidden border border-gray-300 rounded-none">
                     <Image
-                      src="/images/loc-img.png"
+                      src="/images/my-location.png"
                       alt={locale === 'fa' ? 'موقعیت مکانی' : 'Location'}
                       fill
                       className="object-cover"
