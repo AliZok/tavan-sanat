@@ -224,10 +224,10 @@ export default function ContactPage() {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-12 h-12 border-[#669c27] border-3 text-white shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center bg-[#669c27] hover:bg-[#5a8a22]"
+        className="fixed bottom-8 right-8 w-12 h-12 border-[#82c534] border-3  text-white shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
         aria-label="Scroll to top"
       >
-        <ArrowUp className="w-6 h-6" />
+        <ArrowUp className="w-6 h-6" color="#82c534" />
       </button>
     </div>
   );
