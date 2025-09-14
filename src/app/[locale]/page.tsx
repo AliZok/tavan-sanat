@@ -277,15 +277,23 @@ export default function Component() {
                       </div>
                     </div>
                     <div className="w-full lg:w-1/2">
-                      <div className="relative w-full h-[300px] bg-gray-200 overflow-hidden border border-gray-300">
-                        <Image
-                          src="/images/my-location.jpg"
-                          alt={locale === 'fa' ? 'موقعیت مکانی' : 'Location'}
-                          fill
-                          className="object-cover"
-                          priority
-                        />
-                      </div>
+                      <a
+                        href="https://www.google.com/maps?q=35.6960,51.3675"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block cursor-pointer hover:opacity-90 transition-opacity duration-300"
+                        title={locale === 'fa' ? 'کلیک کنید تا در نقشه باز شود' : 'Click to open in map'}
+                      >
+                        <div className="relative w-full h-[300px] bg-gray-200 overflow-hidden border border-gray-300">
+                          <Image
+                            src="/images/my-location.jpg"
+                            alt={locale === 'fa' ? 'موقعیت مکانی' : 'Location'}
+                            fill
+                            className="object-cover"
+                            priority
+                          />
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -298,10 +306,10 @@ export default function Component() {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-12 h-12 border-[#669c27] border-3  text-white shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
+        className="fixed bottom-8 right-8 w-12 h-12 border-[#82c534] border-3  text-white shadow-lg transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center"
         aria-label="Scroll to top"
       >
-        <ArrowUp className="w-6 h-6" color="#669c27" />
+        <ArrowUp className="w-6 h-6" color="#82c534" />
       </button>
     </div>
   );

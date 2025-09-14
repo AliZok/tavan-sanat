@@ -163,15 +163,23 @@ export default function ContactPage() {
 
                 {/* Location Image Section */}
                 <div className="relative">
-                  <div className="relative w-full h-[500px] bg-gray-200 overflow-hidden border border-gray-300 rounded-none">
-                    <Image
-                      src="/images/my-location.jpg"
-                      alt={locale === 'fa' ? 'موقعیت مکانی' : 'Location'}
-                      fill
-                      className="object-cover"
-                      priority
-                    />
-                  </div>
+                  <a
+                    href="https://www.google.com/maps?q=35.6960,51.3675"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block cursor-pointer hover:opacity-90 transition-opacity duration-300"
+                    title={locale === 'fa' ? 'کلیک کنید تا در نقشه باز شود' : 'Click to open in map'}
+                  >
+                    <div className="relative w-full h-[500px] bg-gray-200 overflow-hidden border border-gray-300 rounded-none">
+                      <Image
+                        src="/images/my-location.jpg"
+                        alt={locale === 'fa' ? 'موقعیت مکانی' : 'Location'}
+                        fill
+                        className="object-cover"
+                        priority
+                      />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
