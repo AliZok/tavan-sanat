@@ -105,10 +105,16 @@ export default function ContactPage() {
                         <h3 className="text-lg font-semibold text-gray-900 mb-2">
                           {locale === 'fa' ? 'تلفن' : 'Phone'}
                         </h3>
-                        <p className="text-gray-700">
+                        <p 
+                          className="text-gray-700 cursor-pointer hover:text-[#669c27] transition-colors duration-200"
+                          onClick={() => window.open(`tel:${translations.contact.phoneNumber}`, '_self')}
+                        >
                           {translations.contact.phoneNumber}
                         </p>
-                        <p className="text-gray-700">
+                        <p 
+                          className="text-gray-700 cursor-pointer hover:text-[#669c27] transition-colors duration-200"
+                          onClick={() => window.open(`tel:${translations.contact.mobileNumber}`, '_self')}
+                        >
                           {translations.contact.mobileNumber}
                         </p>
                       </div>

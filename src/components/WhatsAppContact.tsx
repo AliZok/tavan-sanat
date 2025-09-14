@@ -112,7 +112,12 @@ export default function WhatsAppContact({
                   <Phone className="w-5 h-5 text-green-600" />
                   <div>
                     <p className="text-sm text-gray-600">تلفن تماس</p>
-                    <p className="font-medium text-gray-900">{phoneNumber}</p>
+                    <p 
+                      className="font-medium text-gray-900 cursor-pointer hover:text-green-600 transition-colors duration-200"
+                      onClick={() => window.open(`tel:${phoneNumber}`, '_self')}
+                    >
+                      {phoneNumber}
+                    </p>
                   </div>
                 </div>
                 

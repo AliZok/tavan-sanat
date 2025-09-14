@@ -46,7 +46,12 @@ const Footer: React.FC = () => {
                     />
                   </svg>
                 </div>
-                <span className="font-semibold">تلفن: ۲۲۹۰۹۸۸۰-۰۲۱</span>
+                <span 
+                  className="font-semibold cursor-pointer hover:text-green-300 transition-colors duration-200"
+                  onClick={() => window.open('tel:021-22909880', '_self')}
+                >
+                  تلفن: ۲۲۹۰۹۸۸۰-۰۲۱
+                </span>
               </div>
 
               {/* Fax */}

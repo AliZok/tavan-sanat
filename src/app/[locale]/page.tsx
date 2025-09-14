@@ -259,11 +259,21 @@ export default function Component() {
                     <div className="w-full lg:w-1/2">
                       <div className="flex gap-2 mb-3">
                         <div>{translations.contact.phone}</div>
-                        <div>{translations.contact.phoneNumber}</div>
+                        <div 
+                          className="cursor-pointer hover:text-[#669c27] transition-colors duration-200"
+                          onClick={() => window.open(`tel:${translations.contact.phoneNumber}`, '_self')}
+                        >
+                          {translations.contact.phoneNumber}
+                        </div>
                       </div>
                       <div className="flex gap-2 mb-3">
                         <div>{translations.contact.mobile}</div>
-                        <div>{translations.contact.mobileNumber}</div>
+                        <div 
+                          className="cursor-pointer hover:text-[#669c27] transition-colors duration-200"
+                          onClick={() => window.open(`tel:${translations.contact.mobileNumber}`, '_self')}
+                        >
+                          {translations.contact.mobileNumber}
+                        </div>
                       </div>
                       <div className="flex gap-2 mb-3">
                         <div>{translations.contact.email}</div>
