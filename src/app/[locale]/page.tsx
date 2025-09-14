@@ -279,7 +279,7 @@ export default function Component() {
                     <div className="w-full lg:w-1/2">
                       <div className="relative w-full h-[300px] bg-gray-200 overflow-hidden border border-gray-300">
                         <Image
-                          src="/images/my-location.png"
+                          src="/images/my-location.jpg"
                           alt={locale === 'fa' ? 'موقعیت مکانی' : 'Location'}
                           fill
                           className="object-cover"
