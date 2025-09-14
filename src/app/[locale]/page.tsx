@@ -277,7 +277,12 @@ export default function Component() {
                       </div>
                       <div className="flex gap-2 mb-3">
                         <div>{translations.contact.email}</div>
-                        <div>{translations.contact.emailAddress}</div>
+                        <div 
+                          className="cursor-pointer hover:text-[#669c27] transition-colors duration-200"
+                          onClick={() => window.open(`mailto:${translations.contact.emailAddress}`, '_self')}
+                        >
+                          {translations.contact.emailAddress}
+                        </div>
                       </div>
                       <div className="flex gap-2 mb-3 ">
                         <div>{translations.contact.address}</div>

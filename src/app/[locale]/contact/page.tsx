@@ -128,7 +128,10 @@ export default function ContactPage() {
                         <h3 className="text-lg font-semibold text-gray-900 mb-2">
                           {locale === 'fa' ? 'ایمیل' : 'Email'}
                         </h3>
-                        <p className="text-gray-700">
+                        <p 
+                          className="text-gray-700 cursor-pointer hover:text-[#669c27] transition-colors duration-200"
+                          onClick={() => window.open(`mailto:${translations.contact.emailAddress}`, '_self')}
+                        >
                           {translations.contact.emailAddress}
                         </p>
                       </div>
