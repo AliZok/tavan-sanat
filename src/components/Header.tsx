@@ -79,7 +79,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex ml-auto gap-6 sm:gap-8 items-center">
+        <nav className="hidden lg:flex ml-auto gap-4 sm:gap-6 items-center">
           <Link
             href={`/${locale}`}
             className="relative text-sm font-semibold hover:text-[#669c27] transition-colors duration-300 text-[#353c4a] group"
