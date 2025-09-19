@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Tavan Sanat - Air Quality Solutions',
+  title: 'توان صنعت آینده ایرانیان',
   description:
     'Pioneering air quality solutions for a healthier tomorrow. Advanced environmental monitoring and analytics.',
   icons: {

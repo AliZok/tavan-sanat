@@ -23,7 +23,7 @@ export async function generateMetadata({
   const direction = getDirection(locale as Locale);
 
   return {
-    title: 'AirSense Analytics - Air Quality Solutions',
+    title: 'توان صنعت آینده ایرانیان',
     description:
       'Pioneering air quality solutions for a healthier tomorrow. Advanced environmental monitoring and analytics.',
     other: {
