@@ -26,6 +26,14 @@ export async function generateMetadata({
     title: 'توان صنعت آینده ایرانیان',
     description:
       'Pioneering air quality solutions for a healthier tomorrow. Advanced environmental monitoring and analytics.',
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: 'any' },
+        { url: '/my-logo.png', type: 'image/png' },
+      ],
+      shortcut: '/favicon.ico',
+      apple: '/apple-touch-icon.png',
+    },
     other: {
       dir: direction,
     },
