@@ -46,6 +46,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // Force redirect root path to /fa
+  if (pathname === '/') {
+    return NextResponse.redirect(new URL('/fa', request.url));
+  }
+
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = locales.every(
     locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`

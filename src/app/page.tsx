@@ -1,5 +1,4 @@
-import { redirect } from 'next/navigation';
-
 export default function HomePage() {
-  redirect('/en');
+  // This page should not be reached as middleware redirects to /fa
+  return null;
 }
