@@ -1,19 +1,7 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import '../globals.css';
 import { getDirection, type Locale } from '../../lib/i18n';
 import WhatsAppIcon from '../../components/WhatsAppIcon';
-import StructuredData from '../../components/StructuredData';
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
 
 export async function generateMetadata({
   params,
@@ -34,7 +22,10 @@ export async function generateMetadata({
 
   const keywords = isPersian
     ? [
+        'توان صنعت',
         'توان صنعت آینده ایرانیان',
+        'توان صنعت ایرانیان',
+        'توان صنعت آینده',
         'آنالایزر گاز دودکش',
         'آنالایزر غبار محیط',
         'کیفیت هوا',
@@ -43,7 +34,11 @@ export async function generateMetadata({
         'نظارت محیطی',
         'تجهیزات سنجش آلودگی',
         'شرکت ایرانی',
-        'تولیدکننده آنالایزر'
+        'تولیدکننده آنالایزر',
+        'توان صنعت تهران',
+        'توان صنعت ایران',
+        'شرکت توان صنعت',
+        'صنعت آینده ایرانیان'
       ]
     : [
         'Tavan Sanat Ayande Iranian',
@@ -130,7 +125,6 @@ export default async function LocaleLayout({
 
   return (
     <div dir={direction} lang={locale}>
-      <StructuredData locale={locale as Locale} />
       {children}
       <WhatsAppIcon />
     </div>

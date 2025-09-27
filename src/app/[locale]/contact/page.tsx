@@ -1,11 +1,11 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, MapPin, Clock, ArrowUp } from 'lucide-react';
 import { useParams } from 'next/navigation';
 import { getTranslations, getDirection, type Locale } from '../../../lib/i18n';
 import Header from '../../../components/Header';
+import StructuredData from '../../../components/StructuredData';
 
 export default function ContactPage() {
   const params = useParams();
@@ -22,6 +22,7 @@ export default function ContactPage() {
 
   return (
     <div className="flex flex-col min-h-screen" dir={direction}>
+      <StructuredData locale={locale} />
       <Header />
 
       {/* Hero Section - Half Image, Half Text */}
@@ -48,12 +49,12 @@ export default function ContactPage() {
           <div className="w-full lg:w-1/2 bg-white flex items-center justify-center p-8 md:p-12 min-h-[50vh] lg:min-h-full">
             <div className="max-w-lg text-center">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tighter text-gray-900 leading-tight mb-6">
-                {locale === 'fa' ? 'تماس با ما' : 'CONTACT US'}
+                {locale === 'fa' ? 'تماس با توان صنعت آینده ایرانیان' : 'CONTACT TAVAN SANAT AYANDE IRANIAN'}
               </h1>
               <p className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed mb-8">
                 {locale === 'fa' 
-                  ? 'با تیم متخصص ما در تماس باشید و از خدمات حرفه‌ای ما بهره‌مند شوید.'
-                  : 'Get in touch with our expert team and benefit from our professional services'
+                  ? 'با تیم متخصص توان صنعت آینده ایرانیان در تماس باشید و از خدمات حرفه‌ای ما در زمینه آنالایزرهای محیطی و تجهیزات سنجش کیفیت هوا بهره‌مند شوید.'
+                  : 'Get in touch with our expert team at Tavan Sanat Ayande Iranian and benefit from our professional services in environmental analyzers and air quality monitoring equipment'
                 }
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -89,8 +90,8 @@ export default function ContactPage() {
                     </h2>
                     <p className="text-gray-600 leading-relaxed mb-8">
                       {locale === 'fa' 
-                        ? 'تیم ما آماده پاسخگویی به سوالات شما و ارائه خدمات حرفه‌ای در زمینه تجهیزات صنعتی و تحلیل گاز است.'
-                        : 'Our team is ready to answer your questions and provide professional services in the field of industrial equipment and gas analysis.'
+                        ? 'تیم متخصص توان صنعت آینده ایرانیان آماده پاسخگویی به سوالات شما و ارائه خدمات حرفه‌ای در زمینه تجهیزات صنعتی، آنالایزرهای محیطی و تحلیل گاز است. ما با بیش از یک دهه تجربه در صنعت، خدمات مشاوره، طراحی، تأمین، نصب و نگهداری تجهیزات سنجش کیفیت هوا را ارائه می‌دهیم.'
+                        : 'Our expert team at Tavan Sanat Ayande Iranian is ready to answer your questions and provide professional services in the field of industrial equipment, environmental analyzers and gas analysis. With over a decade of experience in the industry, we provide consulting, design, supply, installation and maintenance services for air quality monitoring equipment.'
                       }
                     </p>
                   </div>

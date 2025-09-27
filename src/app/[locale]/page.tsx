@@ -1,24 +1,11 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
-import {
-  BarChart,
-  Cloud,
-  Cpu,
-  Globe,
-  ChevronRight,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-  ChevronUp,
-  ArrowUp,
-} from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { useParams } from 'next/navigation';
-import { useState, useEffect } from 'react';
 import { getTranslations, getDirection, type Locale } from '../../lib/i18n';
 import Header from '../../components/Header';
+import StructuredData from '../../components/StructuredData';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -79,6 +66,7 @@ export default function Component() {
   };
   return (
     <div className="flex flex-col min-h-screen" dir={direction}>
+      <StructuredData locale={locale} />
       <Header />
 
       {/* Hero Section */}
@@ -250,6 +238,82 @@ export default function Component() {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section for SEO */}
+        {locale === 'fa' && (
+          <section className="w-full py-16 bg-white">
+            <div className="max-w-4xl mx-auto px-4 md:px-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-[#353c4a] mb-4">
+                  سوالات متداول درباره توان صنعت آینده ایرانیان
+                </h2>
+                <p className="text-gray-600">
+                  پاسخ سوالات رایج درباره خدمات و محصولات توان صنعت
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
+                      توان صنعت آینده ایرانیان چه خدماتی ارائه می‌دهد؟
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      <strong>توان صنعت آینده ایرانیان</strong> خدمات تخصصی طراحی، مشاوره، تأمین و نصب آنالایزرهای آنلاین گاز، آب، پساب و هوا را ارائه می‌دهد. همچنین خدمات کالیبراسیون و نگهداری تجهیزات زیست محیطی از جمله فعالیت‌های اصلی این شرکت است.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
+                      آدرس و شماره تماس توان صنعت کجاست؟
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      <strong>توان صنعت آینده ایرانیان</strong> در تهران، خیابان آزادی، خیابان کارون شمالی، کوچه سید عباسی، پلاک 18، واحد 2 واقع شده است. شماره تلفن: 021-66859042 و موبایل: 09120628762
+                    </p>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
+                      توان صنعت با چه صنایعی همکاری می‌کند؟
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      <strong>توان صنعت آینده ایرانیان</strong> با صنایع فلزی و فولاد، صنایع نفت، گاز و پتروشیمی، نیروگاه‌ها، کشت و صنعت، سازمان حفاظت محیط زیست، آب و فاضلاب، سیمان و مراکز بهداشتی و دانشگاهی همکاری دارد.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
+                      آنالایزرهای توان صنعت چه ویژگی‌هایی دارند؟
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      آنالایزرهای <strong>توان صنعت آینده ایرانیان</strong> شامل آنالایزرهای گاز دودکش، آنالایزرهای غبار محیط، آنالایزرهای گاز محیط و آنالایزرهای GC می‌باشند که با دقت بالا و قابلیت اطمینان مناسب طراحی شده‌اند.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
+                      آیا توان صنعت گواهینامه‌های معتبر دارد؟
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      بله، <strong>توان صنعت آینده ایرانیان</strong> دارای گواهینامه‌های ISO 9001:2008، ISO 14001:2004 و OHSAS 18001:2007 می‌باشد که نشان‌دهنده کیفیت و استانداردهای بالای خدمات این شرکت است.
+                    </p>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
+                      چگونه با توان صنعت تماس بگیرم؟
+                    </h3>
+                    <p className="text-gray-700 leading-relaxed">
+                      برای تماس با <strong>توان صنعت آینده ایرانیان</strong> می‌توانید از طریق تلفن 021-66859042، موبایل 09120628762 یا ایمیل CRM@tsai-co.com با ما در ارتباط باشید. همچنین می‌توانید به آدرس تهران، خیابان آزادی، خیابان کارون شمالی مراجعه کنید.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
       </main>
 
       <footer className="bg-gray-50">

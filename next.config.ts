@@ -48,7 +48,7 @@ const nextConfig: NextConfig = {
       {
         source: '/',
         destination: '/fa',
-        permanent: true,
+        permanent: false,
       },
     ];
   },

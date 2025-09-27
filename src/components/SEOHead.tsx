@@ -1,5 +1,6 @@
+'use client';
+
 import Head from 'next/head';
-import { useParams } from 'next/navigation';
 import { type Locale } from '../lib/i18n';
 
 interface SEOHeadProps {
