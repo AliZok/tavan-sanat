@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://tsai-co.com/sitemap.xml
+Sitemap: https://tavan-sanaat.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
@@ -12,10 +12,36 @@ Disallow: /admin/
 Disallow: /api/
 Disallow: /_next/
 Disallow: /private/
+Disallow: /temp/
 
-# Allow all other content
+# Allow all content
 Allow: /fa/
 Allow: /en/
 Allow: /products/
 Allow: /services/
 Allow: /contact/
+
+# Allow specific keyword pages for SEO
+Allow: /fa/توان-صنعت
+Allow: /fa/توان-صنعت-آینده-ایرانیان
+Allow: /fa/آنالایزر-گاز-دودکش
+Allow: /fa/آنالایزر-غبار-محیط
+Allow: /fa/کیفیت-هوا
+Allow: /fa/تجهیزات-زیست-محیطی
+Allow: /fa/کالیبراسیون-آنالایزر
+
+# Allow product categories
+Allow: /fa/products/flue-gas-analyzer
+Allow: /fa/products/flue-dust-analyzer
+Allow: /fa/products/ambient-gas-analyzer
+Allow: /fa/products/ambient-dust-analyzer
+Allow: /fa/products/gc-analyzer
+
+# Allow images and assets
+Allow: /images/
+Allow: /customers-logo/
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.webp
+Allow: /*.svg
+Allow: /*.ico

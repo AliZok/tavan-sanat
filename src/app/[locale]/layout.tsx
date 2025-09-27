@@ -73,7 +73,7 @@ export async function generateMetadata({
     openGraph: {
       type: 'website',
       locale: isPersian ? 'fa_IR' : 'en_US',
-      url: `https://tsai-co.com/${locale}`,
+      url: `https://tavan-sanaat.com/${locale}`,
       siteName: isPersian ? 'توان صنعت آینده ایرانیان' : 'Tavan Sanat Ayande Iranian',
       title,
       description,
@@ -93,10 +93,10 @@ export async function generateMetadata({
       images: ['/tavan-sanaat-logo-with-text.png'],
     },
     alternates: {
-      canonical: `https://tsai-co.com/${locale}`,
+      canonical: `https://tavan-sanaat.com/${locale}`,
       languages: {
-        'fa-IR': 'https://tsai-co.com/fa',
-        'en-US': 'https://tsai-co.com/en',
+        'fa-IR': 'https://tavan-sanaat.com/fa',
+        'en-US': 'https://tavan-sanaat.com/en',
       },
     },
     icons: {

@@ -14,8 +14,8 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     "@type": "Organization",
     "name": isPersian ? "توان صنعت آینده ایرانیان" : "Tavan Sanat Ayande Iranian",
     "alternateName": isPersian ? "Tavan Sanat Ayande Iranian" : "توان صنعت آینده ایرانیان",
-    "url": "https://tsai-co.com",
-    "logo": "https://tsai-co.com/tavan-sanaat-logo-with-text.png",
+    "url": "https://tavan-sanaat.com",
+    "logo": "https://tavan-sanaat.com/tavan-sanaat-logo-with-text.png",
     "description": isPersian 
       ? "شرکت توان صنعت آینده ایرانیان - پیشرو در طراحی، مشاوره، تأمین و نصب آنالایزرهای آنلاین گاز، آب، پساب و هوا"
       : "Tavan Sanat Ayande Iranian - Leading provider of environmental analyzers and air quality monitoring solutions",
@@ -33,7 +33,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       "availableLanguage": ["Persian", "English"]
     },
     "sameAs": [
-      "https://tsai-co.com"
+      "https://tavan-sanaat.com"
     ],
     "areaServed": {
       "@type": "Country",
@@ -51,7 +51,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": isPersian ? "توان صنعت آینده ایرانیان" : "Tavan Sanat Ayande Iranian",
-    "url": "https://tsai-co.com",
+    "url": "https://tavan-sanaat.com",
     "description": isPersian 
       ? "شرکت تخصصی آنالایزرهای محیطی و کیفیت هوا"
       : "Environmental Analyzer and Air Quality Monitoring Specialists",
@@ -62,7 +62,7 @@ export default function StructuredData({ locale }: StructuredDataProps) {
     },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://tsai-co.com/search?q={search_term_string}",
+      "target": "https://tavan-sanaat.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };
@@ -70,14 +70,14 @@ export default function StructuredData({ locale }: StructuredDataProps) {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://tsai-co.com/#organization",
+    "@id": "https://tavan-sanaat.com/#organization",
     "name": isPersian ? "توان صنعت آینده ایرانیان" : "Tavan Sanat Ayande Iranian",
     "alternateName": isPersian ? ["توان صنعت", "توان صنعت ایرانیان", "توان صنعت آینده"] : ["Tavan Sanat", "Tavan Sanat Iranian"],
-    "image": "https://tsai-co.com/tavan-sanaat-logo-with-text.png",
+    "image": "https://tavan-sanaat.com/tavan-sanaat-logo-with-text.png",
     "description": isPersian 
       ? "شرکت توان صنعت آینده ایرانیان - پیشرو در طراحی، مشاوره، تأمین و نصب آنالایزرهای آنلاین گاز، آب، پساب و هوا"
       : "Tavan Sanat Ayande Iranian - Leading provider of environmental analyzers and air quality monitoring solutions",
-    "url": "https://tsai-co.com",
+    "url": "https://tavan-sanaat.com",
     "telephone": "+98-21-66859042",
     "mobile": "+98-912-062-8762",
     "email": "CRM@tsai-co.com",
@@ -177,9 +177,9 @@ export default function StructuredData({ locale }: StructuredDataProps) {
       }
     ],
     "sameAs": [
-      "https://tsai-co.com",
-      "https://tsai-co.com/fa",
-      "https://tsai-co.com/en"
+      "https://tavan-sanaat.com",
+      "https://tavan-sanaat.com/fa",
+      "https://tavan-sanaat.com/en"
     ],
     "foundingDate": "2020",
     "numberOfEmployees": "10-50",

@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fa_IR',
-    url: 'https://tsai-co.com',
+    url: 'https://tavan-sanaat.com',
     siteName: 'توان صنعت آینده ایرانیان',
     title: 'توان صنعت آینده ایرانیان | شرکت تخصصی آنالایزرهای محیطی',
     description: 'شرکت توان صنعت آینده ایرانیان - پیشرو در طراحی، مشاوره، تأمین و نصب آنالایزرهای آنلاین گاز، آب، پساب و هوا',
@@ -65,10 +65,10 @@ export const metadata: Metadata = {
     images: ['/tavan-sanaat-logo-with-text.png'],
   },
   alternates: {
-    canonical: 'https://tsai-co.com',
+    canonical: 'https://tavan-sanaat.com',
     languages: {
-      'fa-IR': 'https://tsai-co.com/fa',
-      'en-US': 'https://tsai-co.com/en',
+      'fa-IR': 'https://tavan-sanaat.com/fa',
+      'en-US': 'https://tavan-sanaat.com/en',
     },
   },
   icons: {

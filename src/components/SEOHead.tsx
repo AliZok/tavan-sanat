@@ -64,7 +64,7 @@ export default function SEOHead({
   const finalTitle = title || defaultTitle;
   const finalDescription = description || defaultDescription;
   const finalKeywords = [...defaultKeywords, ...keywords];
-  const finalCanonicalUrl = canonicalUrl || `https://tsai-co.com/${locale}`;
+  const finalCanonicalUrl = canonicalUrl || `https://tavan-sanaat.com/${locale}`;
 
   return (
     <Head>
@@ -92,7 +92,7 @@ export default function SEOHead({
       <meta property="og:url" content={finalCanonicalUrl} />
       <meta property="og:site_name" content={isPersian ? 'توان صنعت آینده ایرانیان' : 'Tavan Sanat Ayande Iranian'} />
       <meta property="og:locale" content={isPersian ? 'fa_IR' : 'en_US'} />
-      <meta property="og:image" content="https://tsai-co.com/tavan-sanaat-logo-with-text.png" />
+      <meta property="og:image" content="https://tavan-sanaat.com/tavan-sanaat-logo-with-text.png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={isPersian ? 'توان صنعت آینده ایرانیان' : 'Tavan Sanat Ayande Iranian'} />
@@ -101,7 +101,7 @@ export default function SEOHead({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={finalTitle} />
       <meta name="twitter:description" content={finalDescription} />
-      <meta name="twitter:image" content="https://tsai-co.com/tavan-sanaat-logo-with-text.png" />
+      <meta name="twitter:image" content="https://tavan-sanaat.com/tavan-sanaat-logo-with-text.png" />
       <meta name="twitter:image:alt" content={isPersian ? 'توان صنعت آینده ایرانیان' : 'Tavan Sanat Ayande Iranian'} />
       
       {/* Additional SEO Meta Tags */}
