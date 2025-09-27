@@ -99,10 +99,10 @@ export default function Component() {
           <div className="container px-4 md:px-6 flex items-start justify-center relative z-10 pt-[25vh]">
             <div className="text-left">
               <h1 className="text-lg font-extrabold tracking-tighter text-white leading-tight animate-fade-in-up mb-4">
-                WELCOME TO
+                {locale === 'fa' ? 'خوش آمدید به' : 'WELCOME TO'}
               </h1>
               <h2 className="text-[47px] font-extrabold tracking-tighter text-white leading-tight animate-fade-in-up delay-200 mb-6">
-                TAVAN SANATE AYANDE IRANIAN
+                {locale === 'fa' ? 'توان صنعت آینده ایرانیان' : 'TAVAN SANATE AYANDE IRANIAN'}
               </h2>
             </div>
           </div>
@@ -138,6 +138,13 @@ export default function Component() {
                 <p className="text-[12px] md:text-[16px] lg:text-[18px] text-white leading-relaxed text-justify">
                   {translations.company.description2}
                 </p>
+                {locale === 'fa' && (
+                  <p className="text-[12px] md:text-[16px] lg:text-[18px] text-white leading-relaxed text-justify mt-4">
+                    <strong>توان صنعت آینده ایرانیان</strong> با تکیه بر دانش فنی و تجربه‌های ارزشمند، 
+                    آماده ارائه خدمات تخصصی در زمینه آنالایزرهای محیطی و تجهیزات سنجش کیفیت هوا 
+                    به صنایع مختلف کشور می‌باشد.
+                  </p>
+                )}
               </div>
 
               {/* Scroll Indicator */}
@@ -255,6 +262,21 @@ export default function Component() {
                   <h3 className="font-bold text-center text-3xl text-[#353c4a] mb-4 py-2">
                     {translations.contact.title}
                   </h3>
+                  
+                  {/* SEO-friendly company description in footer */}
+                  {locale === 'fa' && (
+                    <div className="mb-6 p-4 bg-gray-50 rounded-lg">
+                      <h4 className="font-semibold text-lg mb-2 text-[#353c4a]">
+                        درباره توان صنعت آینده ایرانیان
+                      </h4>
+                      <p className="text-sm text-gray-700 leading-relaxed">
+                        <strong>توان صنعت آینده ایرانیان</strong> یکی از پیشروترین شرکت‌های ایرانی در زمینه 
+                        طراحی، مشاوره، تأمین و نصب آنالایزرهای آنلاین گاز، آب، پساب و هوا می‌باشد. 
+                        این شرکت با تکیه بر دانش فنی و تجربه‌های ارزشمند، خدمات تخصصی کالیبراسیون 
+                        و نگهداری تجهیزات زیست محیطی را به صنایع مختلف ارائه می‌دهد.
+                      </p>
+                    </div>
+                  )}
                   <div className="flex flex-col lg:flex-row gap-6">
                     <div className="w-full lg:w-1/2">
                       <div className="flex gap-2 mb-3">

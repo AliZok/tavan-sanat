@@ -13,9 +13,64 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'توان صنعت آینده ایرانیان',
+  title: 'توان صنعت آینده ایرانیان | شرکت تخصصی آنالایزرهای محیطی و کیفیت هوا',
   description:
-    'Pioneering air quality solutions for a healthier tomorrow. Advanced environmental monitoring and analytics.',
+    'شرکت توان صنعت آینده ایرانیان - پیشرو در طراحی، مشاوره، تأمین و نصب آنالایزرهای آنلاین گاز، آب، پساب و هوا. خدمات کالیبراسیون و نگهداری تجهیزات زیست محیطی.',
+  keywords: [
+    'توان صنعت آینده ایرانیان',
+    'آنالایزر گاز دودکش',
+    'آنالایزر غبار محیط',
+    'کیفیت هوا',
+    'تجهیزات زیست محیطی',
+    'کالیبراسیون آنالایزر',
+    'نظارت محیطی',
+    'تجهیزات سنجش آلودگی',
+    'شرکت ایرانی',
+    'تولیدکننده آنالایزر'
+  ],
+  authors: [{ name: 'توان صنعت آینده ایرانیان' }],
+  creator: 'توان صنعت آینده ایرانیان',
+  publisher: 'توان صنعت آینده ایرانیان',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'fa_IR',
+    url: 'https://tsai-co.com',
+    siteName: 'توان صنعت آینده ایرانیان',
+    title: 'توان صنعت آینده ایرانیان | شرکت تخصصی آنالایزرهای محیطی',
+    description: 'شرکت توان صنعت آینده ایرانیان - پیشرو در طراحی، مشاوره، تأمین و نصب آنالایزرهای آنلاین گاز، آب، پساب و هوا',
+    images: [
+      {
+        url: '/tavan-sanaat-logo-with-text.png',
+        width: 1200,
+        height: 630,
+        alt: 'توان صنعت آینده ایرانیان',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'توان صنعت آینده ایرانیان | شرکت تخصصی آنالایزرهای محیطی',
+    description: 'شرکت توان صنعت آینده ایرانیان - پیشرو در طراحی، مشاوره، تأمین و نصب آنالایزرهای آنلاین',
+    images: ['/tavan-sanaat-logo-with-text.png'],
+  },
+  alternates: {
+    canonical: 'https://tsai-co.com',
+    languages: {
+      'fa-IR': 'https://tsai-co.com/fa',
+      'en-US': 'https://tsai-co.com/en',
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
