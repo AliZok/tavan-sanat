@@ -147,57 +147,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // SEO-optimized keyword pages for Persian
-  const keywordPages = [
-    {
-      url: `${baseUrl}/fa/توان-صنعت`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/fa/توان-صنعت-آینده-ایرانیان`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/fa/آنالایزر-گاز-دودکش`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/fa/آنالایزر-غبار-محیط`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/fa/کیفیت-هوا`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/fa/تجهیزات-زیست-محیطی`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/fa/کالیبراسیون-آنالایزر`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-  ]
+  // Only include actual existing pages - no fake URLs
 
   return [
     ...mainPages,
     ...servicePages,
     ...productPages,
     ...categoryPages,
-    ...keywordPages,
   ]
 }
