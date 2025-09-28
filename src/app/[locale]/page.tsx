@@ -239,81 +239,6 @@ export default function Component() {
           </div>
         </section>
 
-        {/* FAQ Section for SEO */}
-        {locale === 'fa' && (
-          <section className="w-full py-16 bg-white">
-            <div className="max-w-4xl mx-auto px-4 md:px-6">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-[#353c4a] mb-4">
-                  سوالات متداول درباره توان صنعت آینده ایرانیان
-                </h2>
-                <p className="text-gray-600">
-                  پاسخ سوالات رایج درباره خدمات و محصولات توان صنعت
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-6">
-                  <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
-                      توان صنعت آینده ایرانیان چه خدماتی ارائه می‌دهد؟
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      <strong>توان صنعت آینده ایرانیان</strong> خدمات تخصصی طراحی، مشاوره، تأمین و نصب آنالایزرهای آنلاین گاز، آب، پساب و هوا را ارائه می‌دهد. همچنین خدمات کالیبراسیون و نگهداری تجهیزات زیست محیطی از جمله فعالیت‌های اصلی این شرکت است.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
-                      آدرس و شماره تماس توان صنعت کجاست؟
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      <strong>توان صنعت آینده ایرانیان</strong> در تهران، خیابان آزادی، خیابان کارون شمالی، کوچه سید عباسی، پلاک 18، واحد 2 واقع شده است. شماره تلفن: 021-66859042 و موبایل: 09120628762
-                    </p>
-                  </div>
-                  
-                  <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
-                      توان صنعت با چه صنایعی همکاری می‌کند؟
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      <strong>توان صنعت آینده ایرانیان</strong> با صنایع فلزی و فولاد، صنایع نفت، گاز و پتروشیمی، نیروگاه‌ها، کشت و صنعت، سازمان حفاظت محیط زیست، آب و فاضلاب، سیمان و مراکز بهداشتی و دانشگاهی همکاری دارد.
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="space-y-6">
-                  <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
-                      آنالایزرهای توان صنعت چه ویژگی‌هایی دارند؟
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      آنالایزرهای <strong>توان صنعت آینده ایرانیان</strong> شامل آنالایزرهای گاز دودکش، آنالایزرهای غبار محیط، آنالایزرهای گاز محیط و آنالایزرهای GC می‌باشند که با دقت بالا و قابلیت اطمینان مناسب طراحی شده‌اند.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
-                      آیا توان صنعت گواهینامه‌های معتبر دارد؟
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      بله، <strong>توان صنعت آینده ایرانیان</strong> دارای گواهینامه‌های ISO 9001:2008، ISO 14001:2004 و OHSAS 18001:2007 می‌باشد که نشان‌دهنده کیفیت و استانداردهای بالای خدمات این شرکت است.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-gray-50 p-6 rounded-lg">
-                    <h3 className="text-xl font-semibold text-[#353c4a] mb-3">
-                      چگونه با توان صنعت تماس بگیرم؟
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      برای تماس با <strong>توان صنعت آینده ایرانیان</strong> می‌توانید از طریق تلفن 021-66859042، موبایل 09120628762 یا ایمیل CRM@tsai-co.com با ما در ارتباط باشید. همچنین می‌توانید به آدرس تهران، خیابان آزادی، خیابان کارون شمالی مراجعه کنید.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
       </main>
 
       <footer className="bg-gray-50">
@@ -327,20 +252,6 @@ export default function Component() {
                     {translations.contact.title}
                   </h3>
                   
-                  {/* SEO-friendly company description in footer */}
-                  {locale === 'fa' && (
-                    <div className="mb-6 p-4 bg-gray-50 rounded-lg">
-                      <h4 className="font-semibold text-lg mb-2 text-[#353c4a]">
-                        درباره توان صنعت آینده ایرانیان
-                      </h4>
-                      <p className="text-sm text-gray-700 leading-relaxed">
-                        <strong>توان صنعت آینده ایرانیان</strong> یکی از پیشروترین شرکت‌های ایرانی در زمینه 
-                        طراحی، مشاوره، تأمین و نصب آنالایزرهای آنلاین گاز، آب، پساب و هوا می‌باشد. 
-                        این شرکت با تکیه بر دانش فنی و تجربه‌های ارزشمند، خدمات تخصصی کالیبراسیون 
-                        و نگهداری تجهیزات زیست محیطی را به صنایع مختلف ارائه می‌دهد.
-                      </p>
-                    </div>
-                  )}
                   <div className="flex flex-col lg:flex-row gap-6">
                     <div className="w-full lg:w-1/2">
                       <div className="flex gap-2 mb-3">
