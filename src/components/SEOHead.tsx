@@ -111,7 +111,7 @@ export default function SEOHead({
       <meta name="application-name" content={isPersian ? 'توان صنعت آینده ایرانیان' : 'Tavan Sanat Ayande Iranian'} />
       
       {/* Business Information */}
-      <meta name="contact" content="CRM@tsai-co.com" />
+      <meta name="contact" content="CRM@tavan-sanaat.com" />
       <meta name="phone" content="+98-21-66859042" />
       <meta name="address" content={isPersian ? 'تهران خیابان آزادی خیابان کارون شمالی کوچه سید عباسی پلاک 18 واحد 2' : 'Tehran, Azadi St., Karoon North St., Seyed Abbasi Alley, No. 18, Unit 2'} />
       
